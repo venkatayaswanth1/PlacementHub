@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlacementHub | Your Career Gateway</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="bg-blue-600 p-2 rounded-lg">
+                        <i class="fas fa-graduation-cap text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-slate-800">Placement<span class="text-blue-600">Hub</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#resources" class="hover:text-blue-600 transition">Resources</a>
+                    <a href="#companies" class="hover:text-blue-600 transition">Companies</a>
+                    <a href="#notices" class="hover:text-blue-600 transition">Notices</a>
+                    <a href="#analysis" class="hover:text-blue-600 transition">Analysis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6">
+                Master Your <span class="text-blue-600">Placement</span> Journey
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                Access curated preparation resources, company insights, and real interview experiences all in one place.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <a href="resources.html" class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-book-open text-2xl text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Prep Resources</h3>
+                <p class="text-slate-500 text-sm">Role-specific roadmaps, DSA sheets, and technical guides.</p>
+                <span class="mt-6 text-blue-600 font-semibold inline-flex items-center">Explore <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+            </a>
+
+            <a href="companies.html" class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-building text-2xl text-emerald-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Company Info</h3>
+                <p class="text-slate-500 text-sm">Detailed profiles, eligibility criteria, and salary packages.</p>
+                <span class="mt-6 text-emerald-600 font-semibold inline-flex items-center">View List <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+            </a>
+
+            <a href="notices.html" class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-bullhorn text-2xl text-amber-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Past Notices</h3>
+                <p class="text-slate-500 text-sm">Archive of selection lists and official recruitment circulars.</p>
+                <span class="mt-6 text-amber-600 font-semibold inline-flex items-center">Check Archive <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+            </a>
+
+            <a href="analysis.html" class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-chart-line text-2xl text-purple-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Interview Insights</h3>
+                <p class="text-slate-500 text-sm">Selection trends, round counts, and student experience blogs.</p>
+                <span class="mt-6 text-purple-600 font-semibold inline-flex items-center">View Analysis <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+            </a>
+
+        </div>
+
+        <div class="mt-20">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <i class="fas fa-clock text-blue-600"></i> Recent Updates
+            </h2>
+            <div class="overflow-x-auto bg-white rounded-xl shadow-sm border border-slate-200">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 border-b border-slate-200">
+                            <th class="p-4 font-semibold text-slate-700">Company</th>
+                            <th class="p-4 font-semibold text-slate-700">Type</th>
+                            <th class="p-4 font-semibold text-slate-700">Status</th>
+                            <th class="p-4 font-semibold text-slate-700">Date Added</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="p-4 font-medium text-slate-800">Google</td>
+                            <td class="p-4 text-slate-600">Experience Blog</td>
+                            <td class="p-4"><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold uppercase">New</span></td>
+                            <td class="p-4 text-slate-500 italic">2 hours ago</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-slate-800">Microsoft</td>
+                            <td class="p-4 text-slate-600">Shortlist Notice</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold uppercase">Update</span></td>
+                            <td class="p-4 text-slate-500 italic">Yesterday</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-20 py-8 border-t border-slate-200 bg-white text-center text-slate-500">
+        <p>© 2025 PlacementHub. All resources for student success.</p>
+    </footer>
+
+</body>
+</html>
