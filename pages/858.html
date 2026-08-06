@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Deutsche Bank<br>
+<br>CV Submission for DEUTSCHE INDIA PRIVATE LIMITED (Profile: Analyst) is opened till 11:59 PM, 4th October, 2025.
+<br>
+<br>Its mandatory for all the candidates who are applying for this role, to fill the following google form and apply on the portal link attached below: 
+<br>1.  Google Form: https://forms.gle/zZNg1drsxTnUWjNJ9
+<br>2.  Company Portal: https://db.recsolu.com/external/requisitions/ibin6aNX9kYaaF-e3cvqIA
+<br>
+<br>NOTE: Students are required to apply using their ERP-registered email ID on both the company portal and the Google Form.
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extension will be provided.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,27 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Hapillo<br>
+<br>Applicants who have applied to Happilo are requested to check their CDC-registered email ID for the Google Form link and complete the form by 11:59 AM 24-10-2025.
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

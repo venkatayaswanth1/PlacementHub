@@ -1,0 +1,43 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : ACCENTURE<br>
+<br>CV Submission for ACCENTURE for the following roles is opened till 11:59 PM, 13th July, 2025 (Sunday) .
+<br>
+<br>1. MC Delivery Associate
+<br>
+<br>Along with applying in ERP, all the eligible and interested students are advised to register on the link below.
+<br>
+<br>Registration Link :&nbsp;https://indiacampus.accenture.com/register/accenture/bsclnew/apply/?event=960383
+<br>
+<br>2. AI/ML
+<br>
+<br>Along with applying in ERP, all the eligible and interested students are advised to register on the link below.
+<br>
+<br>Registration Link :&nbsp;https://indiacampus.accenture.com/register/accenture/bsclnew/apply/?event=961377
+<br>
+<br>
+<br>Interested students are advised to apply at the ERP portal within the given deadline. No further extensions will be provided.
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

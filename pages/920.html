@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Axtria India Pvt Ltd<br>
+<br>Please find below the details for the Axtria India Pvt Ltd Test scheduled for today from 09:00 PM to 10:00 PM.
+<br>
+<br>Mode: Offline
+<br>Venue: NR421
+<br>Test PoC: Biplab (7004097392)
+<br>
+<br>Please report to the venue 15 mins before the start time. 
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

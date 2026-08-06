@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Sciforn<br>
+<br>PFB the interview shortlist for Sciforn. 
+<br>22IM30015
+<br>22IM3FP03
+<br>22ME3AI33
+<br>23CH10035
+<br>23CS10015
+<br>23CS10076
+<br>23EE10001
+<br>23EE10025
+<br>23IM10007
+<br>23MA10019
+<br>23MA10021
+<br>23MA10045
+<br>23ME10054
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

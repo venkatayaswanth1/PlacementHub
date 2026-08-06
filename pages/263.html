@@ -1,0 +1,46 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : General<br>
+<b>Company</b> : HEST 2025<br>
+<br>This is regarding the launch of the 5th edition of the Higher Education Scholarship Test (HEST) 2025, India's Largest Scholarship Test.
+<br>
+<br>Indian nationals who aspire to Study Abroad can take this test and get scholarships up to INR 2 crores ($240K).
+<br>
+<br>Test Details:
+<br>
+<br>Date &amp; Time - Select a 40 mins test slot anytime between 24th to 28th July, 2025
+<br>
+<br>Mode - Online (Mobile/ Tablet/ PC)
+<br>
+<br>Syllabus - General Aptitude and Verbal Learning
+<br>
+<br>Registration Fees - Zero 
+<br>
+<br>Registration deadline: 27th July 2025
+<br>
+<br>Know more and Register for the test (Free): hest.wemakescholars.com
+<br>
+<br>Note: Interested students may apply. CDC has no role in the selection process.
+<br>
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

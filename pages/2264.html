@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : NAV Fund Services<br>
+<br>PFA the test shortlist for NAV Fund services, 
+<br>the test is scheduled at 18/12/2025 from 6 PM to 8 PM
+<br>
+<br>Shortlisted candidates will receive the links shortly. 
+<br>Location: Respective Location.
+<br>
+<br>PoC: Deepak (90249 50269)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

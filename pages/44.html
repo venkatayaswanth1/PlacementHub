@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : MICROSOFT<br>
+<br>CV submission for Microsoft has been Extended till 11:00 PM, 10-07-2025.
+<br>
+<br>It is compulsory for the students to also apply in the below mentioned link 
+<br>https://jobs.careers.microsoft.com/global/en/job/1841649/Software-Engineer%3a--Internship-Opportunity
+<br>
+<br>You will be asked to sign in using 4 options in the link. Please sign in with your personal email address.
+<br>Note : the same email ID should be used to take Online assessment
+<br>
+<br>Interested and eligible students are advised to apply within deadline.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

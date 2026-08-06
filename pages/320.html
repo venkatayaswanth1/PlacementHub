@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Shortlist of Various Companies<br>
+<br>Please find attached the shortlist of the following companies :
+<br>
+<br>1. Texas Instruments
+<br>2. Wells Fargo
+<br>3. Winzo
+<br>4. Nvidia
+<br>5. Google Hardware
+<br>6. Rippling
+<br>7. Infonetica 
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

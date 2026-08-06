@@ -1,0 +1,39 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Beehyv<br>
+<br>PFB the shortlist for Beehyv- Developer Trainee Profile: 
+<br>
+<br>21BT30038
+<br>21M131009
+<br>21ME31028
+<br>21MI31012
+<br>21MI31046
+<br>22HS10048
+<br>22ME10050
+<br>22MT10019
+<br>22MT10044
+<br>
+<br>POC: Ritvik(9480360231), Anurag(9491087133)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

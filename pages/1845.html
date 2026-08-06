@@ -1,0 +1,53 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : EXL SERVICE<br>
+<br>PFB the extended shortlist of EXL SERVICE
+<br>
+<br>21MF3IM25
+<br>21EX23007
+<br>22CY10047
+<br>22CH10066
+<br>21AE30009
+<br>21MF3IM27
+<br>22PH10052
+<br>21EE38014
+<br>21CH30003
+<br>21MF3IM42
+<br>21MF3IM33
+<br>21AG3FP33
+<br>21EE38031
+<br>22CH10062
+<br>21IE35003
+<br>22MT10005
+<br>22PH10032
+<br>22AE10023
+<br>22NA10035
+<br>21PH23006
+<br>21PH23007
+<br>21CE31015
+<br>21MI33019
+<br>22AG10013
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

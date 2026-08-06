@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : ADITYA BIRLA SCIENCE &amp; TECHNOLOGY<br>
+<br>Please note that the Interview for ADITYA BIRLA SCIENCE &amp; TECHNOLOGY has been scheduled.
+<br> 
+<br>Date: 27th March 2026 (Friday).
+<br>Venue: Respective Location
+<br>POC: Nikita (99692 07598)
+<br>
+<br>PFB shortlist for interview:
+<br>
+<br>24CH60R58
+<br>24CH60R53
+<br>24CH60R49
+<br>24CH60R34
+<br>
+<br>The timings will be notified.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

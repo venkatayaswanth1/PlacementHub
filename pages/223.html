@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : GOOGLE<br>
+<br>Kindly note GOOGLE  is coming to IIT Kharagpur campus on 21st July, 2025.
+<br>The timings for the career talk is 5:00 PM- 6:00 PM.
+<br>
+<br>This opportunity is open to students of IIT Kharagpur.
+<br>All the interested students are required to reach respective Venue 15 minutes prior to the time. Late entry beyond 15 minutes of the start time will not be permitted under any circumstances. 
+<br>
+<br>Students attending the event will receive refreshment (pizza and coke) after the event.
+<br>
+<br>All the students are requested to carry their ID cards.
+<br>
+<br>Venue will be informed soon.
+<br>
+<br>
+<br>
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : Adobe<br>
+<br>1. [PPT] ADOBE
+<br>
+<br>Date: July 20th, 2025 (Sunday)
+<br>Time: 02:00 PM - 03:00 PM
+<br>Mode: Online
+<br>Link: https://events.teams.microsoft.com/event/1cd92889-b069-4f8f-be5d-29954f8328f7@fa7b1b5a-7b34-4387-94ae-d2c178decee1 
+<br>
+<br>POC: SAYAN DUTTA (7257994649)
+<br>
+<br>NOTE: It is mandatory for all interested candidates to join the PPT.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

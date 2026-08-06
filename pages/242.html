@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : MILLENNIUM<br>
+<br>The deadline for filling the application form for Millennium has been extended till 5:30 PM. 
+<br>Link: https://mlp.eightfold.ai/careers/job/private?domain=mlp.com&amp;pid=755944603193
+<br>Note: Your application will not be considered if you don't fill this form before the deadline.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

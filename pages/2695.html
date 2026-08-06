@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : NASIKO<br>
+<br>PFB the Interview Shortlist of NASIKO for the Research Engineer Role (UG and PG).
+<br>
+<br>21CH30046
+<br>21BT30042
+<br>21MI3EP14
+<br>21NA30013
+<br>21NA30030
+<br>24MA60R15
+<br>24MA60R25
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

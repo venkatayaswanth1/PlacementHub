@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : JPMC<br>
+<br>Interested and Eligible students for JPMC Data Science Role are advised to register on their portal by 11:59 PM, 5th November to get their application considered for the further processes.
+<br>
+<br>PFB, the Link to register on their portal as follows:
+<br> https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210681625/?utm_medium=jobshare&amp;utm_source=External+Job+Share
+<br>
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : SLB<br>
+<br>PFB the interview shortist for the role of EE
+<br>
+<br>21EE32002
+<br>21EE37005
+<br>21EC37002
+<br>24AT62R02
+<br>22EC10033
+<br>24EE61R04
+<br>24EE62R21
+<br>22EE10071
+<br>24EE61R18
+<br>22EE10077
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

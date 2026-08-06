@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : Boston Consulting Group India<br>
+<br>All the students who have submitted their CVs to Boston Consulting Group India need to mandatorily fill up the below mentioned form link by 11.07.2025 11.59 PM.
+<br>
+<br>https://www.113.vovici.net/se/13B2588B232C52AD
+<br>
+<br>No further extension will be given.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

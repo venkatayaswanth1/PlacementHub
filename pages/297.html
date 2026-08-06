@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Neo Wealth and Asset Management<br>
+<br>PFB the extended shortlist of Neo Wealth and Asset Management for Quant Role:
+<br>
+<br>23CS10004
+<br>23CS10007
+<br>23CS10032
+<br>23MA10006
+<br>23MA10030
+<br>23MA10042
+<br>23MA10066
+<br>23MA10076<br>
+
+
+</div>
+</body></html>

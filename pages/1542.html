@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : ITC LIMITED<br>
+<br>The CV submission of ITC LIMITED for the role of Assistant, Technical (Under Training) is open till 11:59 AM (Morning), 22nd November 2025 with revised eligibilty.
+<br>
+<br>All the applicants of ITC LIMITED who have applied for the mentioned role are required to fill out the registration form as well before 11:59 PM, 22nd November 2025.
+<br>
+<br>It is mandatory for all the applicants to fill the form. No further extensions will be provided.
+<br>
+<br>Form Link-https://survey.zohopublic.in/zs/5iBSwd
+<br>
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

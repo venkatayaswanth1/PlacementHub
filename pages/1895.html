@@ -1,0 +1,46 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : BANK OF AMERICA<br>
+<br>PFB the extended shortlist of BANK OF AMERICA
+<br>
+<br>21CH30051
+<br>21CH30058
+<br>21ME36017
+<br>21MT30010
+<br>21MT30022
+<br>21MT30026
+<br>21MT30033
+<br>21MT30037
+<br>21MT30045
+<br>21MT30048
+<br>22CH10062
+<br>22CH10084
+<br>22CH10090
+<br>22MT10008
+<br>22MT10019
+<br>22MT10057
+<br>24CH60R06
+<br>24CH60R54
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

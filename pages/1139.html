@@ -1,0 +1,47 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : ACCENTURE (S&amp;C Delivery Associate)<br>
+<br>All students are requested to check and confirm that their system meets the below requirements and compatibility criteria before appearing for the Accenture (S&amp;C Delivery Associate) Test:
+<br>
+<br>1. The machine should be a Laptop/Desktop, DO NOT use Mobile/Tablet.
+<br>
+<br>2. Processor should be intel i3 and above with minimum Processor speed for 2.2 Ghz speed or above.
+<br>
+<br>3. RAM should be minumum 4GB and above.
+<br>
+<br>4. Operating system Windows 8 / 10 /11. 
+<br>
+<br>5. Google Chrome Browser version 80+ is mandatory (up to 5 Latest versions considered, No beta versions)
+<br>
+<br>6. VPN/Proxy should be disabled
+<br>
+<br>7. Video &amp; Audio Webcam is mandatory &amp; Audio Recording should be ON.
+<br>
+<br>8. Cookies &amp; Pop Ups need to be enabled.
+<br>
+<br>9. SEB-Secure Exam Browser is mandatory to take the Test.
+<br>
+<br>Please ensure that your system fulfills all the above requirements well in advance to avoid any technical issues during the test.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

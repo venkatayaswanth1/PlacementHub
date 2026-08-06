@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Trilogy<br>
+<br>PFA the extended shortlist for Trilogy Test
+<br>22AG3FP38
+<br>22IM30015
+<br>22IM30023
+<br>22IM3FP03
+<br>
+<br>Test Date: 20 August 2025
+<br>Time: 1 - 2 PM
+<br>Mode: Offline
+<br>
+<br>POC: Sreelekshmi (90375 46952)
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

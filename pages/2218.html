@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CUBASTION CONSULTING<br>
+<br>Please note that the Test for CUBASTION SONSULTING has been scheduled for 4:30 PM - 6.00 PM, 11th December 2025. Links will be sent. PFA the test shortlist for the same.
+<br>
+<br>NOTE: It is compulsory for all shortlisted candidates to join PPT.
+<br>
+<br>Venue: Respective location
+<br>POC: Himanshu (8307159097)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

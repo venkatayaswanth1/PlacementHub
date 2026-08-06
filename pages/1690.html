@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Siemens Energy<br>
+<br>The test for Siemens Energy is scheduled on 28th November 2025, 8 AM - 10 AM from Respective Location.
+<br>
+<br>Shortlisted students must have received the test link from the company ( admin.mettl@mercer.com ) .
+<br>PFA, the SOP and Shortlist for the test. 
+<br>
+<br>POC:Deepak (+91 90249 50269), Nikita (9969207598)
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

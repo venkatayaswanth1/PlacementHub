@@ -1,0 +1,46 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : I'm Beside You<br>
+<br>PFB the interview shortlist for I'm Beside you: 
+<br>
+<br>For DS role:
+<br>23NA10018
+<br>23MT10021
+<br>
+<br>For SDE role:
+<br>23EX10001
+<br>
+<br>For  UI/UX role:
+<br>22NA30017
+<br>23MA10043
+<br>23EC10033
+<br>22ME31013
+<br>
+<br>For Business Developer role:
+<br>22MT30020
+<br>23AE10028
+<br>22BT3FP56
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

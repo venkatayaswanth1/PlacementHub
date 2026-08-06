@@ -1,0 +1,42 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : NAVI<br>
+<br>PFB the extended shortlist of NAVI for SDE Role 
+<br>
+<br>21AE30026
+<br>21AE30017
+<br>22CY10042
+<br>21CH30018
+<br>22PH10025
+<br>21AE30029
+<br>22CH10015
+<br>22GG10025
+<br>21NA30014
+<br>21CH30053
+<br>21CH30054
+<br>21CH30055
+<br>21CH30056
+<br>21CH30057
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Sigmoid<br>
+<br>Candidates applied for Sigmoid have the test scheduled at 7 PM, candidates will received the test link with the test instructions in it. 
+<br>
+<br>Location: Respective Location
+<br>Time: 7 PM
+<br>
+<br>PoC: Sarth (+91 96040 88480)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

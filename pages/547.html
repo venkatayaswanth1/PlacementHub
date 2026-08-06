@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : AB InBev India<br>
+<br>CV Submission for AB InBev India is open till 11.59 AM, 18th August 2025 (Monday).
+<br>
+<br>Interested students are advised to apply at the ERP portal within the given deadline. 
+<br>
+<br>No further extensions will be provided.
+<br>
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

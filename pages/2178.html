@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : ASC INFRATECH<br>
+<br>PFA the test shortlist for all the roles of ASC Infratech.
+<br>
+<br>The test is scheduled from 10:00 AM on 10th December 2025.
+<br>
+<br>All shortlisted students are required to register on the link shared with them  before 10:00 PM on 9th December 2025.
+<br>
+<br>POC: Ritvik (9480360231) 
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

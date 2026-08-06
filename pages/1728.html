@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CAIRN INDIA (OIL &amp; GAS)<br>
+<br>PFA the shortlist for CAIRN INDIA (OIL &amp; GAS). The test links will be sent via mail. Candidates are to adhere to the instructions mentioned in the email.
+<br>
+<br>Test window: 8 PM to 8 AM 
+<br>Venue: Respective Location 
+<br>
+<br>PoC: Yograj (6263452430), Deepak (9024950269)
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

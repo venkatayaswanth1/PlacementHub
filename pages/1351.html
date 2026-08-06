@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : HILABS<br>
+<br>The test for HILABS for the roles of Software Development Engineer and Data Scientist is scheduled from 11:30 PM onwards on 10th November 2025.
+<br>
+<br>Kindly note that students can appear for only one test as per their preference.
+<br>
+<br>Students are required to carry their Institute ID card/Medical Book and are advised to reach the venue 15 minutes prior to the time.
+<br>
+<br>POC: Pranjal (7988270765), Mehul (9760046080)
+<br> 
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

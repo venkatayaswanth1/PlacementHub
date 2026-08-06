@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : Accenture AEH<br>
+<br>Please note that the PPT for Accenture AEH for the Advanced Engineering Analyst role will be held on 27th October, 2025 from 5:00 PM onwards in offline mode.
+<br>
+<br>Venue: NR 221, Nalanda Classroom Complex
+<br>
+<br>Note: All placement registered eligible students are supposed to attend the PPT without fail. Attendance will be recorded, and only those attending will be considered for the further processes. 
+<br>
+<br>Students are advised to be present 15 minutes prior to the scheduled time.
+<br>
+<br>POC : Madhav (8619732955)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

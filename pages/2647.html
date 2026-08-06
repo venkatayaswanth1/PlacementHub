@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : ACCENTURE STRATEGY AND CONSULTING<br>
+<br>This is to inform all shortlisted students that the assessment link for ACCENTURE STRATEGY AND CONSULTING has been shared with you.
+<br>
+<br>The assessment window will remain active until 3:30 PM on 5th March, counted from the time you received the assessment email.
+<br>
+<br>Deadline : 5th March 2026, 3:30 PM
+<br>
+<br>POC : Aditya Ghandge (+91 93254 68252), Yograj Lodhi (+91 6263 452 430)
+<br>
+<br>Note : For any technical concerns, kindly refer to the support details mentioned in the assessment email.
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

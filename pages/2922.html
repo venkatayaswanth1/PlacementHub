@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Infolllion Research Services Ltd.<br>
+<br>The submission link for the Assignment Round of Infolllion Research Services Ltd. is as follows:
+<br>
+<br>Submission Link : https://forms.gle/ho4Zd34GuXNiBhBa9
+<br>
+<br>Students are advised to submit only the task assigned to them within the stipulated deadline. Submission of any task other than the allotted one will result in disqualification from the process.
+<br>
+<br>The deadline for submission is 9th May (Tomorrow), 11:59 PM (EOD). No further extensions will be provided.
+<br>
+<br>POC : Bhavy (+91 75971 21669), Deepak (+91 90249 50269)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

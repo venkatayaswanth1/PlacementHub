@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : TESLA<br>
+<br>The CV submission process for TESLA has been extended for the all the roles with revised eligibility.
+<br>
+<br>Deadline: 7:59 PM, 28th October 2025
+<br>
+<br>All eligible and interested students are advised to complete their application and form submission within the given deadline.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

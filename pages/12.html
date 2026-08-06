@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : CV submission of various companies<br>
+<br>The following companies are open for CV submission as per below schedule:
+<br>
+<br>1. Bain &amp; Company - Deadline till 12 NOON, 7/7/25
+<br>
+<br>2. LEK - Deadline till 12 NOON, 7/7/25
+<br>
+<br>Interested students are advised to apply at the ERP portal within the given deadline. No further extensions will be provided.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

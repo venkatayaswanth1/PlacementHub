@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Qualcomm<br>
+<br>Students are hereby informed that the CV submission portal for all profiles of Qualcomm is currently down. The portal will be reopened shortly, and an update will be shared very soon.
+<br>
+<br>Students are requested to remain patient and keep following the official CDC noticeboard to get updates on placement activities.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,28 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CV Verification<br>
+<br>Those students flagged for CV verification and have not yet verified until 26-09-2025, are specially allowed to verify their CV in CDC office during 6-8 Oct, 2025. 
+<br>No further extension will be provided and their CVs will freeze with flagged status.
+<br>Best Wishes for upcoming festival and placement season!!!
+<br>CDC Chairperson<br>
+
+
+</div>
+</body></html>

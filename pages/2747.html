@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Multiple Companies<br>
+<br>PFA the MTP Endorsement Form. The form needs to be submitted physically in the CDC Office. The MTP Endorsement Form submission deadline for following Companies has been extended till 06:00 PM, 23rd March 2026:
+<br>
+<br>1. Skyworks
+<br>2. Dassualt Systemes
+<br>3. Absolute
+<br>
+<br>Note : If any applicant has applied on ERP but failed to submit the form within the deadline then the application won't be considered. Both steps are necessary.
+<br>
+<br>No further extensions will be given.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

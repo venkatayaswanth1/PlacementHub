@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Walter P Moore<br>
+<br>Please note that the Pre-Placement Talk for Walter P Moore will be held on 10th December from 12:00 PM onwards. 
+<br>
+<br>All placement-registered students are supposed to attend the PPT, without fail. Attendance is compulsory for subsequent interview rounds.
+<br>
+<br>POC: Vatsal (+91 83067 85651) 
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

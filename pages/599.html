@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Linkedin<br>
+<br>The Test for Linkedin is scheduled on 20.08.2025.(Wednesday)
+<br>
+<br>Test Timing: 07:00 PM
+<br>Mode: Offline
+<br>Venue: Nalanda
+<br>
+<br>POC: Adeeba (91 78601 39131), Rumana(+91 73567 12900)
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

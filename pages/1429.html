@@ -1,0 +1,27 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : ACCENTURE AI<br>
+<br>The test for Accenture AI has been postponed by 30 minutes to 11:30 PM. Keep following the notice board for further updates.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

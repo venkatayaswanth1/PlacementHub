@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Optum<br>
+<br>The Test for Optum is scheduled as follow:
+<br>
+<br>Test Date: 10th October, 2025 (Friday)
+<br>Test Time: 06:00 PMââ¬ââ¬08:00 PM
+<br>Mode: Online
+<br>Venue: Respective Location
+<br>Test POC: Mehul (9760046080)
+<br>
+<br>The test links and instructions will be shared soon.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

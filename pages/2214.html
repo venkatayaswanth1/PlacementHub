@@ -1,0 +1,39 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : TETRA PAK<br>
+<br>PFB the Interview Shortlist for Tetra Pak:
+<br>
+<br>21AG36009
+<br>24AG63R08
+<br>24AG63R12
+<br>24AG63R18
+<br>24AG63R19
+<br>24AG63R23
+<br>24AG63R24
+<br>24AG63R28
+<br>24AG66R07
+<br>24AG66R12
+<br>21IM30039
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

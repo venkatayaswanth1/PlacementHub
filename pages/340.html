@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : INFO EDGE<br>
+<br>Date: July 28th, 2025 (Monday)
+<br>Time: 03:30 PM - 04:30 PM
+<br>Mode: Online
+<br>
+<br>PPT Link: https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDc3MzM2MDgtNzc2Yi00YTY1LThkZjMtNWQxNTQyZmU2OGFh%40thread.v2/0?context=%7b%22Tid%22%3a%220ee9b5f9-52b3-4351-8198-c4804cd66b68%22%2c%22Oid%22%3a%2259170cbd-7088-44d2-9f79-c2c2ea5f6074%22%7d 
+<br>
+<br>NOTE:  It is mandatory for all interested candidates to&nbsp;join&nbsp;the&nbsp;PPT.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

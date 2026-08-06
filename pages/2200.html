@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : BLUE STAR<br>
+<br>Students interested in and applied for any of the roles offered by Blue Star are mandatorily required to register on the company portal using the link below:
+<br>
+<br>https://bluestar.golsassess.com/bsapt/reg/IITKGP/welcome.jsp
+<br>
+<br>All students who complete the registration will be eligible for the subsequent processes.
+<br>
+<br>Registration Deadline: 11th December, 11:59 AM
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : AMERICAN EXPRESS<br>
+<br>The deadline for registration on the American Express Portal has been extended to 11:59 PM, 29th October, 2025 (today).
+<br>
+<br>All applicants who have applied for American Express are requested to complete their registration on the portal before the above deadline. Students who have already registered do not need to register again.
+<br>
+<br>Note: Please ensure that you use your Institute Email ID  for registration. Applications made using personal email IDs will not be considered. The registration is mandatory, and candidates who fail to complete this step will not be considered for the further process.
+<br>
+<br>Kindly go through the attached document carefully and complete your registration before the given deadline.
+<br>
+<br>Portal Link: https://axp.taleo.net/careersection/100/jobdetail.ftl?lang=en&amp;job=25013455
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

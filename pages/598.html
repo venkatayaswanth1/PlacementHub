@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Suzuki R&amp;D Center India Private Limited<br>
+<br>The Group Discussion(GD) for Suzuki R&amp;D Center India Private Limited is scheduled on 20.08.2025.(Wednesday)
+<br>
+<br>Reporting Timing: 09:00 PM
+<br>Mode: Offline
+<br>Venue: Nalanda
+<br>
+<br>POC: Sayan Dutta (+91-7257994649) , Pranjal(+91-7988270765)
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

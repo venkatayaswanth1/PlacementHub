@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : QUALCOMM<br>
+<br>Please find attached the document for the room allocation of QUALCOMM for all the roles (18th October 2025). Kindly note that the test will be conducted only for the role you selected as your preference while registering for the assessment.
+<br>
+<br>Time: 6:00 PM onwards
+<br>
+<br>Venue: Nalanda
+<br>
+<br>Test POC: Sanchay (7027000295), Sayan Dutta (7257994649)
+<br>
+<br>
+<br>Students are required to carry their Institute ID card/Medical Book and are advised to reach the venue 15 minutes prior to the time.
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

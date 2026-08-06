@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : OLA<br>
+<br>All applicants are requested to fill up the following google form for the preference of role in OLA. Please note that you may apply for only one role according to your preference. 
+<br>
+<br>Form Link: https://docs.google.com/forms/d/e/1FAIpQLSf_qdLIgPOsDYyrFE7qrPYyH93B_3dDAnd1JPtHZ8fB5V-Kdw/viewform?usp=sharing&amp;ouid=103589134014115491452
+<br>
+<br>The deadline for the form is 11:59PM, 6th October 2025. Please note that no further extension will be provided for the same.
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

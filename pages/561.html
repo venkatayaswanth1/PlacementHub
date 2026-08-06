@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Zscaler<br>
+<br>The TEST for Zscaler is scheduled on 16.08.2025.(Saturday)
+<br>Test Timing: 6:00 PM to 8:00 PM
+<br>Test Duration: 2 hours
+<br>Mode: Online 
+<br>Venue: Respective Location 
+<br>
+<br>POC: Shreyash (+91 98342 66207)
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

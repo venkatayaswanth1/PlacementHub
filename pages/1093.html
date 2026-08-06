@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : MEESHO LIMITED<br>
+<br>The Pre-Placement Talk (PPT) for MEESHO LIMITED for all the roles is scheduled on 29th October (today) from 6:00 PM onwards. Students are advised to be present 15 minutes prior to the scheduled time.
+<br>
+<br>Venue: Kalidas Auditorium
+<br>
+<br>Note: It is compulsory for all eligible students to attend the PPT. Attendance will be recorded, and only those attending will be considered for the further process. 
+<br>
+<br>The test for the profiles Software Development Engineer I and Data Scientist I is scheduled after the PPT at Nalanda Classroom Complex. The room allocation for the same will be released shortly.
+<br>
+<br>
+<br>POC: Harsh (9532820930), Yash (6264949043)
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

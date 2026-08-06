@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : MEESHO<br>
+<br>Please find attached the room allocation for the test of MEESHO for the roles of Data Scientist - I and Software Development Engineer - I.
+<br>
+<br>Kindly note that only students attending the PPT will be permitted to appear for the test. The test is scheduled for today, 29th October 2025, from 8:00 PM onwards. 
+<br>
+<br>Students are required to carry their Institute ID Card or Medical Book and must report at least 20 minutes before the scheduled time.
+<br>
+<br>Test POC: Harsh (9532820930), Yash (6264949043)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : MTP Endorsement Form Submission<br>
+<br>All the students who applied for following companies on ERP for Internship are requested to submit the MTP Endorsement form physically in the CDC Office within the given deadline : 
+<br>
+<br>1. Wilo Mather and Platt Pumps
+<br>2. Applied Materials
+<br>
+<br>Deadline : 16th April 2026, 05:00PM
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

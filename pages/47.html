@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : AUXIA<br>
+<br>The PPT for Auxia is scheduled for 10:00 AM to 11:00 AM on 11.07.2025.
+<br>
+<br>Date: July 11th, 2025 (Friday)
+<br>Time: 10:00 AM
+<br>Mode: Online
+<br>Link: https://meet.google.com/nva-dren-miu
+<br>NOTE: It is mandatory for all interested candidates to join the PPT.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

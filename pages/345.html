@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Pattern Technologies Pvt Ltd<br>
+<br>CV Submission for PATTERN (Software) is opened till 11.59 PM, 28th July, 2025.
+<br>
+<br>Kindly fill-up the additional form details below by 11.59pm 28th July,2025.
+<br>
+<br>https://docs.google.com/forms/d/e/1FAIpQLSeuzlEQuwoDCb2pIddSMbsCnfYx09NFqaWB-rhytl_eqPIPBQ/viewform?usp=header
+<br>
+<br>Interested students are advised to apply at the ERP portal  and fill-up the additional details form, failing which your application stands cancelled within the given deadline. No further extensions will be provided.
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

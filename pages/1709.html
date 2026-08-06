@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : LARSEN &amp; TOURBO<br>
+<br>All interested candidates are required to register using the link provided below.Only those who complete the registration on the portal will be considered for the subsequent selection process. 
+<br>
+<br>Link: https://campus.lntedutech.com//offline/l#/open/off-campus/landing?college_id=80c0e8c4457441901351e4abbcf8c75c&amp;drive_id=82161242827b703e6acf9c726942a1e4 
+<br>
+<br>Deadline: 5:00 PM, 28th October 2025 
+<br>
+<br>All eligible and interested students are advised to complete their application within the given deadline. 
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CV Verification<br>
+<br>All students who are currently not present on campus are requested to get their CVs verified through their friends/relatives who are available on campus by 26th September, 6:00 PM.
+<br>
+<br>It is the responsibility of the student to ensure that the verification is completed within the stipulated deadline. Any lapse in this regard will not be entertained, and unverified CVs will contain flags.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

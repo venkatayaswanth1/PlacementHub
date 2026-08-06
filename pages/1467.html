@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Microsoft<br>
+<br>The CV submission of Microsoft PM is open till 11:59 PM, 15th November 2025.
+<br>
+<br>Interested and eligible students are advised to apply on their portal with the link attached below in the given deadline. No further extensions will be given.
+<br> https://jobs.careers.microsoft.com/global/en/job/1878799/Product-Manager-MBA-Internship-Opportunities
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

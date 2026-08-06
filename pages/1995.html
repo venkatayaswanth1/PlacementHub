@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Multiple Companies<br>
+<br>The CV submission of the below companies all roles has been opened till 6:00 PM, 5th December 2025.
+<br>
+<br>1. NPST (Network People Services Technologies)
+<br>2. PharmaACE
+<br>3. TATA MOTORS
+<br>4. TATA ADVANCED SYSTEMS
+<br>5. THORNTON TOMASETTI
+<br>6. MAVEN MAGNET
+<br>7. NAV FUND SERVICES (INDIA) PRIVATE LIMITED
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. This is the final deadline, No further extensions will be given.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

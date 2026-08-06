@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : BLACKROCK<br>
+<br>The Pre-Placement Talk (PPT) for BLACKROCK for all the roles is scheduled on 3rd November from 5:45 PM onwards in an offline mode. Students are advised to be present 15 minutes prior to the scheduled time.
+<br>
+<br>Reporting Time: 5:45 PM 
+<br>
+<br>Venue: V1, Vikramshila
+<br>
+<br>Note: It is compulsory for all eligible students to attend the PPT. Attendance will be recorded, and only those attending will be considered for the further process. 
+<br>
+<br>POC: Sayan Dutta (7257994649), Sanchay (7027000295)
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

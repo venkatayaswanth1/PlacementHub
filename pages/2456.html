@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : OCS DESIGNS PVT. LTD.<br>
+<br>PFA the test shortlist for OCS DESIGNS PVT. LTD. for both roles. The timings for the test is 5:30 PM- 6:00 PM.
+<br>
+<br>All the shortlisted students are requested to reach respective rooms 15 minutes prior to the time.
+<br>
+<br>This would be a pen paper test. All the students are requested to carry their ID cards.
+<br> 
+<br>Venue - NC 231
+<br>POC: Abhijeet (+91 6398 985 179)
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

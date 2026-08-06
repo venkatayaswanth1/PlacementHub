@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : OPTUM CE<br>
+<br>PFB the interview shortlist for OPTUM CE.
+<br>
+<br>21CE31004
+<br>22CE10020
+<br>24CE61R04
+<br>24MI62R05
+<br> 
+<br>Date : 13th April 2026
+<br>Venue : Respective location
+<br>Time : Will be Notified
+<br>
+<br>POC : Ritvik(+91 94803 60231)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

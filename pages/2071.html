@@ -1,0 +1,41 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Ashoka University<br>
+<br>The Department of Computer Science, Ashoka University, invites applications for its PhD and Integrated MSc + PhD programs for the January 2026 intake.
+<br>
+<br>The Integrated MSc + PhD program does not require prior exposure to Computer Science or programming. A basic college-level background in Mathematics is sufficient.
+<br>
+<br>Eligible Students:
+<br>Students from Computer Science, Mathematics, Economics, Physics, Electronics, Electrical Engineering, or equivalent disciplines are encouraged to apply.
+<br>
+<br>PFA the attached poster for the same
+<br>
+<br>Important Dates:
+<br>Application Deadline: 25 December 2025
+<br>Entrance Shortlist: 2 January 2026
+<br>
+<br>Application Link:
+<br>https://bit.ly/csphdashoka
+<br>
+<br>Interested and eligible students are advised to apply at the earliest.<br>
+
+
+</div>
+</body></html>

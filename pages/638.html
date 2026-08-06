@@ -1,0 +1,42 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : NoBroker<br>
+<br>PFB the Shortlist for the NoBroker
+<br>
+<br>22AR10015
+<br>22CE36010
+<br>22CE36012
+<br>22CH3EP02
+<br>22EC39017
+<br>22EX5PE02
+<br>22IM30028
+<br>22ME3EP21
+<br>22MI31023
+<br>22MT30028
+<br>22MT30030
+<br>23CE10040
+<br>23EC10067
+<br>23IE10019
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

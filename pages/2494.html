@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : NORTHERN ARC CAPITAL<br>
+<br>The test of NORTHERN ARC CAPITAL for Software Engineer - Technology Role to be conducted on 28th January, 2026 (today).
+<br>
+<br>Time : 8:00 PM
+<br>Login Window : till 9:00 PM
+<br>Venuw : Respective Location
+<br>
+<br>POC - Aryan (+91 81003 03122), Vatsal (+91 83067 85651)
+<br>
+<br>All shortlisted students will receive the test link via CDC registered email before 8:00 PM.
+<br>
+<br>Students are advised to ensure stable internet connectivity and log in within the stipulated time.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

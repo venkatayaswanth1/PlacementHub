@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Schedule<br>
+<b>Company</b> : CDC Internship schedule for 8th October<br>
+<br>1. [TEST] E-Bay (05:30 PM - 06:30 PM)
+<br>Mode: Offline
+<br>Venue: Nalanda Classroom Complex
+<br>Test POC: Pranjal (7988270765), Adeeba (7860139131)
+<br>
+<br>2. [TEST] OLA (07:00 PM - 09:00 PM)
+<br>Mode: Offline
+<br>Venue: Nalanda Classroom Complex
+<br>Test POC: Sayan (8250952356), Sreelekshmi (9037546952)
+<br>
+<br>The Test links and instructions will be shared soon. Room allocation will be released shortly.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

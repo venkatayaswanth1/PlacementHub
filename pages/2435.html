@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Microsoft<br>
+<br>The CV submission of Microsoft for the Applied Sciences PHD Role has been extended till 6:00 PM, 20th January 2025.
+<br>
+<br>It is mandatory for all the students to apply on the below given link as well: https://apply.careers.microsoft.com/careers?query=200019177&amp;start=0&amp;pid=1970393556654901&amp;sort_by=timestamp
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

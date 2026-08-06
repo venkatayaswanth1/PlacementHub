@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : TESLA<br>
+<br>PFA the list of students from Batch-2 who are required to report to their respective allocated rooms.
+<br>
+<br>Students are required to carry their Institute ID card/Medical Book and must report 15 minutes prior to the time. Room allocation remains the same as previously released. The test link will be triggered soon. 
+<br>
+<br>POC: Alok (6299042184), Harsh (9532820930)
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : ICICI Bank<br>
+<br>CV submission for ICICI Bank has been opened till 11:59 PM, 17-08-2025.
+<br>
+<br>Interested and eligible students are advised to apply within deadline along with filling the following forms up which is mandatory.
+<br>
+<br>https://www.icicicareers.com/website/Jobs/Hot-Jobs/2472837.html (Deadline: 17.08.2025, 4:00 PM)
+<br>https://forms.gle/VS78ssvRV4Zq6y8XA (Deadline: 17.08.2025, 11:59 PM)
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

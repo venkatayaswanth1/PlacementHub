@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : AMAZON<br>
+<br>All students who have not yet appeared for the Amazon test are instructed to report to Nalanda Classroom Complex to take the test. You can report to Room No. NR121, NR122, NR123 or NR124 and give the test.
+<br>
+<br>The test can be taken any time between 3:30 AM and 7:00 AM on 27th November, 2025.
+<br>
+<br>It is mandatory for all candidates to appear for the test from Nalanda only. No other location will be permitted.
+<br>
+<br>Students must carry their Institute ID card/Medical Book and are advised to reach the venue well in time.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

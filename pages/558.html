@@ -1,0 +1,30 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : ETERNAL<br>
+<br>The TEST for Eternal ML intern is postponed to 16th August 2025
+<br>Time: 4pm to 6 pm
+<br>Venue: Nalanda
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

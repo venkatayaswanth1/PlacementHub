@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Cisco<br>
+<br>The Test for Cisco is scheduled on 03.09.2025.(Wednesday)
+<br>
+<br>Test Time: 7:30 PM
+<br>Mode: Online
+<br>Venue: Respective Location
+<br>
+<br>POC: Pranjal (+91 79882 70765)
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

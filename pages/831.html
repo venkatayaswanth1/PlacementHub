@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CDC IIT Kharagpur: Preference/Experience Form<br>
+<br>The deadline to fill the Preference/Experience Form is extended till 3rd October 2025, 11:59 PM.
+<br>
+<br>All the students are advised to fill out the form as detailed and as truthfully as possible. The details filled in this form shall be verified and shall be used by companies for selection processes.
+<br>
+<br>CDC IIT Kharagpur: Preference/Experience Form: https://forms.gle/aKqpetP7JUrDXz74A
+<br>
+<br>It is mandatory for all the students to fill the form within the given deadline. No further extensions will be given.
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

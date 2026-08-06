@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Multiple Companies<br>
+<br>The following companies are open for CV Submission till 5:00 PM, 11th November, 2025. Interested and eligible students are advised to apply.
+<br>
+<br>1. INFINEON TECHNOLOGIES [Profile: Engineer, Junior Systems &amp; Performance Engineer]
+<br>
+<br>2. INCANUS TECHNOLOGIES PRIVATE LIMITED [Profile: Subject Matter Experts - AIML, Subject Matter Experts - Data Engineering, Subject Matter Experts - Devops, Subject Matter Experts - DSA, Subject Matter Experts - Maths, Subject Matter Experts - Web Dev, Growth Associate, Product Designer, Associate Program Manager, Associate Product Manager, Software development engineer, Subject Matter Experts]
+<br>
+<br>3. SCIFORN SOLUTIONS [Profile: Full Stack Developer]
+<br>
+<br>4. VERSA NETWORKS INDIA [Profile: Software Engineer 1]
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

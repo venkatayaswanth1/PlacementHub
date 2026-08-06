@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : EMA<br>
+<br>PFB the extended shortlist for EMA for the roles of ML Engineer/SDE
+<br>
+<br>21CS10067
+<br>21CS30063
+<br>21IE35004
+<br>22EE10061
+<br>22EE10072
+<br>22IE10017
+<br>22IE10020
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

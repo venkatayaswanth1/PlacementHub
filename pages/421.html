@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Intraday 2nd August<br>
+<br>All students eligible for internship are advised to take note of Intraday for 2nd August in the attached document.
+<br>
+<br>All students are required to get 5 prints of their CVs for the interview processes.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Sciforn Solutions<br>
+<br>The test of Sciforn Solutions is scheduled on 26.08.2025 (Tuesday) at 8:00 PM. The test link will soon be shared on applicantââ¬s CDC registered email ID.
+<br>
+<br>Test Timing: 08:00 PM
+<br>Mode: Online
+<br>Venue:Respective Locations
+<br>
+<br>POC: Biplab (700-409-7392) Mehul (97600 46080)
+<br>
+<br>
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

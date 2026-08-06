@@ -1,0 +1,41 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Eternal<br>
+<br>Please find below the shortlist for Eternal- SDE Profile: 
+<br>
+<br>22AG3AI07
+<br>22CS30005
+<br>22EC39010
+<br>22EC39025
+<br>22MA25007
+<br>23AE10007
+<br>23CH10003
+<br>23EC10010
+<br>23IE10029
+<br>23MA10001
+<br>23MA10010
+<br>23MA10052
+<br>23ME10107
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,47 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : IBM INDIA<br>
+<br>Please note that the Interview for IBM INDIA has been scheduled on 25th March 2026 (Wednesday).
+<br>
+<br>PFA shortlist for interview:
+<br>
+<br>25CS60R26
+<br>25CS60R28
+<br>25CS60R54
+<br>25CS60R55
+<br>25CS60R63
+<br>25CS60R83
+<br>25CS60R20
+<br>22EC37025
+<br>22EC37026
+<br>22EC39015
+<br>25EC62R28
+<br>25EC62R37
+<br>25EC62R41
+<br>
+<br>
+<br>Venue: Respective Location 
+<br>POC: Devangan (63913 22618)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

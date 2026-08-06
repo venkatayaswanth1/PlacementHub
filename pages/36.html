@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : JPMorgan Chase<br>
+<br>The PPT for JPMorgan Chase is scheduled for 4:00 PM to 05:30 PM on 10.07.2024.
+<br>
+<br>Date: July 10th, 2025 (Thursday)
+<br>Time: 4:00 PM sharp
+<br>Mode: Online
+<br>Zoom ID: 4110816532
+<br>
+<br>NOTE: It is mandatory for all interested candidates to join the PPT.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : FLIPKART<br>
+<br>The deadline to fill the Registration form has been extended till 7:00 PM on 28th July 2025.
+<br>
+<br>All students who have not registered are advised to fill the form received on mail before deadline.
+<br>
+<br>Only those who submit the form will receive the test link.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

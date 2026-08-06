@@ -1,0 +1,53 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPO<br>
+<b>Company</b> : VEDANTA<br>
+<br>VEDANTA has extended the offer to the following student(s):
+<br>
+<br>Anurag Kumar - 21MT3AI35
+<br>
+<br>Anviksha Dharmale - 21MT30005
+<br>
+<br>Gajanand Gena - 22MI10029
+<br>
+<br>Gaurav Kumar - 21GG23004
+<br>
+<br>Jaspreet Kaur - 21MT30039
+<br>
+<br>K Shiva Kumar - 21MI31013
+<br>
+<br>Mrinmoy Dey - 22MI10040
+<br>
+<br>Navpreet Singh Ghai - 21MT30019
+<br>
+<br>Sharwari Satish Muley - 22MT10049
+<br>
+<br>Soham Mallik - 22CE10076
+<br>
+<br>Sonali Verma - 22MI31045
+<br>
+<br>The students are advised to give offer acceptance by 11.08.2025.
+<br>
+<br>(For more details, check your email ID.)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

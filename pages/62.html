@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Additional requirement<br>
+<b>Company</b> : Pkeday Advisors LLP<br>
+<br>All the students who have submitted their CVs to Pkeday Advisors LLP need to mandatorily fill up the below mentioned form positively by 11:59 PM, 11.07.2025.
+<br>
+<br>https://docs.google.com/forms/d/e/1FAIpQLSdWdbLgLJnBtLte1FXXotenuxGPvNzYm3REZTNhL0erEPweYw/viewform?usp=sharing&amp;ouid=115824860709877355584
+<br>
+<br>
+<br>No further extension will be given.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

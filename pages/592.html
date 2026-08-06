@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Mathworks<br>
+<br>Please fill the Additional Candidate Information form for Mathworks which has been opened till 11:59 PM on 19th August 2025 (Tuesday).
+<br>
+<br>No further extensions will be provided.
+<br>
+<br>https://docs.google.com/forms/d/e/1FAIpQLScRw6faMttsy4MiHgzA9arZn4s_-huIWWVPKSXeOshwrYbJ_g/viewform
+<br>Note: Your application will not be considered if you don't fill this form before the deadline.
+<br>
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

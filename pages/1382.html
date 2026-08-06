@@ -1,0 +1,30 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Fujitsu Research of India Pvt. Ltd. (FRIPL)<br>
+<br>All the eligible candidates for Fujitsu Research of India Pvt. Ltd. (FRIPL) are being informed to fill out the form link sent to them via mail without fail by 5:00 PM, 12th November 2025.
+<br>
+<br>Please keep following the CDC Notice Board for further instructions.
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : Quadeye<br>
+<br>The PPT for Quadeye is scheduled for 03:00 PM to 04:00 PM on 09.07.2025.
+<br>
+<br>Date: July 9th, 2025 (Wednesday)
+<br>Time: 3:00 PM sharp
+<br>Mode: Online
+<br>
+<br>Link:  https://zoom.us/j/96865279611?pwd=xY7rnm0iUAm90KUZdsC63G8uPvPTdK.1
+<br>
+<br>NOTE: It is mandatory for all interested candidates to join the PPT.
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

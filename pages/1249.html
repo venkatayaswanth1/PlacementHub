@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : DOUBLETICK | QUICKSELL<br>
+<br>Kindly note that all students who are applying for any of the role of  DOUBLETICK | QUICKSELL are required to fill the following google form with accurate details. Only those candidates will be considered for further process who fill these forms.
+<br>
+<br>Frontend Engineer - SDE 1, SDE2 Form Link: https://forms.gle/QE1wVptxrX9Hh5iM8 
+<br>
+<br>Backend Engineer - SDE1,SDE2 Form Link: https://forms.gle/NGki4GVg9RsU31YN7 
+<br>
+<br>Deadline: 11:59pm, 7th Novemeber 2025
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

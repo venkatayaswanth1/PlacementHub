@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : EXXONMOBIL SERVICES &amp; TECHNOLOGY PRIVATE LIMITED<br>
+<br>This is to inform all concerned students that the psychometric test for EXXONMOBIL SERVICES &amp; TECHNOLOGY PRIVATE LIMITED has been scheduled today, 15th November 2025, from 3:00 PM.
+<br>
+<br>All eligible students are requested to complete the test within the stipulated time from their respective locations. A Google Form will be shared with the eligible candidates via email; please ensure that you fill it out after completing the test.
+<br>
+<br>Please note that an additional test for all eligible students will be conducted at the Nalanda Classroom Complex. Further details regarding the same will be communicated in due course.
+<br>
+<br>Keep following the official CDC noticeboard for further updates.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

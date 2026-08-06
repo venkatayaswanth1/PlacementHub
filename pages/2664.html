@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : General<br>
+<b>Company</b> : Sun Mobility<br>
+<br>Note for PG Students:
+<br>
+<br>The internship duration for both the roles Sun Mobility is of 6 months, only those CVs will be forwarded to the company who will submit the MTP endorsement form physically at the CDC office postively by 1:00 PM of 6th March, 2026.
+<br>
+<br>Please find attached the MTP Endorsement form for your reference.
+<br>
+<br>UG students need not to submit the MTP endorsement form.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

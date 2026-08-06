@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Schedule<br>
+<b>Company</b> : CDC Placement schedule for 24th October<br>
+<br>All students eligible for placement are advised to take note of the schedule for 24th October:
+<br>
+<br>1. [PPT] LAT AEROSPACE (5:00 PM - 6:00 PM)
+<br>Mode : ONLINE
+<br>POC : Madhav (8619732955)
+<br>
+<br>2. [PPT] TESLA (9:00 PM - 10:00 PM)
+<br>Mode : OFFLINE
+<br>POC : Aman (8130306059)
+<br>
+<br>
+<br>Chairman, CDC
+<br>ᐧ<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : AXIS BANK<br>
+<br>PFA the interview shortlist for Axis Bank BIU profile:
+<br>
+<br>22ME31024
+<br>22AG36003
+<br>22MF3IM15
+<br>23EE10052
+<br>23EC10073
+<br>22CH30049
+<br>22MI3FP59
+<br>22MI31019
+<br>22MI3PE02
+<br>22AE3FP34
+<br>22EC39027
+<br>22CE31002
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

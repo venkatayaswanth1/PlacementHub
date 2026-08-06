@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : EMERGENCY CONTACT<br>
+<br>All students eligible for internship are advised to provide their emergency contact.
+<br>
+<br>The emergency contact provided would be used during the internship process to reach out to the students if they are not responsive on their registered contacts.
+<br>
+<br>Please find the google form link: https://forms.gle/GM2ontqwytjzFTZ69
+<br>
+<br>Students are expected to fill the form by 24.07.2025, 11:59 PM. This is a hard deadline and no further extensions will be provided.
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

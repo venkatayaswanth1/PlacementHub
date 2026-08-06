@@ -1,0 +1,46 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Altradov Technologies<br>
+<br>PFB the Interview shortlist for Altradov Technologies:
+<br>
+<br>22AE30004
+<br>22AE30016
+<br>22AR10003
+<br>22CE36015
+<br>22ME31027
+<br>22ME33016
+<br>22ME36010
+<br>22MI10049
+<br>22MI33011
+<br>22MI3EP14
+<br>22MI3EP26
+<br>22NA30028
+<br>23AG10039
+<br>23BT10023
+<br>23CH10048
+<br>23CH10064
+<br>23CH10078
+<br>23ME10110
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

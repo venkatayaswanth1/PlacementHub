@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : JPMorgan Chase<br>
+<br>All applicants should note that they need to fill the Google Form for application to JPMorgan Chase.
+<br>
+<br>https://docs.google.com/forms/d/e/1FAIpQLSfFdYF4g34e3DbDKijO4ucidqeh5LepdSv_0eynsrVM6AYIsw/viewform?usp=header
+<br>
+<br>Your application will only be considered valid once you have filled out this form with all the required details.
+<br>
+<br>NOTE: The deadline for submission is, July 11th, at 11:59 PM. No extensions will be provided.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

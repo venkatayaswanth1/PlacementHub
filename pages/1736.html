@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : ORMAE<br>
+<br>All interested and eligible candidates  are requested to carefully complete the Google Form by providing all the necessary details using the link below.Only those who fill the form will be considered for the subsequent selection process. 
+<br>
+<br>Link: https://docs.google.com/forms/d/e/1FAIpQLSfvo98S-7D5JF3OEt0aM1UgmLmG8Hxv2sea-7xD2vDJuB-79Q/viewform?usp=header
+<br>
+<br>Deadline: 5:00 PM, 29th October 2025 
+<br>
+<br>All eligible and interested students are advised to complete their application within the given deadline. 
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

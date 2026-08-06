@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : Cisco India PVT Ltd<br>
+<br>CV submission for Cisco India PVT Ltd has been extended till 8:00 PM, 23rd August, 2025.
+<br>
+<br>Please register on: https://cisco.avature.net/su/dfeb28575defac9e
+<br>Fill this form out: https://forms.gle/DhHGLeErzj2s9Vkc8
+<br>
+<br>It is mandatory to complete all the processes. Interested and eligible students are advised to apply within the deadline.
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

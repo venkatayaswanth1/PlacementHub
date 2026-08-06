@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : INCANUS<br>
+<br>PFB the Extended Interview Shortlists for INCANUS.
+<br>
+<br>22HS10009
+<br>21MF3IM30
+<br>21MA25012
+<br>24ID60R06
+<br>24ID60R20
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

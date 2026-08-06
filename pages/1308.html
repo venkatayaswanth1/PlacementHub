@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : BARCLAYS<br>
+<br>All the applicants of Barclays for the role of SM&amp;D ââ¬ââ¬ Graduate Analyst (Electronic Trading Quant) are requested to fill the form given below for additional details by 5:00 PM, 9th November 2025.
+<br>
+<br>Note: It is mandatory for all the applicants to fill the form within the given deadline, else you wonââ¬t be considered for the further process.
+<br>
+<br>Form Link: https://forms.gle/vaWP6MdAnm5B17Zy9
+<br>
+<br>All the eligible students are advised to fill the form within the given deadline. No further extensions will be given.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : NATWEST<br>
+<br>The PPT for NATWEST is scheduled for 1:00 PM to 2:30 PM on 17.07.2025
+<br>
+<br>Date : Thursday, 17thJuly 2025
+<br>Time : 1:00 PM ââ¬ââ¬ 2:30 PM
+<br>Venue : Online 
+<br>
+<br>Event link
+<br>https://rbs.zoom.us/j/7955872251
+<br>
+<br>NOTE: It is mandatory for all interested candidates to join the PPT, as attendance will be taken.
+<br>
+<br>
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

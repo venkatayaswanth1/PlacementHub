@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : Mastercard<br>
+<br>The CV Submission of MASTERCARD for all the roles is extended till 6:00 PM, 31st October, 2025. It is mandatory to fill out the Preference form of MASTERCARD for all the roles within the same deadline.
+<br>
+<br>Form link: https://forms.gle/ojjkDQsJSMUWGAsP6
+<br>
+<br>Interested and eligible students are advised to apply and fill out the form within the given deadline. No further extension will be provided.
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

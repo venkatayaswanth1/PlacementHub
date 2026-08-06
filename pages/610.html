@@ -1,0 +1,42 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Suzuki R&amp;D Center India Private Limited<br>
+<br>PFB the Interview Shortlist for the Suzuki R&amp;D Center India Private Limited:
+<br>
+<br>22ME31052
+<br>22EE37006
+<br>22ME36012
+<br>23ME10117
+<br>22ME3FP40
+<br>22ME36017
+<br>22ME31054
+<br>23ME10096
+<br>22MF3IM20
+<br>23ME10046
+<br>22ME33001
+<br>23IE10004
+<br>23IE10014
+<br>23ME10021
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

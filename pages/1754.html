@@ -1,0 +1,25 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission deadline/CGPA Cut-Off<br>
+<b>Company</b> : Ola<br>
+<br>Job Description: Ola's Product Management Development Program (PMDP) is a unique, fast-track initiative designed to groom the next generation of product leaders from top engineering institutions across India. This program offers a deep dive into the world of product management within a dynamic and innovative environment. You'll be empowered to drive impactful projects, working alongside experienced professionals to solve real-world problems in mobility, logistics, and beyond <br><br><br>Find the below details about CV Submission deadline/CGPA Cut-Off:<br><br>CV Submission Starting From (yyyy-mm-dd): 2025-11-28<br>CV Submission Ending At (yyyy-mm-dd): 2025-11-29<br>CGPA Cut Off: 0.0<br><br>Interested students are advised to apply at the ERP portal within the given deadline.<br>No further extensions will be provided.<br><br><br><br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

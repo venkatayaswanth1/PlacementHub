@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : EY GDS<br>
+<br>CV Submission for EY GDS is extended till 11:59 PM, 11th November, 2025.
+<br>
+<br>All the eligible students are requested to fill the following form below to get their application considered further :
+<br>https://docs.google.com/forms/d/e/1FAIpQLSdv34K03jZLLUPu3-SNfyVkJX55wBEsdSPJxUWy4DxhgaptEQ/viewform?usp=publish-editor
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

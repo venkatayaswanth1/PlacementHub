@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : FLIPKART<br>
+<br>A registration form has been sent to all students who have applied to Flipkart.
+<br>
+<br>Students are requested to fill the form on an urgent basis. Only those who complete the form will receive the test link 
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

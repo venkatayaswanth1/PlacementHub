@@ -1,0 +1,44 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : BLACKROCK<br>
+<br>Dear Students,
+<br>
+<br>Please find attached the list of shortlisted candidates for the Applications Engineering Intern role at BlackRock.
+<br>
+<br>Kindly note:
+<br>Only students who filled the BlackRock Preference Form and selected Applications Engineering as their first preference are eligible for this test.
+<br>
+<br>The test window is from 9:00 PM on 22nd July to 9:00 AM on 23rd July, as communicated earlier.
+<br>
+<br>Please ensure you use your CDC-registered email ID ââ¬ââ¬ the same one on which you will receive the test link. Using any other email may lead to disqualification.
+<br>
+<br>POC:
+<br>Biplab (7004097392)
+<br>Mehul (9760046080)
+<br>Roquiya (7477017679)
+<br>Heramb (9834458336)
+<br>
+<br>Wishing you the best.
+<br>
+<br>Chairman CDC&nbsp;<br>
+
+
+</div>
+</body></html>

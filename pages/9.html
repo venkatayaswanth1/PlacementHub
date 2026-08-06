@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Regarding the Photo in the CV of the Candidate<br>
+<br>Form this year onwards, there will be no photo in the CV of candidates.
+<br>
+<br>Student are advised not to approach their faculty advisor to update thier photo in CV.
+<br>
+<br>Those students who have already registered for CDC or prepared their CV for upcoming internship are advised to regenarate their CV by clicking on the 'Update' option in the CV making portal of CDC in ERP.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

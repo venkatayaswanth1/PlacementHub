@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : Multiple Companies<br>
+<br>The CV Submission for the following companies are extended till 3:00 PM, 3rd November, 2025.
+<br>
+<br>1. GIGAML  [Profile: Software Engineer (San Francisco), Software Engineer, Advance Software Engineer]
+<br>
+<br>2. PLUTUS RESEARCH PVT LTD  [Profile: Quantitative Analyst, Trading Systems Developer]
+<br>
+<br>3. JPMORGANCHASE  [Profile: 2026 Full-time Data Science Analyst Program, Full time Analyst - CIB Research &amp; Analytics Program Global Research]
+<br>
+<br>This is the final extension. Interested and eligible students are advised to apply within the given deadline. 
+<br>
+<br>No further extensions will be given.
+<br>
+<br>
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

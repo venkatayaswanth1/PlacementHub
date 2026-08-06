@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Flipkart<br>
+<br>The deadline for the Flipkart APM Deck submission has been extended to 11:59 AM, 21st October, 2025.
+<br>
+<br>Please note that this is the only extension being provided, no further extensions will be granted.
+<br>
+<br>Additionally, the option to resubmit the deck has been enabled through the same form. Kindly use this option judiciously, as only the latest submission will be considered.
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

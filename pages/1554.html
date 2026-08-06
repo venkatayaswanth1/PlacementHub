@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : INDUS INSIGHTS<br>
+<br>This is to inform the students that the retest for Indus Insights is scheduled from 8:30 PM onwards on 23rd November 2025 (today) at the Nalanda Classroom Complex.
+<br>
+<br>The login window for the test will remain open for only 10 minutes from the start time. No student will be allowed to begin the test after the login window closes.
+<br>
+<br>Students are requested to check their email inbox as well as spam/junk folders for the test link beforehand.
+<br>
+<br>All students must report 20 minutes prior to the scheduled time and carry their Institute ID card/Medical Book for verification. PFA the room allocation for the same.
+<br>
+<br>POC: Dhruv (7248955444), Sanchay (7027000295)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

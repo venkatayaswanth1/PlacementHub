@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : General<br>
+<b>Company</b> : Attendance for Placement Process 2025-26<br>
+<br>All the registered students for placement session 2025-26 are advised to take a note of the followings -
+<br>
+<br>1.	All regular students of the campus, registered for placement session 2025-26 are not permitted to appear process of placement (test, GD, interview, etc.) from anywhere other than the allotted exam venue.
+<br>
+<br>2.	It is compulsory to appear for the tests from the Nalanda classroom (or as per allotted exam venue).
+<br>
+<br>
+<br>Chairperson, CDC<br>
+
+
+</div>
+</body></html>

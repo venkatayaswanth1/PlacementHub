@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Standard Chartered<br>
+<br>PFB the extended shortlist of Standard Chartered
+<br>
+<br>21ME31016
+<br>21MT30037
+<br>21HS23001
+<br>21NA30043
+<br>21NA30013
+<br>21MF3IM36
+<br>21MT30045
+<br>21MI33007
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

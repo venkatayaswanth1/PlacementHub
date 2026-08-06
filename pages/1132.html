@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : DENSO<br>
+<br>Please note that the test for DENSO for all roles is rescheduled to 6:30 PM on 31st October, 2025. The room allocation will be released shortly for the same.
+<br>
+<br>Venue: Nalanda
+<br>
+<br>POC: Alok (6299042184), Sanchay (7027000295)
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

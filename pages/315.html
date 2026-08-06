@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : BLACKROCK<br>
+<br>PFB the extended shortlist for Blackrock:
+<br>
+<br>22ME3FP44
+<br>22CE3FP13
+<br>22HS3AI23
+<br>22MI3PE02
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

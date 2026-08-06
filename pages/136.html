@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Reminder<br>
+<b>Company</b> : EBULLIENT SECURITIES ( TRADEWALK BROKING )<br>
+<br>All the shortlisted students are requested to reach NR221 (Nalanda) by 1:45 PM. Late entry beyond 15 minutes of the start time will not be 
+<br>permitted under any circumstances. 
+<br>
+<br>POC : Harsh (9532820930)
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Schedule<br>
+<b>Company</b> : Stripe<br>
+<br>Screening round for Stripe is scheduled on 18th July, 2025 in Online Mode from 11:00 PM to 11:45 PM. PFA the shortlist for the round.
+<br>
+<br>The meeting link and other relevant details will be sent by the company. Interested students are advised to adhere to the instructions and join timely.
+<br>
+<br>No request for changing of test timing will be entertained.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

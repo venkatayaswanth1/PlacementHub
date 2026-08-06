@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : IVY CAP VENTURES<br>
+<br>A special programme with Mr. Vikram Gupta has been scheduled as per his itinerary. This is a unique opportunity for students to interact with someone of his stature. The Pre-Placement Talk (PPT), as requested by students, will also be a part of this session.
+<br>
+<br>Details of the Programme:
+<br>
+<br>Date: 19th August 2025 (Tuesday)
+<br>
+<br>Time: 07:00 AM (sharp)
+<br>
+<br>Venue: S. N. Bose Auditorium
+<br>
+<br>All students are strongly encouraged to attend. It is mandatory for the students eligible for placements to attend.
+<br>
+<br>
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : NK Securities Research<br>
+<br>The CV submission for NK SECURITIES RESEARCH for the roles of Software Development Engineer and Quantitative Researcher has been extended till 4:00 PM, 23rd October 2025.
+<br>
+<br>Kindly note that it is mandatory for all candidates applying for the roles to fill the following google form. Only those who fill the form will be considered for the subsequent process.
+<br>
+<br>Form : https://forms.gle/SB5ZdtzGonJiEEmu6
+<br>
+<br>This is the final extension. Interested and eligible students are advised to apply within the given deadline. 
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

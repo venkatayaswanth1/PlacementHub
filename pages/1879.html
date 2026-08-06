@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : REKISE MARINE<br>
+<br>All eligible students are being notified that the interview process for REKISE MARINE is being postponed to 8 PM.
+<br>
+<br>Keep following the CDC Notice board for further updates on the same.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

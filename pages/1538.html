@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : RISA LABS<br>
+<br>The CV submission for the Associate Technical Product Manager of RISA LABS has been opened till 11:59 AM, 23rd November 2025.
+<br>
+<br>All the applicants who have applied for the Associate Technical Product Manager role are required to submit the Case Study attached.
+<br>
+<br>Deadline for Submission: 10:00 AM, 26th November, 2025
+<br>
+<br>Interested and eligible students are advised to apply and complete the Case Study within the given deadline. The submission link will be shared soon. And no further extensions will be given.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

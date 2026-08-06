@@ -1,0 +1,41 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Multiple Companies<br>
+<br>The CV submission for the following companies is open till 02:00 PM, 12th November 2025:
+<br>
+<br>1. DTDC EXPRESS LIMITED [Profile: Management Trainee]
+<br>
+<br>2. ETHOS LIFE [Profile: SDE]
+<br>
+<br>3. EATON INDIA INNOVATION CENTER [Profile: Engineer, ETLP - The Engineering &amp; Technology Leadership Development Participant]
+<br>
+<br>4. CASHFREE PAYMENTS [Profile: Process Innovation &amp; Excellence Analyst]
+<br>
+<br>5. SOLAR DEFENCE &amp; AEROSPACE LIMITED [Profile: Reliability Engineer (Electrical), Reliability Engineer (Mechanical)]
+<br>
+<br>6. ATHER ENERGY [Profile: Data science- Web Technologies, Design Engineer - Hardware Packaging, GET- System Engineer, GET - Dept. of Chief Engineering, Battery Design Engineer, GET - Department of Product Ownership]
+<br> 
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

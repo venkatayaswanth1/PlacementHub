@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : SAMSUNG RESEARCH BENGALURU<br>
+<br>CV submission for Samsung Research Bengaluru is now open for both roles (Advanced Developer Role and Developer Role) and will remain open till 10:00 PM on 27th July, 2025.
+<br>
+<br>Students who have applied for the Advanced Developer Role must also fill out the following Google Form:
+<br>https://forms.gle/4z5UafLceGePng6M6
+<br>
+<br>NOTE: Applications will not be considered if the form is not filled.
+<br>
+<br>Interested students are advised to apply at the ERP portal within the given deadline. No further extensions will be provided.
+<br>
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

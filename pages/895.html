@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : NAVI<br>
+<br>Please note that the Pre-Placement Talk for NAVI will be held on 8th October 2025 (today) from 5:30 PM.
+<br>
+<br>All placement-registered students are supposed to attend the PPT, without fail. Attendance is compulsory.
+<br>
+<br>Link : http://meet.google.com/put-zava-fgj
+<br>
+<br>PPT POC: Shreyash (9834266207)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

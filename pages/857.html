@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Multiple Companies<br>
+<br>CV submission of the following companies with their revised CGPA Eligibility criteria has been extended till 11:00 PM, 3rd October, 2025.
+<br>
+<br>
+<br>1. DA VINCI DERIVATIVES B.V. (Profile: Graduate Developer)
+<br>
+<br>2. PACE STOCK BROKING SERVICES PVT. LTD (Profile: Jr. Software Developer, Jr Quantitative Researcher)
+<br>
+<br>3. SQUAREPOINT CAPITAL (Profile: Desk Quant Analyst, Graduate Software Developer, Infrastructure Engineer)
+<br>
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extension will be provided.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

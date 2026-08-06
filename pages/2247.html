@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : LINDE<br>
+<br>PFA the shortlist for the further rounds of LINDE to be held on 15th December 2025. 
+<br>
+<br>The reporting time and venue will be communicated shortly. 
+<br>
+<br>Mode- Offline
+<br>
+<br>POC -: Ritvik (+91 94803 60231), Nikita (+91 99692 07598), and Jacob (+91 70733 77504) 
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

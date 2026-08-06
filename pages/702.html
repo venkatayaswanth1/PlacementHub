@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Willings Inc<br>
+<br>CV submisison for Willings Inc has been opened with revised eligibility.
+<br>
+<br>Dealine: 3rd September, 2025 (11:59 PM).
+<br>
+<br>
+<br>Interested students are advised to apply at the ERP portal within the given deadline. No further extensions will be provided.
+<br>
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

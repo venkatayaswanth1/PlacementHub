@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPO<br>
+<b>Company</b> : CDC Placement Process<br>
+<br>All students who have accepted a Pre-Placement Offer (PPO) are required to compulsorily register on the CDC portal for placements.
+<br>
+<br>Please note that while such students are not required to prepare or upload their CVs, registration on the portal is mandatory.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

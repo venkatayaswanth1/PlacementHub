@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Profile Mapping<br>
+<br>Students who are still Unoffered and are registered for CDC Placements 2025 and are willing to participate in further companies are requested and advised to fill the following form at earlier (Deadline: 12:00 PM 4/12/2025)
+<br>
+<br>Form Link : https://docs.google.com/forms/d/e/1FAIpQLSdwniWj1hGTzZGy8wEkHAILQOyzA45CN0Eizzv73UXZSNQblA/viewform?usp=dialog 
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

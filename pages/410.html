@@ -1,0 +1,42 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Schedule<br>
+<b>Company</b> : Tests of various companies<br>
+<br>1) [TEST] Oracle
+<br>
+<br>Date: August 1st, 2025 (Friday)
+<br>Window : 6:00 AM to 8:00 AM
+<br>Mode: Online
+<br>
+<br>POC : Amanââ¬ª(+91 8130306059ââ¬¬), Adeebaââ¬ª(+91 7860139131ââ¬¬)
+<br>
+<br>
+<br>2) [TEST] Cohesity
+<br>
+<br>Date: August 1st, 2025 (Friday)
+<br>Window : 5:30 PM to 7:00 PM
+<br>Mode: ONLINE
+<br>
+<br>POC : Sreelekshmi ââ¬ª(+91 9037546952ââ¬¬),Amishââ¬ª(+91 99110 34435ââ¬¬)
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : HCLTech<br>
+<br>The test link has been triggered for the shortlisted candidates for HCL Software.
+<br>
+<br>The test window is open until 5:00 PM, 9 April 2026.
+<br>The venue is your respective locations.
+<br>
+<br>All shortlisted candidates are advised to complete the test within the deadline. No further extensions will be provided.
+<br>
+<br>POC: Vatsal (83067 85651)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

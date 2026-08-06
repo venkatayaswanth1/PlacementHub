@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : SAMSUNG RESEARCH BENGALURU<br>
+<br>Please find attached the room allocation for SAMSUNG RESEARCH BENGALURU
+<br>
+<br>Test Date: 30-07-2025
+<br>Window : 10:30 PM - 1:30 AM
+<br>Venue: Nalanda
+<br>Test POC: Dhruv(7248955444), Adeeba(7860139131)
+<br>
+<br>Few instructions:
+<br>1. Test will work ONLY on Windows laptops.
+<br>2. Students are advised to reach the venue 30 minutes prior to the test.
+<br>
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

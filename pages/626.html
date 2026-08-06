@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : TVS Motor IP Law<br>
+<br>PFB the Shortlist for the TVS Motor IP Law profile
+<br>
+<br>24IP63001
+<br>24IP63003
+<br>24IP63011
+<br>24IP63015
+<br>24IP63021
+<br>24IP63024
+<br>24IP63027
+<br>24IP63032
+<br>24IP63035
+<br>24IP63036
+<br>24IP63048
+<br>24IP63050
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

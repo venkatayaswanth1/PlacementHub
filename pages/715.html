@@ -1,0 +1,27 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission deadline/CGPA Cut-Off<br>
+<b>Company</b> : Intellimation.Ai<br>
+<br>Job Description: About Us:
+<br>We take pride in being an AI-based Fintech firm at Intellimation.ai, distinguished by our advanced technology and expertise in the Global banking and financial services domain. With Series A funding secured, we are entering an exciting phase of growth. This milestone allows us to accelerate growth, innovate, and build a world-class team to revolutionize the fintech space.
+<br>At the heart of our success lies our proprietary foundation model, a technological marvel that ensures unparalleled accuracy and delivers industry-leading business outcomes. Our flagship product, <br><br><br>Find the below details about CV Submission deadline/CGPA Cut-Off:<br><br>CV Submission Starting From (yyyy-mm-dd): 2025-09-04<br>CV Submission Ending At (yyyy-mm-dd): 2025-09-05<br>CGPA Cut Off: 0.0<br><br>Interested students are advised to apply at the ERP portal within the given deadline.<br>No further extensions will be provided.<br><br><br><br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

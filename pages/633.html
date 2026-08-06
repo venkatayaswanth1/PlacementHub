@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Zscaler<br>
+<br>PFB the Shortlist for the Zscaler
+<br>
+<br>22CS30005
+<br>23CS10011
+<br>23EC10088
+<br>23EE10025
+<br>23IE10029
+<br>23MA10034
+<br>23MA10040
+<br>23MA10051
+<br>23MA10053
+<br>
+<br>Please note you will get a mail with further details.
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : TALENTEDGE INFO SOLUTIONS PVT LTD<br>
+<br>Please note that the Test for TALENTEDGE INFO SOLUTIONS PVT LTD has been scheduled from 12:00 PM, 12th December 2025 onwards.
+<br>
+<br>Please note it is mandatory for all students to attempt the test again, regardless of whether they have completed it within the previously allotted window.
+<br>
+<br>Test Window - 12:00 PM, 12th December to 12:00 AM 13th December.
+<br>
+<br>Venue: Respective location
+<br>POC: Deepak (9024950269)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

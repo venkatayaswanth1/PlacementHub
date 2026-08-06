@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : Maxim AI<br>
+<br>CV Submission for all roles of Maxim AI has been extended till 11:59 PM, 8th October, 2025.
+<br>
+<br>Interested students are advised to apply at the ERP portal. No further extensions will be provided.
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

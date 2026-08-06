@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : TREXQUANT INDIA BUSINESS CONSULTING<br>
+<br>The CV submission of TREXQUANT INDIA BUSINESS CONSULTING has been opened till 11:00 AM, 23rd November 2025.
+<br>
+<br>
+<br>All the applicants who have applied for the TREXQUANT INDIA BUSINESS CONSULTING are required to fill the additional details in the below links as well.
+<br>
+<br>Link - https://forms.gle/GHMgf1TBzVdG7Gk56
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

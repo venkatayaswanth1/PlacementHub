@@ -1,0 +1,41 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPO<br>
+<b>Company</b> : L.E.K. CONSULTING<br>
+<br>L.E.K. CONSULTING has extended the offer to the following student(s):
+<br>
+<br>ANURAG GUPTA	- 21HS3AI28
+<br>
+<br>BONGIRWAR HARSH NITIN	- 21AG3FP13
+<br>
+<br>KRITIN SHARMA	 - 21AR10018	
+<br>
+<br>SHAMEEK SAHA	- 21CE31018
+<br>
+<br>SIDDHARTH DIKSHIT	- 21CH30039
+<br>
+<br>The students are advised to give offer acceptance by 04.08.2025.
+<br>
+<br>(For more details, check your email ID.)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

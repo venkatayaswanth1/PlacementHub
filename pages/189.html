@@ -1,0 +1,41 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : WELLS FARGO<br>
+<br>The TEST for WELLS FARGO for both profiles is scheduled from 9:00 PM to 11:00 PM on 18.07.2025.
+<br>
+<br> 
+<br>Date: July 18th, 2054 (Friday)
+<br>Window : 9:00 PM to 11:00 PM
+<br>Venue: Nalanda
+<br>Test POC: Yesilanka Sree Aryan  (9550881582), Shreyash (9834266207)
+<br>Room Allocation: Will be shared soon
+<br>Mode: Online
+<br>
+<br>NOTE : Please bring your own Laptop and charger
+<br>             Rest of the details has been shared over mail to the applicants
+<br>
+<br>
+<br>Students are advised to reach the venue 15 minutes prior to the test.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

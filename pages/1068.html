@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : VM Architects<br>
+<br>Please note that the CV submission for VM Architects is open till 11:59 PM, 28th October. 
+<br>
+<br>Interested and eligible students are requested to fill out the following google form to be considered in the further processes: 
+<br>https://docs.google.com/forms/d/e/1FAIpQLSc5-bx3H3WLRkNd_4BH0aID7F1grCenZG8UGYir1uBau0mcMQ/viewform?usp=header
+<br>
+<br>No Extensions will be provided further. 
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

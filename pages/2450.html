@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : ARUP INDIA PVT. LTD.<br>
+<br>PFA the Interview shortlist of ARUP INDIA PVT. LTD.
+<br>
+<br>Interview is scheduled on 22nd January from 8.00 AM onwards
+<br>
+<br>Venue - Outside CDC Office
+<br>
+<br>PoC: Dishil ( +91 9925492574), Deepak ( +91 9024950269)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

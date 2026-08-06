@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : WELLS FARGO<br>
+<br>This is to inform all students that the application deadline for Wells Fargo has been extended until 11:00 PM on 14th November 2025 (today) on the companyââ¬s application portal.
+<br>
+<br>All students who have already applied through the ERP Portal are required to complete the application on the Wells Fargo portal before the extended deadline.
+<br>
+<br>Students are also requested to mention ââ¬Indian Institute of Technology Kharagpurââ¬ in the School/Institution field on the companyââ¬s application portal.
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

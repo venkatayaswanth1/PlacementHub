@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : ATHER ENERGY<br>
+<br>The CV submission of ATHER ENERGY for the role of GET- Supply Chain have been opened till 11:59 PM, 28th November 2025.
+<br>
+<br>Form Link: https://forms.gle/6XC8sVeVQBMJEVbNA
+<br>
+<br>Interested and eligible students are advised to fill the above preference form and apply within the given deadline .This is the final deadline.
+<br>
+<br>No further extensions will be given.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

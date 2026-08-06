@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : DATOMS<br>
+<br>PFA the test shortlist for all the roles of Datoms. The test is scheduled from 9th December onwards, and students may take it up to 10th December, 11:59 PM.
+<br>
+<br>Venue: Respective locations.
+<br>
+<br>The shortlisted students would have received the test link directly from the company on their registered email IDs. If any shortlisted student is not available to take the test during the allotted window, they are requested to revert to the company at the earliest.
+<br>
+<br>POC: Abhijeet (6398985179)
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

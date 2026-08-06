@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CV Building for Internship 2025-26<br>
+<br>The CV building portal in ERP for internship CV building is being extended till 24th July 2025, 12:00 PM.
+<br>
+<br>The portal is open for all the students including who have applied for B.Tech/BS to Dual Degree/MS conversion.
+<br>
+<br>Students who have secured a Dual Degree conversion must update/regenerate their resume (specially their degree and year of passing out). This is mandatory for their further involvement in the internship process.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

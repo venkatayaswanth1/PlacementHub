@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : D. E. Shaw India Private Limited<br>
+<br>CV submission for D. E. Shaw India Private Limited has been extended till 11:59 AM, 16-07-2025.
+<br>
+<br>Interested students are advised to apply at the ERP portal within the given deadline. No further extensions will be provided.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : FLIPKART<br>
+<br>This is to inform all students who have applied for the Flipkart APM-1 role that the problem statement and related details have been shared via email on your CDC registered email IDs.
+<br>
+<br>You are requested to check your email and go through the instructions carefully. The deadline for submission is 6:00 PM, 20th October 2025.
+<br>
+<br>No further extensions will be provided.
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,42 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Ola<br>
+<br>PFB the interview shortlist for Ola:
+<br>
+<br>22ME36018
+<br>22ME36017
+<br>23EC10070
+<br>22EE32001
+<br>23EC10046
+<br>23ME10117
+<br>22CH30049
+<br>22MI33015
+<br>22MI3FP59
+<br>23GG10003
+<br>23AG10039
+<br>22AG3FP38
+<br>23CH10031
+<br>23MA10065
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

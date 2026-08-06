@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : L&amp;T Finance - Data Analytics<br>
+<br>Candidates who had applied on L&amp;T Finance Portal with the preference in Data Analytics must have recieved the test link. 
+<br>
+<br>Interested and eligible students are advised to take the test.
+<br>
+<br>Test Window - 10:00 AM to 12:00 PM
+<br>Date - 29-11-2025
+<br>Venue - Respective Location
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

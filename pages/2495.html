@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : ANORA INSTRUMENTATION PRIVATE LIMITED<br>
+<br>PFA the test shortlist of ANORA INSTRUMENTATION PRIVATE LIMITED to be conducted on 29th January, 2026.
+<br>
+<br>Time : 7:30 PM
+<br>Venue : Nalanda
+<br>
+<br>POC - Abhijeet (+91 6398 985 179), Bhavy (+91 75971 21669)
+<br>
+<br>The room allocation details will be shared shortly.
+<br>
+<br>All shortlisted students are advised to bring their laptops for the test and report to the venue well before the scheduled time to avoid any inconvenience
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

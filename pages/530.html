@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : <br>
+<br>Please find attached the shortlist cum room allotment for Mastercard
+<br>Date: August 12th, 2025 (Tuesday)
+<br>Test timings: 9:00 PM -10:30 PM
+<br>Mode: OFFLINE
+<br>
+<br>POC: Amish(9911034435), Sayan(8250952356)
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

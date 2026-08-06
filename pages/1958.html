@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : DELOITTE TOUCHE TOHMATSU for ER&amp;I Role<br>
+<br>PFB the extended shortlist of DELOITTE TOUCHE TOHMATSU for ER&amp;I Role
+<br>
+<br>
+<br>22CS72P06
+<br>24ES60R08
+<br>24ES60R10
+<br>24MA60R38
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : DELOITTE TOUCHE TOHMATSU INDIA LLP<br>
+<br>Please find attached the shortlist for the assessment of DELOITTE TOUCHE TOHMATSU INDIA LLP for all the roles.
+<br>
+<br>The test is scheduled on 26th November 2025 (today) from 12:00 AM onwards at Nalanda Classroom Complex.
+<br>
+<br>Students are required to carry their Institute ID card/Medical Book and are advised to reach the venue 15 minutes prior to the time.
+<br>
+<br>POC:  Pranjal (7988270765), Biplab (7004097392)
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

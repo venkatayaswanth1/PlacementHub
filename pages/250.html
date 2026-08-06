@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Schedule<br>
+<b>Company</b> : CDC Internship schedule for 23rd July<br>
+<br>1. [TEST] AMAZON (06:00 PM - 08:00 PM)
+<br>Mode: Online
+<br>Test POC: Sreelekshmi(9037546952), Alok(6299042184)
+<br>The test links and instructions will be shared soon.
+<br>
+<br>2. [TEST] UBER (08:00 PM - 09:30 PM)
+<br>Mode: Offline
+<br>Test POC: Sayan(8250952356), Dhruv(7248955444)
+<br>The test links and instructions will be shared soon. The room allotment will be released shortly.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

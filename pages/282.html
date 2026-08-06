@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Databricks<br>
+<br>Please find the extended Shortlist of the SDE role for Databricks.
+<br>
+<br>22CS30036
+<br>22CS30066
+<br>23CS10022
+<br>23CS10051
+<br>23CS10084
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

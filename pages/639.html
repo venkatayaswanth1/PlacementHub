@@ -1,0 +1,25 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission deadline/CGPA Cut-Off<br>
+<b>Company</b> : Sciforn Solutions<br>
+<br>Job Description: We're hiring Full Stack Web Developer Interns at our Pune office! Work with a global team building cutting-edge fintech applications for top banks in Europe and North America. Tech Stack: HTML, JavaScript, Bootstrap, SQL, C#, Blazor, ASP.NET Core, LINQ What Youââ¬ll Do: Develop, test, and deploy web apps. Solve problems and work on real-world fintech projects. Looking For: Tech-savvy, eager-to-learn candidates with basic web development knowledge. Apply now to kick-start your career in fintech innovation! <br><br><br>Find the below details about CV Submission deadline/CGPA Cut-Off:<br><br>CV Submission Starting From (yyyy-mm-dd): 2025-08-21<br>CV Submission Ending At (yyyy-mm-dd): 2025-08-23<br>CGPA Cut Off: 0.0<br><br>Interested students are advised to apply at the ERP portal within the given deadline.<br>No further extensions will be provided.<br><br><br><br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

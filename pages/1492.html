@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : DELOITTE USI<br>
+<br>All applicants of DELOITTE USI who have applied for the role of Analyst have to register also on the below link
+<br>
+<br>Link: https://usijobs.deloitte.com/en_US/careersUSI/HiddenJob?jobId=314021&amp;source=Campus+career+center
+<br>
+<br>All the applicants are required to fill the form before 10:00 AM, 18th November 2025. It is mandatory for all the applicants to fill the form. No further extensions will be provided.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

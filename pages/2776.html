@@ -1,0 +1,30 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : TVS Motor<br>
+<br>Please find below the PPT link for the Design Engineer: Electrical role for TVS Motor. It is compulsory for all the shortlisted students to attend the PPT to be considered for the further process. 
+<br>
+<br>Time: 11:00 AM- 12:00 PM, 26th March
+<br>Link: https://teams.microsoft.com/meet/49720480723134?p=Ngv39I6gYhKkFFWJIy
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

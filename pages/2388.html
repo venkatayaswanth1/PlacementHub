@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : HERO MOTOCORP<br>
+<br>Interested students are advised to fill out the google form to provide additional details for HERO MOTOCORP.
+<br>
+<br>Link-: https://docs.google.com/forms/d/e/1FAIpQLScy8z9tpm4IbqCQKDcDkDmGyb2mcV_zRGxHGafN8Buep72veQ/viewform
+<br>
+<br>Please note that the deadline to fill the form is until 10:00 PM, 14th January. It is mandatory to fill the form to be eligible for further consideration.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

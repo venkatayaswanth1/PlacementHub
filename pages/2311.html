@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : TATA MOTORS<br>
+<br>The online assessment for TATA MOTORS is scheduled today on 30th December and can be taken until 31st December 9:00 AM.
+<br>
+<br>Shortlisted students will receive test link from the firm.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

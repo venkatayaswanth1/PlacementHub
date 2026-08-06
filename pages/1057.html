@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : NK SECURITIES RESEARCH<br>
+<br>Please note that the test for NK SECURITIES RESEARCH for both the roles is scheduled on 25th October, 2025 from 6:00 PM onwards.
+<br>
+<br>Reporting Time: 5:30 PM 
+<br>
+<br>PFA the shortlist and room allocation for the same.
+<br>
+<br>Students are required to carry their Institute ID card/Medical Book.
+<br>
+<br>POC: Adeeba (7860139131), Harsh (9532820930)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

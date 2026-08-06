@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : MindStudio<br>
+<br>Dear Students,
+<br>
+<br>PFA the shortlist for all the roles of MindStudio.
+<br>
+<br>Kindly report to Room NC 431 by 11:30 AM on 10th December for the process.
+<br>
+<br>POC-:Jacob (7073377504)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Off Campus Internship Form<br>
+<br>Students who got their internship for the summers of 2025 through Non-CDC Track are requested to fill up the form below.
+<br>
+<br>Deadline: 10th September, 2025, 11:59 PM
+<br>
+<br>Form Link : https://docs.google.com/forms/d/1O_SiJWRKuG7tiRJdKki0Jlv5KvaERA-fPm7rNzxmeuw/alreadyresponded?pli=1&amp;pli=1&amp;pli=1&amp;edit_requested=true
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

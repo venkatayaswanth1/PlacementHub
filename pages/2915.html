@@ -1,0 +1,47 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : A BLUNT STORY<br>
+<br>PFB the Interview shortlist.
+<br>
+<br>21CH3PE01
+<br>22CH10055
+<br>24CH60R06
+<br>24MS60R08
+<br>24MS60R10
+<br>24MS60R17
+<br>24MS60R25
+<br>24RT60R13
+<br>24CH60R29
+<br>24CH60R20
+<br>24CH60R28
+<br>24CH60R41
+<br>24CH60R49
+<br>24CH60R51
+<br>24CH60R59
+<br>24CH60R60
+<br>24MS60R05
+<br>
+<br>POC : Dishil (+91-9925492574)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

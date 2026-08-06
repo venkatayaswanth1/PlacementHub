@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : SLNKO<br>
+<br>PG Candidates who are available and are having specializations in Power (Preffered Associated with Electronics/Electrical/ATDC/GS Sanyal/Energy Science) are requested to fill the following form as the additional details for SLNKO: 
+<br>
+<br>https://docs.google.com/forms/d/e/1FAIpQLSeML-aTbZKI2pCJigZdto3MyZj0s36aclmZYJBN2VY0dl8xsQ/viewform 
+<br>
+<br>Deadline: 1:45 PM, 13 December
+<br>
+<br>CDC, IIT KHARAGPUR<br>
+
+
+</div>
+</body></html>

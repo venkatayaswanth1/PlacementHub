@@ -1,0 +1,27 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : ITC Limited<br>
+<br>PFA the test shortlist for ITC Limited. The test link has been triggered to the students on their email IDs.. All the shortlisted students are requested to complete the assessment by 9:00 PM, 23rd July, 2025.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : General<br>
+<b>Company</b> : Notification for Selection of Placement Committee Member (Placecom) 2026-27<br>
+<br>EXTENSION OF LAST DATE of Placement Committee Member Selection 2026-27 FORM AT CDC OFFICE
+<br>
+<br>The applicant should get the application form signed by the Dept In-Charge (T&amp;P) or Head of the Department / School / Centre and submit the same PHYSICALLY at CDC Office positively by 5:00 PM of 27th March, 2026.
+<br>
+<br>While submitting the application at CDC office, the applicant should enter their details in a particular google form available at CDC office. IT IS MANDATORY.
+<br>
+<br>All other T&amp;Cs remain unchanged.
+<br>
+<br>No further extensions will be given.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

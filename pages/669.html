@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : SAMSUNG R&amp;D INSTITUTE - NOIDA<br>
+<br>CV submission for SAMSUNG R&amp;D INSTITUTE - NOIDA has been extended till 08:00 PM, 27th August, 2025.
+<br>
+<br>Interested and eligible students are advised to apply within the deadline. 
+<br>
+<br>No further extensions will be provided.
+<br>
+<br>
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

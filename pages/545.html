@@ -1,0 +1,48 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Mastercard<br>
+<br>Please find below the shortlist for Advanced Analytics Profile :
+<br>
+<br>23IE10032
+<br>22EE37005
+<br>23IE10045
+<br>23EC10006
+<br>22EE38004
+<br>23ME10096
+<br>23ME10078
+<br>23ME10023
+<br>22ME31024
+<br>22ME31017
+<br>22ME3EP21
+<br>22ME3FP01
+<br>22MF3IM23
+<br>22ME3FP27
+<br>22ME31040
+<br>22ME36010
+<br>22ME3FP08
+<br>22ME33005
+<br>22ME36005
+<br>23ME10015
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

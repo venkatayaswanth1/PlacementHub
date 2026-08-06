@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Bandhan Bank<br>
+<br>PFB the extended shortlist of Bandhan Bank - Manager - Masters role
+<br>
+<br>24CL60R03
+<br>22PH10032
+<br>21EE38017
+<br>24IM61R02
+<br>22HS10049
+<br>22HS10031
+<br>24WM60R04
+<br>22GG10038
+<br>24WM60R07
+<br>22PH10033
+<br>21BT30009
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

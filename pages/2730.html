@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : ALLEN CAREER INSTITUTE PVT. LTD.<br>
+<br>The CV submission of ALLEN CAREER INSTITUTE PVT. LTD. has been opened till 11:59 PM, 17th March with revised eligibility.
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline.
+<br>
+<br>Also, all the students who apply are requested to fill the form: https://forms.gle/sgW8erMwvsbgUKfh9 and go through the following PPT: https://drive.google.com/file/d/1RAmRW_UIh05BCLQC3fTsf4BfqHl6zTdf/view?usp=sharing
+<br>
+<br>This is the final deadline. No further extensions will be given.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

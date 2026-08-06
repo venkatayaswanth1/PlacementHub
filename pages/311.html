@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : RIPPLING<br>
+<br>Please find attached the next round of test shortlist for RIPPLING.
+<br>
+<br>Mail with test link will be sent to students shortlisted. 
+<br>
+<br>Note: The test is strictly monitored and students indulging in malpractice will be removed and actions will be taken.
+<br>
+<br>Details for test :
+<br>Test Date: 26-07-2025 (Today)
+<br>Time : 7 PM to 8 PM
+<br>Mode : OFFLINE
+<br>Venue : NR221
+<br>Test POC: Dhruv (7248955444)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

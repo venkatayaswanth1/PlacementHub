@@ -1,0 +1,39 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPO<br>
+<b>Company</b> : WELLS FARGO<br>
+<br>WELLS FARGO has extended the offer to the following student(s):
+<br>
+<br>Sneha Dash - 21EC39023
+<br>
+<br>Aditya Gaikwad - 21EC37024
+<br>
+<br>Samarth Adatia - 21EE38012
+<br>
+<br>Venkata Suba Mahanth - 21EE38036
+<br>
+<br>The students are advised to give offer acceptance by 12.08.2025.
+<br>
+<br>(For more details, check your email ID.)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

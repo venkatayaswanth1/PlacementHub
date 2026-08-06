@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : ACCENTURE (MC Delivery Associate)<br>
+<br>PFA the list of shortlisted candidates for the Test of ACCENTURE (MC Delivery Associate).
+<br>
+<br>Test Window: Till 21st July, 2025 (11:59PM)
+<br>Venue: Respective Location
+<br>
+<br>Shortlisted students have received the test link directly from Accenture.
+<br>
+<br>Note: Only B.Tech (4 years) undergraduate students are eligible for Accenture's MC Delivery Role, as released in the notice earlier. And Dual Degree Students are not eligible for this role.
+<br>
+<br>POC: Dhruv (7248955444)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

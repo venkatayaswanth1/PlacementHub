@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Infonetica<br>
+<br>As part of the shortlisting process for the&nbsp;Software Engineer role&nbsp;at Infonetica, an&nbsp;assignment&nbsp;task will be conducted. 
+<br>
+<br>Kindly take note of the following instructions:
+<br>* The&nbsp;assignment&nbsp;task will be shared separately, and further instructions regarding its submission will be communicated in due course to the applicants via email.
+<br>* You will receive the assignment task and the submission link by 5:00 PM, 17th July 2025.
+<br>* Please note that only one submission per student is permitted.
+<br>* Submission format: public GitHub repo only
+<br>* Assignment Deadline: 11:59 PM, 17th July 2025 &nbsp;(No further extension will be provided)
+<br>
+<br>
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

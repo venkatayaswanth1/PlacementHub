@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : E-Bay<br>
+<br>The online PPT for E-Bay is scheduled from 7:00 PM - 8:00 PM, on 30th September, 2025. 
+<br>
+<br>Updated PPT Link: https://ebay.zoom.us/j/92347795345?pwd=b0ACnjoDZEJ83qHKd4xUy82A9toKD0.1
+<br>Password: 475531
+<br>
+<br>PPT POC: Sayan Dutta (7257994649)
+<br>
+<br>It is mandatory for all the applicants to join the PPT.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

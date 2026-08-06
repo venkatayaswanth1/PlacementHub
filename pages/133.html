@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : GOOGLE (Hardware)<br>
+<br>CV Submission for GOOGLE (Hardware) is re-opened till 5.00PM, 16th July, 2025 (Wednesday).
+<br>
+<br>Kindly fill-up the additional form details below by 5.00pm 16th July,2025.
+<br>
+<br>https://docs.google.com/forms/d/e/1FAIpQLScZ9ckn4TvnZkpmJLizL1xie8FykiMjqZeYyRPtNwyHrVxx8w/viewform?usp=header
+<br>
+<br>Interested students are advised to apply at the ERP portal  and fill-up the additional form within the given deadline both. 
+<br>
+<br>No further extensions will be provided.
+<br>
+<br>
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

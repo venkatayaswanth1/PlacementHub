@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : SLB (Schlumberger)<br>
+<br>The Pre-Placement Talk (for all the roles) of SLB is scheduled on 7th October, 2025 (today) from 6:30 PM to 7:30 PM.
+<br>
+<br>Mode: Offline
+<br>Venue: V1, Vikramshila
+<br>
+<br>Note : Attendance for the offline PPT for all the roles is mandatory and will be recorded. Only students attending the PPT will be considered for the subsequent processes. 
+<br>
+<br>Students are advised to be present 15 minutes prior to the scheduled time.
+<br>
+<br>POC: Mehul (9760046080), Sayan (7257994649)
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

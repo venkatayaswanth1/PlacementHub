@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Qualcomm Absentee list<br>
+<br>Please find attached the list of absentees in the tests for Qualcomm.
+<br>
+<br>The attendance list has been shared with the respective companies. All students that are found to have appeared in this test remotely without having received prior permission from the CDC Office, take note that you are disqualified from the process for that particular company with immediate effect, i.e. you would not be making it to any of the subsequent rounds of selection to that firm. 
+<br>
+<br>In addition to this, further disciplinary actions will be taken against the individuals indulging in malpractices and bypassing the test guidelines that are communicated to them.
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

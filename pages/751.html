@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CDC Placement process 2025-26<br>
+<br>Students registered for placements are hereby informed that no offline placement process will be conducted till 3rd October 2025. The process will resume thereafter, and further details will be communicated in due course. All students are expected to be available from 4th October 2025 onwards for placement processes.
+<br>
+<br>Students are requested to remain calm and await further communication.
+<br>
+<br>Keep following the CDC noticeboard on ERP to get updates on placement processes.
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

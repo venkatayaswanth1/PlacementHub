@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : SLB<br>
+<br>The PPT for SLB for Petrotechnical Engineer and Field Engineer Trainee is scheduled on 7th October from 6:30 PM to 7:30 PM.
+<br>
+<br>Venue: Vikramshila
+<br>
+<br>It is compulsory for all eligible students to attend the PPT. Attendance will be recorded, and only those attending will be considered for the interview process. Students are advised to be present 15 minutes prior to the scheduled time.
+<br>
+<br>The interview is scheduled after the PPT at Nalanda. The shortlist for the same will be released shortly.
+<br>
+<br>POC: Mehul (9760046080), Sayan (7257994649)
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

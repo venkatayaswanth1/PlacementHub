@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : ExxonMobil<br>
+<br>PFB the GD Shortlist for ExxonMobil
+<br>
+<br>22EX23014
+<br>22EX5PE01
+<br>22EX5PE02
+<br>22EX5PE05
+<br>23EX10011
+<br>23EX10020
+<br>23EX10021
+<br>23EX10027
+<br>23EX10035
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

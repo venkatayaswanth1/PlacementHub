@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : DELOITTE<br>
+<br>All students who have applied for any role at Deloitte are requested to fill out the updated form provided below by 8:00 PM on 21st November 2025.
+<br>
+<br>Note: Please fill out this form even if you have already submitted the previous Google form for Deloitte and It is mandatory for all the applicants to fill the form within the given deadline, else you wonââ¬t be considered for the further process.
+<br>
+<br>Form Link: https://forms.gle/PqZFNh4DDYExAe9R6
+<br>
+<br>All the eligible students are advised to fill the form within the given deadline. No further extensions will be given.
+<br>
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

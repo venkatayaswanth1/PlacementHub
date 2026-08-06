@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Seimens Energy<br>
+<br>The CV submission for Seimens Energy for all the roles with the revised eligibility is open until 12:00 PM, 26th November 2025.
+<br>
+<br>All Interested and eligibile students are advised to fill the following google form to get considered for the application: https://forms.gle/YnQv7NSvQZR7Zony5
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

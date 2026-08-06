@@ -1,0 +1,30 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Additional requirement<br>
+<b>Company</b> : Google<br>
+<br>Students are advised to fill Additional details form of GOOGLE (software) by 11:59 PM of 15th July, 2025, failing which your application stands cancelled.
+<br>
+<br>https://docs.google.com/forms/d/e/1FAIpQLSdf6PnMx0gpVSRHlUShxk0i84SOnlK-yXYVy_XJko1nmdapWw/viewform?usp=header
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

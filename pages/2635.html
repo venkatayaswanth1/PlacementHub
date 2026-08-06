@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Additional requirement<br>
+<b>Company</b> : Addition Details Required<br>
+<br>All students interested and Water Resources Profile and want to pursue Career in Core Water Resources please fill the form before the deadline.
+<br>
+<br>Form Link : https://docs.google.com/forms/d/e/1FAIpQLSfLB6wzCFh_QUiQUDJWtj1DzKJH0AriWt2LSWm1XLw2oc3GqQ/viewform
+<br>
+<br>Deadline : 28th February 2026, 11:59 PM
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

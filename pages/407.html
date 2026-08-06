@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : FLIPKART<br>
+<br>PFA the Extended Shortlist of Flipkart:
+<br>
+<br>22AG36004
+<br>23CE10026
+<br>23EE10096
+<br>
+<br>Shortlisted students will be contacted soon with further instructions.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

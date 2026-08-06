@@ -1,0 +1,49 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CV verification for placement<br>
+<br>CDC will do the verification on 17th Sept 2025 from 12:00 noon onwards.
+<br>
+<br>
+<br>Following students are advised to visit CDC at 12:00 noon on 17-09-2025
+<br>
+<br>24AE60R13
+<br>24AE60R14
+<br>24AE60R04
+<br>24AE60R02
+<br>24AE60R03
+<br>24AE60R06
+<br>24AE60R09
+<br>24AE60R10
+<br>24AE60R12
+<br>24AE60R11
+<br>
+<br>
+<br>You are advised to carry the relevant documents / supporting proof . Also bring your laptop.
+<br>
+<br>If you have already accepted the PPO and your roll number is in this list, do not come to CDC for verification purpose.
+<br>
+<br>If there is no flag in the CV which you are using do not visit CDC for verification purpose.
+<br>
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

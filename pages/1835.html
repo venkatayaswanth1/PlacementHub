@@ -1,0 +1,30 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : BlinkIT<br>
+<br>Please Find Below the registration form for BlinkIT : 
+<br>https://docs.google.com/forms/d/e/1FAIpQLSdRRkxHS0ZULvGAAb_n-mE1w_b1-OTSNamGXQmtjuq1N9mEzA/viewform?usp=dialog 
+<br>
+<br>Filling the form is necessary to get their Profile considered for the further processes. 
+<br>
+<br>CDC, IITKharagpur<br>
+
+
+</div>
+</body></html>

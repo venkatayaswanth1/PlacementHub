@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Shortlist_Written Test_Placecom Member Selection 2026-27<br>
+<br>Date: 8th April, 2026
+<br>Reporting time: 6:00 pm
+<br>Venue: Nalanda Complex ââ¬ââ¬ exact seating plan is attached.
+<br>
+<br>Mode: Pen and paper test
+<br>
+<br>Bring your Institute ID card/ Medical book in original, failing which the candidate will not be allowed to appear in the test under any circumstances.
+<br>
+<br>Bring only black/ blue ball pen.
+<br>
+<br>Do not bring any type of electronic gadgets, smart watch into the exam room. If found in possession during the written test , candidature shall be cancelled without any consideration.
+<br>
+<br>No candidate will be allowed to appear for the test beyond 6:15 pm.<br>
+
+
+</div>
+</body></html>

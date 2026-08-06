@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : SAMSARA<br>
+<br>PFA the list of shortlisted candidates for the Test of Samsara.
+<br>The test is scheduled as per the details below:
+<br>
+<br>Date: July 20th, 2025 (Today)
+<br>Time: 12:00 Noon - 02:00 PM
+<br>Mode: Online
+<br>Test POC: Dhruv (7248955444), Divyanshu (9604027664)
+<br>
+<br>The test links and instructions will be shared with the shortlisted students via mail.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

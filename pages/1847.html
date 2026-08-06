@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : IVYCAP VENTURES<br>
+<br>All eligible students are notified that the interview of IVYCAP VENTURES is scheduled to commence from 2:00 PM, on 1st December 2025 (today).
+<br>
+<br>PFB the shortlist:
+<br>21AG36020
+<br>22MT10039
+<br>22MT10050
+<br>22HS10058
+<br>21CH30012
+<br>
+<br>CDC, IIT Khargpur<br>
+
+
+</div>
+</body></html>

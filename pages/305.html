@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Atlassian<br>
+<br>PFB the extended shortlist of Atlassian:
+<br>
+<br>22CS30029
+<br>22EC39006
+<br>22EC39014
+<br>22EC39023
+<br>22EC39032
+<br>22EC39035
+<br>22EC3AI17
+<br>22EE38001
+<br>23EC10082<br>
+
+
+</div>
+</body></html>

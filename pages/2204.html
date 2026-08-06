@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CAMPUS STAY -BACK NOTICE<br>
+<br>Available candidates are advised to stay till 16 December, as some companies are tentatively visiting on-campus till 16th of December, so it is advised for all available candidates to be on campus till 16th of December.
+<br>
+<br>Tentative Schedule of some companies visitng offline:
+<br>1. Agnikul Aerospace - 11 December
+<br>2. BEL - 11 December
+<br>3. SLNKO - 13 December
+<br>4. Linde - 15 December 
+<br>5. MIDANI - 16 December 
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

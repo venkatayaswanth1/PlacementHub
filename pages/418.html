@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Shortlists of Various Companies<br>
+<br>Please find attached the interview shortlist for all profiles of the following companies:
+<br>
+<br>1. DTL
+<br>2. Honeywell
+<br>3. Fidelity Investment
+<br>4. SRI-Bangalore
+<br>5. Media.net
+<br>6. Info Edge
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : RELIANCE INDUSTRIES LIMITED (NEW ENERGY INITIATIVES)<br>
+<br>RELIANCE INDUSTRIES LIMITED (NEW ENERGY INITIATIVES) is looking for suitable candidates for the profile for "Team Member (Manager) - Mechanical" above the CG criteria of 7. Other relevant criteria has been released earlier.
+<br>
+<br>Interested students should apply on the link - https://forms.gle/ePkrSv84QC5jBpEe9
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

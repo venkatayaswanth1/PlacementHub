@@ -1,0 +1,52 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : TCG DIGITAL SOLUTIONS PVT LTD<br>
+<br>PFB the extended test shortlist for TCG DIGITAL SOLUTIONS PVT LTD.
+<br>
+<br>22AE10014
+<br>21BT30021
+<br>21BT30042
+<br>21BT3AI12
+<br>21CH30018
+<br>21CY23005
+<br>22CY10049
+<br>21CE31007
+<br>21CE31008
+<br>21CE31015
+<br>21CE3AI13
+<br>21CE3AI14
+<br>21IE35004
+<br>21GG23011
+<br>21GG5PE02
+<br>21MF3IM12
+<br>21ME31024
+<br>21ME36012
+<br>21MT30010
+<br>21MT30022
+<br>21MI31034
+<br>21NA30006
+<br>21NA30019
+<br>22NA10011
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

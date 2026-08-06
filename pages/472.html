@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Kognitos<br>
+<br>Please find attached the shortlist cum schedule for the test.
+<br>
+<br>Date: August 7th, 2025 (Thursday)
+<br>Test timings: 9:00PM-11:00PM
+<br>Mode: ONLINE
+<br>
+<br>POC: Pranjal(+91 7988270765)
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

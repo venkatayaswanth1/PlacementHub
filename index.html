@@ -3,100 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlacementHub | Your Career Gateway</title>
+    <title>PlacementHub | Your Ultimate Placement Gateway</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .glass-card {
             background: rgba(255, 255, 255, 0.95);
-            transition: all 0.3s ease;
-            border: 1px solid #e5e7eb;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e2e8f0;
         }
         .glass-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-            border-color: #3b82f6;
+            transform: translateY(-6px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
+            border-color: #2563eb;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
+<body class="bg-slate-50 text-slate-900 font-sans min-h-screen flex flex-col justify-between">
 
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <nav class="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <div class="flex items-center gap-2">
-                    <div class="bg-blue-600 p-2 rounded-lg">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="bg-blue-600 p-2.5 rounded-xl shadow-md">
                         <i class="fas fa-graduation-cap text-white text-xl"></i>
                     </div>
-                    <span class="text-2xl font-bold tracking-tight text-slate-800">Placement<span class="text-blue-600">Hub</span></span>
-                </div>
-                <div class="hidden md:flex space-x-8 font-medium">
-                    <a href="#resources" class="hover:text-blue-600 transition">Resources</a>
-                    <a href="companies_new.html" class="hover:text-blue-600 transition">Companies</a>
-                    <a href="#notices" class="hover:text-blue-600 transition">Notices</a>
-                    <a href="#analysis" class="hover:text-blue-600 transition">Analysis</a>
+                    <span class="text-2xl font-extrabold tracking-tight text-slate-900">Placement<span class="text-blue-600">Hub</span></span>
+                </a>
+                <div class="flex items-center space-x-3 md:space-x-5 font-bold text-sm">
+                    <a href="companies_new.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-md transition-all">Company Directory</a>
+                    <a href="notices.html" class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-xl shadow-md transition-all">Official Notices</a>
+                    <a href="comp.html" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition-all hidden sm:inline-block">Table Archive</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="py-16 bg-white border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6">
+    <header class="py-16 md:py-20 bg-white border-b border-slate-200/80">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <span class="px-4 py-1.5 bg-blue-50 text-blue-700 rounded-full text-xs font-extrabold tracking-wide uppercase border border-blue-200 mb-6 inline-block">Complete Integrated Placement & Internship Portal</span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
                 Master Your <span class="text-blue-600">Placement</span> Journey
             </h1>
-            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-                Access curated preparation resources, company insights, and real interview experiences all in one place.
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed mb-8">
+                Access <span class="font-bold text-slate-900">713 Job Descriptions</span>, <span class="font-bold text-slate-900">2,839 Official Recruitment Notices</span>, and instant <span class="font-bold text-blue-600">Package Range Filtering</span> all in one place.
             </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="companies_new.html" class="px-7 py-4 bg-blue-600 hover:bg-blue-700 text-white font-extrabold rounded-2xl shadow-lg hover:shadow-blue-500/25 transition-all text-sm flex items-center gap-2">
+                    <i class="fas fa-building"></i> Company Directory (380+)
+                </a>
+                <a href="notices.html" class="px-7 py-4 bg-amber-500 hover:bg-amber-600 text-white font-extrabold rounded-2xl shadow-lg hover:shadow-amber-500/25 transition-all text-sm flex items-center gap-2">
+                    <i class="fas fa-bullhorn"></i> Official Notices (2,839)
+                </a>
+                <a href="companies_new.html?tier=super-dream" class="px-7 py-4 bg-purple-900 hover:bg-purple-800 text-white font-extrabold rounded-2xl shadow-lg transition-all text-sm flex items-center gap-2">
+                    <i class="fas fa-filter"></i> Filter Packages (CTC)
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 py-12">
+    <main class="max-w-7xl mx-auto px-4 py-12 flex-grow w-full">
+        <!-- Stats Banner -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 text-center shadow-xs">
+                <div class="text-3xl md:text-4xl font-extrabold text-blue-600 mb-1">713</div>
+                <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Job Descriptions</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 text-center shadow-xs">
+                <div class="text-3xl md:text-4xl font-extrabold text-amber-500 mb-1">2,839</div>
+                <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Official Notices</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 text-center shadow-xs">
+                <div class="text-3xl md:text-4xl font-extrabold text-emerald-600 mb-1">380+</div>
+                <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Top Companies</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 text-center shadow-xs">
+                <div class="text-3xl md:text-4xl font-extrabold text-purple-600 mb-1">5 CTC Tiers</div>
+                <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Package Filtering</div>
+            </div>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             
-            <a href="resources.html" class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-book-open text-2xl text-blue-600"></i>
+            <a href="companies_new.html" class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600">
+                        <i class="fas fa-building text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Company Directory</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Search 380+ companies by name, role, CTC package, and A-Z index.</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Prep Resources</h3>
-                <p class="text-slate-500 text-sm">Role-specific roadmaps, DSA sheets, and technical guides.</p>
-                <span class="mt-6 text-blue-600 font-semibold inline-flex items-center">Explore <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                <span class="mt-6 text-blue-600 font-bold text-sm inline-flex items-center">View Directory <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
             </a>
 
-            <a href="companies_new.html" class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-building text-2xl text-emerald-600"></i>
+            <a href="notices.html" class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-amber-600">
+                        <i class="fas fa-bullhorn text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Official Notices</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Archive of 2,839 placement & internship shortlists and schedules.</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Company Info</h3>
-                <p class="text-slate-500 text-sm">Detailed profiles, eligibility criteria, and salary packages.</p>
-                <span class="mt-6 text-emerald-600 font-semibold inline-flex items-center">View List <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                <span class="mt-6 text-amber-600 font-bold text-sm inline-flex items-center">Check Notices <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
             </a>
 
-            <a href="notices.html" class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-bullhorn text-2xl text-amber-600"></i>
+            <a href="companies_new.html?tier=super-dream" class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 text-purple-600">
+                        <i class="fas fa-filter text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Filter Packages</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Filter companies by CTC package (Super Dream, Dream, High CTC).</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Past Notices</h3>
-                <p class="text-slate-500 text-sm">Archive of selection lists and official recruitment circulars.</p>
-                <span class="mt-6 text-amber-600 font-semibold inline-flex items-center">Check Archive <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                <span class="mt-6 text-purple-600 font-bold text-sm inline-flex items-center">Filter CTC Packages <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
             </a>
 
-            <a href="analysis.html" class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-chart-line text-2xl text-purple-600"></i>
+            <a href="comp.html" class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 text-emerald-600">
+                        <i class="fas fa-table text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fast Table Archive</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">High-performance table view of 713 JDs with instant fuzzy search.</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Interview Insights</h3>
-                <p class="text-slate-500 text-sm">Selection trends, round counts, and student experience blogs.</p>
-                <span class="mt-6 text-purple-600 font-semibold inline-flex items-center">View Analysis <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
+                <span class="mt-6 text-emerald-600 font-bold text-sm inline-flex items-center">Search Archive <i class="fas fa-arrow-right ml-2 text-xs"></i></span>
             </a>
 
         </div>
-
-         </div>
     </main>
 
-    <footer class="mt-20 py-8 border-t border-slate-200 bg-white text-center text-slate-500">
-        <p>© 2025 PlacementHub. All resources for student success.</p>
+    <footer class="py-8 border-t border-slate-200 bg-white text-center text-slate-500 text-sm">
+        <p>© 2026 PlacementHub. Integrated Placement, Internship & Notice Portal.</p>
     </footer>
 
 </body>

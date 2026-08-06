@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : JSW Group<br>
+<br>Please fill the Additional Candidate Information form for JSW Group. The deadline for filling this information is  till 11:59 PM on 26th August 2025 (Tuesday).
+<br>
+<br>No further extensions will be provided.
+<br>https://docs.google.com/forms/d/e/1FAIpQLSeVdXlrgdLdK9gLwMHcTd9H11VmCh5lTbqaxYckxeL0JCK_OQ/viewform 
+<br>
+<br>Note: It is mandatory to fill this form
+<br>
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

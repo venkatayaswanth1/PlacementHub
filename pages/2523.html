@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : ADDVERB<br>
+<br>PFB the interview shortlist of ADDVERB to be conducted on 31st January, 2026.
+<br>
+<br>24AE60R09
+<br>24EC65R18
+<br>24IM61R08
+<br>
+<br>Time and Venue will be conveyed.
+<br>
+<br>POC - Jacob (+91 70733 77504)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

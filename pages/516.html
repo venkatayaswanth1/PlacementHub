@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : Open House for placement_2025-26<br>
+<br>All potential students for placement are hereby informed that CDC will conduct the Open House session for the 2026 pass out batch on 12.08.2025 from 6:30 PM onwards .
+<br>
+<br>Venue : Netaji Auditorium
+<br>
+<br>As the seats are limited, seats will be filled on first come, first served basis.
+<br>
+<br>Eligible and interested students are advised to attend the session.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

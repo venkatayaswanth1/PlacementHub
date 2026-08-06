@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : FUJITSU<br>
+<br>All the students who have applied for Fujitsu are requested to fill up the following form before 6pm, 26th March 2026.
+<br>
+<br>Form Link: https://forms.gle/4G4MMQrLBPSCVdyK8
+<br>
+<br>Kindly fill up the form before the given deadline else your application will not be considered for further process. 
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

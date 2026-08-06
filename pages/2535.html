@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : RELIANCE RETAIL<br>
+<br>PFA the shortlist for subsequent rounds of Reliance Retail
+<br>
+<br>The Pre Placement Talk for  Reliance Retail is scheduled on 3rd February, 2026 from 8:30 AM onwards. 
+<br>
+<br>Participation in PPT is mandatory for all the interested students. Attendance will be recorded by the company. Students are advised to adhere to the schedule. 
+<br>
+<br>Link -: https://teams.microsoft.com/meet/4378013985100?p=XldWpaOHVcJTSDWxJD
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

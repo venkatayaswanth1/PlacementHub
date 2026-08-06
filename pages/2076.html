@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Comviva<br>
+<br>Interested and Eligible candidates for Comviva are requested to fill the following form to get their application considered for the further processes: 
+<br>
+<br>https://forms.gle/1iBeaXYW9WcEuzf6A
+<br>
+<br>Deadline: 12 PM, 8/12/2025
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

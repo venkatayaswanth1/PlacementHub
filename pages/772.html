@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Hitachi Ventures<br>
+<br>PFA the interview shortlist for Hitachi Ventures:
+<br>
+<br>22IM3FP03
+<br>22BT3FP51
+<br>22ME3FP40
+<br>22ME3FP01
+<br>22CH3FP57
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

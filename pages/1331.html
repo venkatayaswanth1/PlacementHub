@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission deadline/CGPA Cut-Off<br>
+<b>Company</b> : EY Global Delivery Services India LLP<br>
+<br>Job Description: We are seeking a highly talented with strong academic credentials in Data Science
+<br>specialization areas. Good exposure to Data science life cycle with academic project experience on
+<br>how to examine, statistically interpret, and derive meaningful insights from large sets of data.
+<br>In this role, your responsibilities include extracting and processing information to find patterns and
+<br>trends, using technology to analyse data, and creating a solution using machine-learning algorithm
+<br>or predictive model for data analysis. You will play a key role in the development and
+<br>implementation of AI solutions, leveraging your technical expertise.
+<br>The ideal candidate should have a deep understanding of AI technologies and latest trends and
+<br>cutting-edge AI models capabilities. <br><br><br>Find the below details about CV Submission deadline/CGPA Cut-Off:<br><br>CV Submission Starting From (yyyy-mm-dd): 2025-11-10<br>CV Submission Ending At (yyyy-mm-dd): 2025-11-11<br>CGPA Cut Off: 0.0<br><br>Interested students are advised to apply at the ERP portal within the given deadline.<br>No further extensions will be provided.<br><br><br><br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

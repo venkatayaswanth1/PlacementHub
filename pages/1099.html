@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : TRIA<br>
+<br>PFB the extended Interview Shortlists for Frontend Software role of Tria.
+<br>
+<br>22EE38028
+<br>23CH10031
+<br>23CH10051
+<br>
+<br>POC: Biplab (7004097392)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : SERVICENOW<br>
+<br>Please note that the test for SERVICENOW is scheduled for 5th November 2025 (tomorrow).
+<br>Venue: Nalanda Classroom Complex
+<br>
+<br>Test POC: Sayan Dutta (7257994649)
+<br>
+<br>Test timings, shortlisted candidatesââ¬ list and room allocations will be shared shortly.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

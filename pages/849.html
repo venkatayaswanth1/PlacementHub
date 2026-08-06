@@ -1,0 +1,39 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission deadline/CGPA Cut-Off<br>
+<b>Company</b> : UPL<br>
+<br>Job Description: NextGen Engineer Intern
+<br>Data Science:
+<br>Work with a team of high performing data science professionals, and cross-functional business partners to identify business opportunities, and drive product road map.
+<br>
+<br>Understand business problems and provide data-driven solutions for those problems.
+<br>
+<br>Develop custom data models and algorithms to apply to data sets. Can design and develop Machine Learning models at scale.
+<br>
+<br>Coordinate with different functional teams to implement models and monitor outcomes.
+<br>
+<br>Strong problem-solving skills with an emphasis on technology development.
+<br>
+<br>Strong math skills (e.g. statistics, algebra)
+<br>
+<br>Excellent communication and presentation skills <br><br><br>Find the below details about CV Submission deadline/CGPA Cut-Off:<br><br>CV Submission Starting From (yyyy-mm-dd): 2025-09-30<br>CV Submission Ending At (yyyy-mm-dd): 2025-10-03<br>CGPA Cut Off: 0.0<br><br>Interested students are advised to apply at the ERP portal within the given deadline.<br>No further extensions will be provided.<br><br><br><br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

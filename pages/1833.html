@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CDC Placement process 2025-26<br>
+<br>PFA shortlist for multiple companies as follows:
+<br>
+<br>Note: Students who are out of the process are strictly being instructed not to appear for any other interview processes even if your roll number is listed in the sheet.
+<br>
+<br>1. INSURITY [Profile: SDE]
+<br>2. COMMONWEALTH BANK OF AUSTRALIA 
+<br>3. SLB [Profile: Full Stack]
+<br>4. SRI NOIDA 
+<br>5. SRI DELHI
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

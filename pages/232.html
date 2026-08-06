@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : SAMSUNG KOREA<br>
+<br>PFA the list of shortlisted candidates for the Test of Samsung Korea.
+<br>The test is scheduled as per the details below:
+<br>
+<br>Date: July 22nd, 2025 (Tuesday)
+<br>Time: 05:30 PM - 08:30 PM
+<br>Mode: Offline (Nalanda)
+<br>Test POC: Sreelekshmi Kishore (+91 9037546952), Aryan Yesilanka (+91 9550881582)
+<br>
+<br>The test links and instructions will be shared with the shortlisted students. The room allotment will be released shortly.
+<br>
+<br>
+<br>
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : RISA LABS INC<br>
+<br>The CV submission of RISA LABS INC for the following roles is opened until 11:59 PM, 7th November 2025:
+<br>1. Product Designer
+<br>2. Member of Technical Staff (USA)
+<br>3. Associate Product Manager
+<br>4. System Engineer
+<br>5. Associate Product Manager - Growth (USA)
+<br>6. Member of Technical Staff
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,46 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : MIDHANI<br>
+<br>Please note that the Interviews for MIDHANI will be held on 16th December, 2025.
+<br>
+<br>All the students who had applied for the company on ERP are eligible to appear for the interview process.
+<br>
+<br>All applicants are required to bring the following documents for the document verification process:
+<br>
+<br>1. All educational certificates (original and xerox copies)
+<br>
+<br>2. Semester mark sheets of the current course
+<br>
+<br>3. Caste certificate (if applicable)
+<br>
+<br>4. PwD or ESM certificate (if applicable)
+<br>
+<br>5. Two passport-size photographs
+<br>
+<br>6. Aadhaar card (Xerox copy)
+<br>
+<br>
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

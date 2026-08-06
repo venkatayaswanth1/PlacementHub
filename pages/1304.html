@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : FUJITSU RESEARCH OF INDIA PVT. LTD. (FRIPL)<br>
+<br>Please find attached the room allocation for the assessment of FUJITSU RESEARCH OF INDIA PVT. LTD. (FRIPL) scheduled at 2:00 AM, 9th November 2025, for the following roles:
+<br>1. Researcher - II AI Lab_(Master's)
+<br>2. Software Engineer - II (M.Tech)
+<br> 
+<br>Students are required to carry their Institute ID card/Medical Book and are advised to reach the venue 15 minutes prior to the time.
+<br>
+<br>Note: Candidates who have received multiple links for the test are supposed to appear only for a single role.
+<br>
+<br>POC: Sumanth (7406826440), Biplab (7004097392)
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

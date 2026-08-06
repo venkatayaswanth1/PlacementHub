@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Mathworks<br>
+<br>The test of MathWorks scheduled on 21.08.2025 (Thursday) at 11:00 PM has been changed from offline to online mode. The test link will soon be shared on applicantââ¬s CDC registered email ID.
+<br>
+<br>Test Timing: 11:00 PM
+<br>Mode: Online
+<br>Venue:Respective Locations
+<br>
+<br>POC: Biplab(+91 7004097392), Mehul(+91 97600 46080)
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

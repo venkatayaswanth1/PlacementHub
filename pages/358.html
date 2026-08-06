@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Accenture GN (Data &amp; AI)<br>
+<br>All eligible students (Dual Degree students) for the Accenture GN (Data &amp; AI) Role have received the link for the FINAL ASSESMENT.
+<br>
+<br>Please disregard the date mentioned in the email sent by Accenture.
+<br>
+<br>Note: The deadline to complete the FINAL ASSESMENT is extended till 28th July, 2025 (10:00 PM).
+<br>
+<br>NO FURTHER EXTENSION WILL BE PROVIDED.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

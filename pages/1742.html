@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CDC Placement process 2025-26<br>
+<br>Student who got shortlisted in multiple companies are advised to fill out their preferences today (29th November 2025) by 9 AM through the form link provided below.
+<br>
+<br>Link: https://forms.gle/eEbrXYKQ675uHguSA 
+<br>
+<br>Students are requested to fill out the form within the given deadline; no further extensions will be provided.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Tata Steel<br>
+<br>The TEST for Tata Steel is scheduled as follows:
+<br>
+<br>Date: October 17th, 2025 (Thursday)
+<br>Window: 6:00 PM to 8:00 PM
+<br>Mode: Offline
+<br>Venue: Nalanda
+<br>
+<br>The Test shortlist and Room allocation will be released soon.
+<br>
+<br>POC: Sumanth (+91-7406826440)
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

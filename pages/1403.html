@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : SCIFORN SOLUTIONS<br>
+<br>Please find attached the shortlisted candidates list for the SCIFORN SOLUTIONS assessment.
+<br>
+<br>The assessment link has been sent to all shortlisted students. Kindly check your registered email for the same.
+<br>
+<br>Date: 13th November 2025
+<br>Time: 1:30 AM ââ¬ââ¬ 3:00 AM
+<br>Login Window: Till 1:40 AM
+<br>Venue: Respective Location
+<br>
+<br>All shortlisted candidates are required to complete the assessment within the specified time frame.
+<br>
+<br>POC: Amish (9911034435), Heramb (9834458336)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

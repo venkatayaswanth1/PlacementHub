@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : LAT Aerospace<br>
+<br>Please find below the shortlist for LAT Aerospace :
+<br>22ME36009
+<br>22AE30016
+<br>22ME36017
+<br>22ME36012
+<br>23ME10052
+<br>22ME33003
+<br>22AE3AI01
+<br>23AE10033
+<br>23AE10001
+<br>23AE10018
+<br>
+<br>Chairman,CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : DA VINCI DERIVATIVES B.V.<br>
+<br>Please note that the test for DA VINCI DERIVATIVES B.V. for the role Graduate Developer is scheduled on 14th October, 2025 from 8:00 PM onwards. 
+<br>
+<br>Students are required to carry their Institute ID card/Medical Book and must report 15 minutes prior to the time.
+<br>
+<br>Room allocation will be released shortly.
+<br>
+<br>POC: Pranjal (7988270765), Yash (6264949043)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

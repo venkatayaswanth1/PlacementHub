@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : FISCHERJORDAN LLC<br>
+<br>All the eligible students are being informed that they have been shared the application form over their respective email IDs for FISCHERJORDAN LLC. The deadline has been extended till 26th November 2025, 11:59 PM (End of Day). 
+<br>
+<br>Students are requested to fill out the form within the given deadline; no further extensions will be provided.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

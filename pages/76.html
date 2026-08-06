@@ -1,0 +1,43 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : APT PORTFOLIO<br>
+<br>As part of the shortlisting process for the Data Management &amp; Research role at APT PORTFOLIO, a short assignment task will be conducted. Kindly take note of the following instructions:
+<br>
+<br>* A Google Form will be circulated shortly to facilitate the formation of teams comprising three members. 
+<br>
+<br>* The team leader is required to complete and submit the form on behalf of the group. 
+<br>
+<br>* All team members must belong to the same department. 
+<br>
+<br>* A candidate must not be a member of more than one team. 
+<br>
+<br>* Only students who have applied for the aforementioned role are eligible to be included in a team. 
+<br>
+<br>* The assignment task will be shared separately, and further instructions regarding its submission will be communicated in due course. 
+<br>
+<br>* Please note that only one submission per team is permitted.
+<br>
+<br>
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

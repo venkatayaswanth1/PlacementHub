@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Neo Wealth &amp; Asset Management<br>
+<br>All applicants should note that they need to fill the Google Form for application to Neo Wealth &amp; Asset Management.
+<br>
+<br>https://docs.google.com/forms/d/e/1FAIpQLScFYH-MeFEMOBlkbyVrV464S-qFRXTRvk4S2ah9Zf_QKQ81Dg/viewform?usp=header&nbsp;
+<br>
+<br>Your application will only be considered valid once you have filled out this form with all the required details.
+<br>
+<br>NOTE: The deadline for submission is, July 23th, at 06:00 PM. No extensions will be provided.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

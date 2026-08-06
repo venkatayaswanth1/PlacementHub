@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : INCANUS TECHNOLOGIES PRIVATE LIMITED<br>
+<br>Please find attached the shortlist and room allocation for the assessment of INCANUS TECHNOLOGIES PRIVATE LIMITED for the role of Software development engineer.
+<br>
+<br>The test is scheduled on 28th November 2025 (today) from 01:00 AM onwards at Nalanda Classroom Complex.
+<br>
+<br>Students are required to carry their Institute ID card/Medical Book and are advised to reach the venue 15 minutes prior to the time.Test link will be shared shortly.
+<br>
+<br>POC: Kartik (9118990910), Himanshu (8307159097)
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

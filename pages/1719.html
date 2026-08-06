@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : VVF<br>
+<br>Candidates who were eligible with the revised eligibility and have applied on the company portal will have the test for VVF with the following details:
+<br>
+<br>Test window: 7 PM to 12 PM 
+<br>Venue: Respective Location 
+<br>
+<br>PoC: Aryan (8100303122), Alok(8856827387)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

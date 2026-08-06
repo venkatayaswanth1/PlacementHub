@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : IBM<br>
+<br>Please find attached the room allocation for the assessment of IBM.
+<br>
+<br>Please note that the test will have a strict login window of 10 minutes, after 11:10 PM none of the students will be allowed to appear for the test. Candidates who have received multiple links for the test are supposed to appear only for a single role.
+<br> 
+<br>Students are required to carry their Institute ID card/Medical Book and are advised to reach the venue 15 minutes prior to the time.
+<br>
+<br>POC: Adeeba (7860139131), Dhruv (7248955444)
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

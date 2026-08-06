@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Absolute<br>
+<br>PFB the Interviews shortlist for Absolute.
+<br>
+<br>24BT60R02
+<br>24BT60R09
+<br>24BT60R17
+<br>24BT60R22
+<br>24BT60R24
+<br>24BT60R27
+<br>
+<br>Date : 9th and 10th April 2026
+<br>Venue : Respective Location
+<br>POC: Deepak ( +91 90249 50269)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

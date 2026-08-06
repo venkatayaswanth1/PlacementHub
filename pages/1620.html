@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : RISA LABS INC<br>
+<br>Please find below the submission link for various roles of RISA LABS INC.
+<br>
+<br>Associate Product Manager - Growth: https://forms.gle/pLghN4dSreSPxzqX7
+<br>
+<br>Associate Technical Product Manager: https://forms.gle/MwhjZbeho8LUskLGA
+<br>
+<br>Associate Product Manager: https://forms.gle/nfAkykHXc5sUZZAD7
+<br>
+<br>Product Designer: https://forms.gle/g74E5P5wFuvYtLCMA
+<br>
+<br>The deadline for submission for all the roles is 7:30 PM, 26th November 2025.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

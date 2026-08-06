@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : SEDEMAC<br>
+<br>PFA the Test Shortlist of SEDEMAC which is scheduled on 7th November 2025 from 6:00 PM onwards.
+<br>Venue: Nalanda Classroom Complex
+<br>
+<br>Please note that all the shortlisted students for SEDEMAC must have received an email containing details for the practice test and Mettl Secure Browser (MSB) installation.
+<br>
+<br>If you have not received the email, kindly fill out the Google Form given below:
+<br>https://forms.gle/dvcP6rqdGcxGdVLy7
+<br>
+<br>Test POC: Sayan Dutta (7257994649), Sreelekshmi (9037546952)
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

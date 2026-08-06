@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CV Verification<br>
+<br>Students who have not yet completed their CV verification may do so today (7th October) or tomorrow (8th October) during office hours, i.e., until 6:00 PM. The final deadline for CV verification is 6:00 PM, 8th October 2025.
+<br>
+<br>Students under SAPP or those pursuing MTP outside the campus should request their friends or relatives on campus to complete the verification on their behalf, after mailing the CDC office in advance.
+<br>
+<br>It is the responsibility of each student to ensure that the verification is completed within the given timeline. Any lapse in this regard will not be entertained, and unverified CVs will contain flags.
+<br>
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

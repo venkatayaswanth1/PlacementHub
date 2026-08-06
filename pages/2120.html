@@ -1,0 +1,30 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : TAVANT TECHNOLOGIES<br>
+<br>The test of TAVANT TECHNOLOGIES is scheduled on 8th December from 8:00 PM to 9:00 PM from respective location. 
+<br>
+<br>
+<br>POC: Deepak(9024950269), Alok Ranjan(8856827387) 
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,44 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : DE Shaw<br>
+<br>PFB Extended Shortlist for D. E Shaw
+<br>
+<br>22CS30021
+<br>22CS30025
+<br>22CS30033
+<br>22CS30054
+<br>22EC39018
+<br>22EC39021
+<br>22EC39028
+<br>22EE3AI21
+<br>22IM30026
+<br>23CS10002
+<br>23IE10010
+<br>23IE10033
+<br>23IE10037
+<br>23NA10018
+<br>23NA10037
+<br>23PH10034
+<br>
+<br>CDC Chairman<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,45 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPO<br>
+<b>Company</b> : Piramal Capital &amp; Housing Finance Limited<br>
+<br>PIRAMAL has extended the offer to the following student(s):
+<br>
+<br>GEDDA SAI SHASANK - 22CS10025
+<br>
+<br>GOSAVI ANUSHKA ANIL - 21CH30013
+<br>
+<br>PRIYAVRAT JAY MISHRA - 22EE10093
+<br>
+<br>SAMARTH SHARMA - 22MA10052
+<br>
+<br>SARTHAK SAHU - 22IE10038
+<br>
+<br>TELU AMRUTHAVARSHINI - 21CS30055
+<br>
+<br>VANKADARA JAYADITHYA SREEKAR - 21EC39050
+<br>
+<br>The students are advised to give offer acceptance by 29.08.2025.
+<br>
+<br>(For more details, check your email ID.)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

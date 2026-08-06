@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : British Petroleum<br>
+<br>Please find below the details for the test:
+<br>
+<br>Date: August 7th, 2025 (Thursday)
+<br>Test timings: 8:00PM-9:00PM
+<br>Mode: OFFLINE
+<br>Venue: NR224
+<br>POC : Mehul ââ¬ªââ¬ª(+91 9760046080ââ¬¬ââ¬¬)
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

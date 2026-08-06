@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : PUBLICIS SAPIENT<br>
+<br>The Test for Publicis Sapient is scheduled at 11:00 PM. 
+<br>
+<br>Shortlisted students must have received the test link.
+<br>
+<br>PFA the test shorlitst. 
+<br>Venue: Respective Location. 
+<br>
+<br>PoC: Deepak (902495026)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

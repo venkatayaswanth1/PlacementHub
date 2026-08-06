@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : STANDARD CHARTERED<br>
+<br>All the students who attempted the first test of STANDARD CHARTERED are requested to fill out this form positively by 11:59 AM (Morning), 26th November 2025. Please note that failing to do so may affect your candidacy for the next process.
+<br>
+<br>Link: https://forms.gle/SgExSbktEWnPKGSd8 
+<br>
+<br>Students are requested to fill out the form within the given deadline; no further extensions will be provided.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

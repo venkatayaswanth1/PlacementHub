@@ -1,0 +1,54 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPO<br>
+<b>Company</b> : GOLDMAN SACHS<br>
+<br>GOLDMAN SACHS has extended the offer to the following student(s) in Quant profile:
+<br>
+<br>Anshul Trehan - 22MA10008
+<br>
+<br>Smriti Bansal - 22CH10067
+<br>
+<br>Yash Daga - 22MF10046
+<br>
+<br>Swathi K - 22MA10063
+<br>
+<br>Tanishq Gaur - 22EC10080
+<br>
+<br>Rajit Bhojani - 22MA10046
+<br>
+<br>Tanishq Prasad - 21CS30054
+<br>
+<br>Goldman Sachs has extended the offer to the following student(s) in CS profile:
+<br>
+<br>Khushi Verma - 22MT10029
+<br>
+<br>Rishabh Jain - 22MA10048
+<br>
+<br>Sumanth Tejeswar Panga - 21EC37012
+<br>
+<br>
+<br>All he students are advised to give offer acceptance by 12.08.2025.
+<br>
+<br>(For more details, check your email ID.)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

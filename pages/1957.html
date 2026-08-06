@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Axtria<br>
+<br>PFA the Test Shortlist for Axtria
+<br>
+<br>
+<br>Scheduled at 8:00 PM 
+<br>Location: Nalanda
+<br>Room Allocation will be released soon.
+<br>
+<br>Note: Shortlisted Candidtes must have received a registration link from hirepro which needs to be completed before 3 PM so that their registration is considered.
+<br>
+<br>PoC: Lokesh (+91 83560 65336)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

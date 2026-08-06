@@ -1,0 +1,39 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : HERO MOTOCORP<br>
+<br>PFA the updated test shortlist of HERO MOTOCORP.
+<br>
+<br>Test for HERO MOTOCORP
+<br>is scheduled today on 16th January from 9pm onwards
+<br>
+<br>Please find the Passkey for electrical and mechanical:
+<br>
+<br>Electrical-400622
+<br>Mechanical-306267
+<br>
+<br>
+<br>Venue - Respective Location
+<br>
+<br>PoC: Aryan ( +91 8100303122)
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

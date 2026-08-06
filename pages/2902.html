@@ -1,0 +1,27 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Placecom selection 2026-27 - PI<br>
+<br>Please find enclosed the attached schedule for PI for Placecom selection 2026-27.
+<br>
+<br>You should produce original supporting document in respect of the claimed POR as per your application during the interview process.<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CAPITAL ONE<br>
+<br>Please note that there are some technical errors in the test link for CAPITAL ONE for the role of Associate (Business Analyst). Students will receive the correct link shortly over their respective mail ID.
+<br>
+<br>The test timings, as previously communicated remains the same:
+<br>
+<br>Associate (Business Analyst): 9 PM - 9:30 PM
+<br>Associate (Software Engineer): 10 PM - 11:30 PM
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

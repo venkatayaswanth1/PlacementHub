@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : SKYFLOW<br>
+<br>The test for SKYFLOW is scheduled on 3rd December 2025 from 07:30 AM (Morning) onwards.
+<br>
+<br>Venue: Nalanda Classroom Complex
+<br>
+<br>POC: Deepak(9024950269), Anurag(9491087133)
+<br>
+<br>Note: Please carry your laptops, pens, and papers. The room allocation and shortlists will be released soon.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

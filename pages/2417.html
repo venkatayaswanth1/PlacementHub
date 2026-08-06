@@ -1,0 +1,39 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : DP World<br>
+<br>Type : PLACEMENT
+<br>Subject : Urgent
+<br>Company : DP World
+<br>
+<br>Please find attached the room allocation cum extended shortlist for the test of DP World.
+<br>
+<br>As Mentioned earlier the test is scheduled on 19 January 2026 (today) from 07:00 PM onwards.
+<br>
+<br>Students are required to carry their Institute ID card/Medical Book and are advised to reach the venue 15 minutes prior to the time.
+<br>
+<br>POC: Abhinav ( +91 98379 64667) and Dishil (+91 99254 92574)
+<br>
+<br>Note: Please carry your laptops, pens, and papers.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

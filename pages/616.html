@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CDC Placement Process<br>
+<br>To ensure accuracy and fairness in the CVs, students are requested to follow the guidelines below while submitting documents for verification. Please note that entries without valid proof may not be considered.
+<br>
+<br>1. Competitions (Participation/Wins): Upload the official certificate issued by the organizing body. If there is any position, then that should be clearly stated on the certificate given by the issuing authority. In the case, no certificate is issued, an official email or letter from the organisers should be produced confirming the candidates' participation.
+<br>2. Entrepreneurship Experience: Founder: Proof of registration/incorporation or an official document/letter confirming the role. Non-Founder (Team Member/Intern): An official letter from the founder/organization clearly stating the role and duration.
+<br>3. Self-Initiated Projects: Provide project links (e.g., GitHub, website, published work) and/or a comprehensive document describing objectives, process, and outcomes; the order is to be followed as well and proofs/code links are to be given wherever required.
+<br>4. Academic/Professor-Guided Projects: Upload a completion/acknowledgement certificate signed by the guiding professor.
+<br>5. Internships: For an internship stated as completed should contain both the offer letter and the completion letter of the same. For an ongoing internship, only an offer letter is to be uploaded.
+<br>6. Position of responsibility: For the position under any specific hall of residence, it is to be approved by the warden; for the position under any specific society/cell/fest, it is to be approved by the professor-in-charge/organization under which it is operating.
+<br>
+<br>Students are encouraged to arrange and upload documents carefully in the prescribed format to ensure smooth verification of their CVs.
+<br>
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

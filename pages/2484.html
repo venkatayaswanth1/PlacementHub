@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : AVAADA GROUP<br>
+<br>The Pre Placement Talk for Avaada group is scheduled today on 27th January, 2026 from 3:45 PM onwards.
+<br>
+<br>Participation in PPT is mandatory for all the interested students. Attendance will be recorded by the company. Students are advised to adhere to the schedule.
+<br> 
+<br>Link -: https://meet.google.com/mgw-aapx-jsr
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

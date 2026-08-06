@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Quantiphi Analytics<br>
+<br>All the students who have applied on ERP for Quantiphi Analytics and have missed the test are instructed to complete their registration and test on the UNSTOP link given below within the deadline :
+<br>
+<br>Reg Link : https://unstop.com/p/quantiphi-campus-hiring-2026-iit-kharagpur-quantiphi-1582036
+<br>
+<br>Registration Deadline : 04:15 PM
+<br>Test Deadline: 05:15 PM
+<br>
+<br>Interested and eligible students are advised to complete the process within the given deadline. This is the final deadline. No further extensions will be given.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

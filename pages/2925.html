@@ -1,0 +1,42 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Esyasoft<br>
+<br>PFB the shortlist for test
+<br>
+<br>24AI60R05
+<br>24AI60R24
+<br>24AI60R35
+<br>22EE10039
+<br>22IE10009
+<br>22EC10013
+<br>
+<br>Date : 13th May 2026
+<br>Time : 6 PM
+<br>Venue : Respective Location
+<br>
+<br>Note : The link will been shared with the shortlisted candidates.
+<br>
+<br>POC : Aditya( 93254 68252)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

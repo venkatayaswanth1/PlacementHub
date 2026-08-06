@@ -1,0 +1,59 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : HCL Tech<br>
+<br>Please note that the interview for HCL Tech has been scheduled
+<br>
+<br>PFB the Interviews shortlist.
+<br>
+<br>24CS60R48
+<br>24AI60R43
+<br>24MA60R18
+<br>24EE65R14
+<br>22IE10025
+<br>24MA60R15
+<br>24MA60R06
+<br>24MA60R09
+<br>24AG63R33
+<br>24MA60R37
+<br>24CS60R81
+<br>24CS60R82
+<br>24AI60R05
+<br>21BT30045
+<br>24AI60R01
+<br>24AI60R35
+<br>21MI3EP14
+<br>24MM62R09
+<br>24AI60R03
+<br>24MA60R35
+<br>24CS60R47
+<br>24EE65R01
+<br>24SE60R03
+<br>24CS60R75
+<br>
+<br>Date: 23rd April, 2026.
+<br>Venue: Respective Location
+<br>
+<br>POC: Dishil (9925492574) Vatsal Gutgutia (9234457393)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

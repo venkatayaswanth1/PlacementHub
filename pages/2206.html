@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : VIRTUSA<br>
+<br>PFA the test shortlist for all the roles of VIRTUSA.
+<br>
+<br>The test is scheduled on 11th December 2025, from 9:00 AM, and can be taken until 5:00 PM.
+<br>
+<br>Please note that there will be two tests, and both must be completed to qualify for the subsequent rounds.
+<br>
+<br>The test link will be shared by the company.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

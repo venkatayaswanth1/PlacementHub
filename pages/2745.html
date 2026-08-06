@@ -1,0 +1,54 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : SM Consultants<br>
+<br>PFB the shortlist of interview for SM Consultants.
+<br>
+<br>21AR10033
+<br>21AR10043
+<br>21CE31002
+<br>21CE31003
+<br>21CE31005
+<br>24CE62R02
+<br>24CE62R03
+<br>24CE62R04
+<br>24CE62R10
+<br>24CE62R11
+<br>24CE62R13
+<br>24CE62R15
+<br>24CE64R04
+<br>24CE64R08
+<br>24CE64R09
+<br>24CE65R06
+<br>24CE65R07
+<br>24CE65R10
+<br>24CE65R13
+<br>24WM60R01
+<br>
+<br>
+<br>Date and Time: Will be Informed
+<br>Venue : Respective Location
+<br>
+<br>POC : Nikita (9969207598), Kartik (9118990910)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

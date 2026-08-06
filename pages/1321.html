@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : MATHWORKS INDIA PRIVATE LIMITED<br>
+<br>Please note that the re-test of MATHWORKS INDIA PRIVATE LIMITED for the students who faced issues during the previous test will be conducted on 10th November 2025 at 12:30 AM. 
+<br>
+<br>Note: There will be a strict login window of 15 minutes; after 12:45 AM, none of the candidates will be allowed to appear for the test.
+<br>
+<br>All eligible students are advised to be present at the Nalanda Classroom Complex 15 minutes before the scheduled time.
+<br>
+<br>The room allotment for the same will be released shortly.
+<br>
+<br>Test POC: Heramb (9834458336), Sayan Dutta (7257994649)
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

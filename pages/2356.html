@@ -1,0 +1,51 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : INTERVIEW KICKSTART<br>
+<br>PFB the interview shortlist for INTERVIEW KICKSTART:
+<br>
+<br>22NA10013
+<br>21CH30030
+<br>21ME31020
+<br>24RJ60R01
+<br>21EX5PE01
+<br>24ID60R05
+<br>21BT30016
+<br>21QE30001
+<br>21CH30061
+<br>21ME31053
+<br>21CH30006
+<br>21CE36014
+<br>22CY10048
+<br>22NA10027
+<br>21MT30046
+<br>21HS23012
+<br>21MT30020
+<br>21AE30001
+<br>21MT30047
+<br>21AE30034
+<br>
+<br>
+<br>Further details regarding the interview process will be communicated to the students in due course.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

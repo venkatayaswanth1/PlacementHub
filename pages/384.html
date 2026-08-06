@@ -1,0 +1,44 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Pattern Technologies<br>
+<br>PFA the test shortlist for the Pattern Technologies for Software Engineering Intern role. The test is as per the following slot:
+<br>
+<br>Date : 29th July, 2025 (Today)
+<br>Time : 11:30 PM
+<br>Duration: 2 hours
+<br>Venue : Respective Location
+<br>
+<br>Please find below the instructions for the test:
+<br>1. It is a proctored test. Candidates are expected to dress accordingly
+<br>2. Candidates are expected to have a device with good audio and video capabilities
+<br>3. They are expected to have good internet bandwidth
+<br>4. Do not switch off the camera during the test.
+<br>5. Do not switch tabs or try to close the full screen mode
+<br>6. Make sure no other face is captured in the camera during the test
+<br>7. Candidates should make sure they are using the latest version of the Chrome browser for the test.
+<br>
+<br>POC: Mehul(9760046080), Biplab(7004097392)
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

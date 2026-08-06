@@ -1,0 +1,30 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : <br>
+<br>Students are hereby informed that during the CV verification process, if any submitted documents are found to be inappropriate (fake or forged), misleading, or biased, strict disciplinary action will be initiated against them. The penalty will be decided accordingly and may lead to debarment from the Day 1,2,3 placement process.
+<br>
+<br>All students are therefore strongly advised to exercise utmost caution and ensure that their documents are uploaded correctly and in compliance with the prescribed guidelines.
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

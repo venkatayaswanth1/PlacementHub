@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : MATHWORKS INDIA PRIVATE LIMITED<br>
+<br>Kindly note that the registration portal is currently unavailable due to technical issues. Students will be notified with further instructions once the portal is restored and registration can resume.
+<br>
+<br>The test will be conducted as scheduled at 9:30 PM on 27th October 2025, as previously communicated.
+<br>
+<br>Your cooperation and timely attention to updates are appreciated.
+<br>
+<br>Test POC: Heramb (9834458336), Sayan Dutta (7257994649)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

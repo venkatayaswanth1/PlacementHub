@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : Multiple Companies<br>
+<br>CV submission for the following companies has been extended till 10:00 PM, 8th October, 2025.
+<br>
+<br>1. GRAVITON RESEARCH CAPITAL (Profile: Quantitative Researcher - India, Software Engineer - India)
+<br>
+<br>2. QUANTBOX RESEARCH  (Profile: Quant Research and Trading Analyst - India, Core Engineering Analyst - Bengaluru/ Gurugram)
+<br>
+<br>
+<br>
+<br>Interested and eligible students are advised to apply. No further extensions will be given.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

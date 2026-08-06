@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Intellemation AI<br>
+<br>PFA the interview shortlist for Intellemation AI:
+<br>
+<br>23IE10045
+<br>23CH10083
+<br>23ME10117
+<br>23IE10048
+<br>23EC10088
+<br>23ME10043
+<br>23AE10045
+<br>23ME10019
+<br>23EE10058
+<br>23CH10086
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

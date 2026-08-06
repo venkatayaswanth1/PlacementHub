@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : BLACKROCK<br>
+<br>Students who have applied but not received the Blackrock test link, fill up this form :https://forms.gle/PnYtYAy8bp1JGgLf6
+<br>
+<br>Kindly note that you must have received the link from Elitmus. Please check your spams once before filling up the form.
+<br>
+<br>Deadline: 11:59AM, 9th November 2025
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

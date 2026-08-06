@@ -1,0 +1,47 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Société Générale<br>
+<br>PFB the test shortlist for Société Générale:
+<br>
+<br>22AE3FP53
+<br>22AG3AI08
+<br>22AG3FP58
+<br>22CE3AI14
+<br>22CH3FP20
+<br>22EC3FP37
+<br>22HS23001
+<br>22HS23006
+<br>22HS23016
+<br>22MA25001
+<br>22ME3AI33
+<br>22ME3FP01
+<br>22MI3FP59
+<br>22NA3AI41
+<br>
+<br>Test Window - 7:00 PM to 11:00 PM
+<br>Test Duration - 60 Minutes
+<br>Venue - Respective Location
+<br>Test POC - Rumana (7356712900)
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

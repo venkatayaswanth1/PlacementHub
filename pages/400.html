@@ -1,0 +1,41 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CORRIDOR PLATFORMS<br>
+<br>Please find attached the Test Shortlist for CORRIDOR PLATFORMS.
+<br>
+<br>Test Date: 31-07-2025
+<br>Time: 7:00 AM to 8:00 AM (Morning)
+<br>Venue: Respective Location
+<br>Test POC: Yesilanka Sree Aryan (9550881582)
+<br>
+<br>Few instructions:
+<br>
+<br>1. The technical test will an online proctored one of 60 mins duration.
+<br>2. The candidates received invitation emails from the test platform on their CDC registered email id.
+<br>3. Candidate must attempt the test in a distraction free environment with good internet connection. Camera, Microphone support is mandatory.
+<br>4. Corridor Platforms will share a zoom link along with the test invite. The candidates can join the zoom room and directly chat with us in case of any technical mishaps during the course of the test.
+<br>
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

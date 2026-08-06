@@ -1,0 +1,46 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : TRINITY LIFE SCIENCES<br>
+<br>PFB the interview shortlist for Trinity Life Sciences.
+<br>
+<br>22CH10066
+<br>21CE10078
+<br>22CE10001
+<br>22CE10015
+<br>22CE10057
+<br>22EE10039
+<br>22IE10009
+<br>22EC10013
+<br>22IM10018
+<br>22ME10003
+<br>22ME10068
+<br>22ME10082
+<br>22ME10105
+<br>
+<br>Date : 3rd and 4th March 2026
+<br>VENUE : Nalanda
+<br>
+<br>POC - Nikita(+91-9969207598), Ritvik(+91-9480360231)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

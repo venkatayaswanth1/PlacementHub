@@ -1,0 +1,44 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : APT PORTFOLIO<br>
+<br>The TEST for APT PORTFOLIO is scheduled on Date: July 17th, 2025 (Thursday) for the roles as follows:
+<br>
+<br>1. Trading Role
+<br>Test Window : 08:00 PM to 09:30 PM
+<br>Test Duration : 90 minutes
+<br>Login Window: 10 minutes
+<br>Mode: Online
+<br>
+<br>2. Software Role
+<br>Test Window : 10:00 PM to 12:00 AM
+<br>Test Duration : 120 minutes
+<br>Login Window: 10 minutes
+<br>Mode: Online
+<br>
+<br>NOTE : Rest of the details would be shared over mail to the applicants.
+<br>
+<br>POC : Mehul (9760046080), Divyanshu (9604027664)
+<br>
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

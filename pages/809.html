@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Notice regarding PWD Students in CDC Placement Process<br>
+<br>Some concerns have been raised regarding the status of PWD students at CDC. The following points are hereby clarified:
+<br>
+<br>1. Eligibility of a PWD student will be considered strictly as per the ERP records. No other certification will be entertained.
+<br>
+<br>2. CDC provides special mobility facilities for PWD candidates during the placement process, subject to prior intimation from the concerned candidates.
+<br>
+<br>3. All eligible PWD students will be extended the privileges as applicable. However, the final decision of awarding additional time or any other special assistance during online assessments lies solely at the discretion of the recruiter.
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

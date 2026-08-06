@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Schedule<br>
+<b>Company</b> : ESDS Software Solution Ltd<br>
+<br>PFA the shortlist for the test of ESDS Software Solution Ltd is scheduled on 3rd February 2026 at 6:00 PM.
+<br>
+<br>There will be a Pre-Placement Talk (PPT) on 3rd February 2026 at 5:30 PM.
+<br>
+<br>Attendance at the PPT is strictly mandatory for all shortlisted students. Failure to attend the PPT will render the student ineligible to appear for the test, irrespective of being shortlisted.
+<br>
+<br>Room allotment details will be shared shortly.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

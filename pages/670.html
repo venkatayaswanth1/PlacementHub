@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : SigIQ.ai<br>
+<br>CV submission for SigIQ.ai for both the roles have been extended till 6:59 PM, 28th August, 2025.
+<br>
+<br>1. Backend Software Intern
+<br>2. Frontend / Full Stack Intern
+<br>
+<br>Interested and eligible students are advised to apply within the deadline.
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

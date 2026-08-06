@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : MATHWORKS<br>
+<br>The  Assessment scheduled for Mathworks on 21st January 2026 can be taken from respective locations.
+<br>
+<br>Test link will be shared soon.
+<br>
+<br>PoC- Deepak(+91 90249 50269) and Dishil(+91 99254 92574) 
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

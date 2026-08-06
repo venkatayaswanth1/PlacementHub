@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Application for Departmental Representative_2025-26<br>
+<br>Kind attn:APPLICATION FORM OF DEPARTMENTAL REPRESENTATIVE FOR CDC 2025-26
+<br>
+<br>
+<br>A hardcopy letter is being send today to all the Department/ School/ Centre regarding the selection of Departmental Representative of CDC for the year 2025-26
+<br>======================
+<br>
+<br>Students who are interested for the position of Departmental Representative are advised to contact their Department / School / Centre office, Faculty Advisor, In Charge (T&amp;P) or HoD -office for more information.
+<br>
+<br>FORM COPY IS ALSO ATTACHED
+<br>=======================
+<br>
+<br>Last date to receive the names from the department/ school/ centre to CDC is 18th August 2025, 5:00 PM.
+<br>
+<br>========================
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

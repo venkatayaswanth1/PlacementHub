@@ -1,0 +1,41 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPO<br>
+<b>Company</b> : SRI-NOIDA<br>
+<br>SRI-NOIDA  has extended the offer to the following student(s):
+<br>
+<br>ADAVATH THARUN KUMAR - 22CS10001
+<br>
+<br>ADITYA AGARWAL - 22EC10004
+<br>
+<br>MD MUTAHHIR AZAM - 22IE10029
+<br>
+<br>RATAN KUMAR - 22EC10067
+<br>
+<br>SAVALAPURAPU ROSHAN - 22CS10068
+<br>
+<br>The students are advised to give offer acceptance by 15.08.2025.
+<br>
+<br>(For more details, check your email ID.)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

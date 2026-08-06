@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : TATA CAPITAL LTD.<br>
+<br>Interested students are advised to fill out the google form to provide additional details for TATA CAPITAL.
+<br>
+<br>Link-: https://docs.google.com/forms/d/e/1FAIpQLSd4tbBjFBppu6MUP5NQWweDZTeFMQoqoy77uzGGvszi_zFDhQ/viewform?usp=publish-editor
+<br>
+<br>Please note that the deadline to fill the form is until 11:59 PM, 30th January. It is mandatory to fill the form to be eligible for further consideration.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

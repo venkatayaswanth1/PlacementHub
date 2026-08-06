@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : NASIKO<br>
+<br>PFA the Interview Shortlists for Nasiko - Backend Engineer and Backend Engineer II Role.
+<br>
+<br>Interview Date and Time will be conveyed soon to all the shortlisted students.
+<br>
+<br>POC : Abhijeet (+91 6398 985 179), Krishna (+91 70754 85176)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

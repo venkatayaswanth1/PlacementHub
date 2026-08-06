@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : CRL-BEL, Bengaluru<br>
+<br>PFA the shortlist from CRL-BEL, Bengaluru.
+<br>
+<br>All the shortlisted students are advised to check their CDC registered email id for detail information.
+<br>
+<br>Date of written test/ interview will be notified in due course.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

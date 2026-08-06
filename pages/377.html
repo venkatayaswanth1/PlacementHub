@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : PATTERN (Software Engineering Intern)<br>
+<br>Those who have registered on erp, kindly fill-up the additional form details below by 5.00pm 29th July,2025.
+<br>
+<br>https://docs.google.com/forms/d/e/1FAIpQLSeuzlEQuwoDCb2pIddSMbsCnfYx09NFqaWB-rhytl_eqPIPBQ/viewform?usp=header
+<br>
+<br>Fill-up the additional details form, failing which your application stands cancelled within the given deadline. No further extensions will be provided.
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

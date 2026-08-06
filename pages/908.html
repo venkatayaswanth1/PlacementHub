@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Ola<br>
+<br>PFB the extended test shortlist for OLA SDE profile for test scheduled at 7:00 PM. 
+<br>22MI3PE02
+<br>23MI10016
+<br>23MI10028
+<br>23NA10007
+<br>23NA10018
+<br>23NA10033
+<br>23NA10041
+<br>23NA10045
+<br>
+<br>Room Alloted to this students is NR224
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : General<br>
+<b>Company</b> : Various Companies<br>
+<br>All students are hereby informed that, upon receiving an offer from an organization or company, they will be blocked on the ERP system against that specific company.
+<br>
+<br>Please note that, comprehensive profile-based blocking may not always be feasible.
+<br>
+<br>In this regard, students are advised not to worry regarding the same and company will share the offer letter as per their selected roles.
+<br>
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

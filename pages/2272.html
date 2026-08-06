@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : VEDANTA LIMITED<br>
+<br>Students interested and applied for VEDANTA LIMITED need to mandatorily fill the form below.
+<br>
+<br>Link : https://docs.google.com/forms/d/e/1FAIpQLScR0SqQcq7mlLsr-3c6PuRIpNjm9njdCPLHy9QycUE7fGE9Yw/viewform?usp=sharing&amp;ouid=103370108609826605249
+<br>
+<br>Deadline -: 19th December 11:59 PM
+<br>
+<br>Interested and eligible students are advised to fill within the given deadline. No further extensions will be given.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

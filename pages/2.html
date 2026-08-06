@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Travelling window for potentially eligible students for Internship 2025-26<br>
+<br>All the students who will register for CDC internship process of 2025-26 may note:
+<br>
+<br>Travel window for the potentially eligible students for internship will be from 11th July to 13th July, 2025.
+<br>
+<br>All the tests (if conducted) before the travel window time will be conducted online, that means students can write their tests / process from their respective locations.
+<br>
+<br>From 18th July 2025 onwards all the tests may be conducted at Nalanda and student must come to Nalanda to write the test / process, otherwise their candidature will be treated as null and void.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

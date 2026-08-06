@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Qualcomm<br>
+<br>CV submission for Qualcomm is now open for all roles.
+<br>
+<br>The deadline to apply is 6:00 PM, 17th July 2025 (Thursday).
+<br>
+<br>Interested students are advised to apply through the ERP portal within the given deadline. No further extensions will be provided.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

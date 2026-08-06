@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Schedule<br>
+<b>Company</b> : CDC Placement schedule for 9th October<br>
+<br>All students eligible for placement are advised to take note of the schedule for 9th October:
+<br>
+<br>[Test] Squarepoint Capital - SDE, Desk Quant Analyst, Infrastructure Engineer (9th October) 
+<br>
+<br>Infrastructure Engineering : From 6:00 PM
+<br>Desk Quant Analyst : From 8:00 PM 
+<br>SDE : From 9:30 PM 
+<br>
+<br>Venue : Nalanda
+<br>
+<br>POC : Pranjal (7988270765), Harsh (9532820930)
+<br>
+<br>
+<br>Students are advised to reach the venue 15 minutes prior for all the assessments. Room allocation will be released soon.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,44 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : TVS Motor<br>
+<br>Please find below the shortlist of Personal Interview round for Design Engineer- Electrical role of TVS Motor. 
+<br>
+<br>25EE63R19
+<br>25EE62R12
+<br>25AT62R05
+<br>25AT62R06
+<br>25AT62R10
+<br>25EC65R01
+<br>25EE61R17
+<br>25AT62R07
+<br>25AT62R01
+<br>25EE62R03
+<br>25EE61R10
+<br>25AT62R11
+<br>
+<br>Time &amp; Date: 3:00 PM-8:30 PM, 3rd April, 2026
+<br>Venue: Online
+<br>POC: Vatsal Sethi(8306785651), Deepak(9024950269)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

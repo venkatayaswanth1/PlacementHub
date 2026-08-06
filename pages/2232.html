@@ -1,0 +1,45 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : NIRMAAN<br>
+<br>PFA shortlist for Nirmaan :
+<br>
+<br>24RJ60R06
+<br>24MT60R21
+<br>24MT60R06
+<br>24ME63R32
+<br>24ID60R33
+<br>24EE63R05
+<br>24EC63R20
+<br>24AR60R48
+<br>22MT10016
+<br>22EX10018
+<br>21QE30001
+<br>21MT30022
+<br>21AG36002
+<br>21AG32002
+<br>21ME36006
+<br>
+<br>Note: Students who are out of the process are strictly being instructed not to appear for any other interview processes even if your roll number is listed in the sheet.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

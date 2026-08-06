@@ -1,0 +1,47 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Multiple Companies<br>
+<br>The following companies CV Submission has been extended till 11:59 PM, 8th November, 2025. Interested and eligible students are advised to apply.
+<br>
+<br>1. APPLE [Profile: Software Development Engineer, both roles]
+<br>
+<br>2. TIRUPATI GLOBAL DMCC [Profile: Quant Researcher, Quant Developer]
+<br>
+<br>3. MCKINSEY &amp; COMPANY [Profile: Business Analystr]
+<br>
+<br>4. KOTAK MAHINDRA BANK LTD. [Profile: Data Scientist and Data Analyst role]
+<br>
+<br>4. EIGENWAVE [Profile: Software Engineer]
+<br>
+<br>5. RISA LABS INC.  [Profile: All Roles ]
+<br>
+<br>6. UPSWING FINANCIAL TECHNOLOGIES PVT. LTD. [Profile: Cloud Platform Engineer, Software Development Engineer (SDE)]
+<br>
+<br>7. EMA UNLIMITED [Profile: ML Engineer, SDE]
+<br>
+<br>8. JUPITER MONEY [Profile: SDE 1]
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

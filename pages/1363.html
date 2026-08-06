@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : NOBROKER TECHNOLOGIES SOLUTIONS PVT LTD<br>
+<br>All the eligible candidates for NOBROKER TECHNOLOGIES SOLUTIONS PVT LTD are being informed to fill out the form link provided without fail by 11:59 PM, 11th November 2025.
+<br>
+<br>Link: https://forms.gle/CrVQnXnxx89yJ9r57
+<br>
+<br>Please keep following the CDC Notice Board for further instructions.
+<br>
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

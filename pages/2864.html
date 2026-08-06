@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Schedule<br>
+<b>Company</b> : Selection of Placement Committee Member 2026-27<br>
+<br>This is to inform you that Personal Interview for Selection for Placement Committee Member 2026-27 will be held on 7th &amp; 8th May, 2026.
+<br>
+<br>All the shortlist students for PI are advised to organise their travel plan (if any) accordingly.
+<br>
+<br>Exact timing and other details related to PI will be notified later.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

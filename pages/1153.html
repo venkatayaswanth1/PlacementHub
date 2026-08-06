@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : TESLA<br>
+<br>Please note that the test for TESLA for all the roles is scheduled on 2nd November, 2025 (Today) from 7 PM onwards. 
+<br>
+<br>Students are required to carry their Institute ID card/Medical Book and must report 15 minutes prior to the time.
+<br>
+<br>Room allocation will be released shortly.
+<br>
+<br>POC: Alok (7257994649), Harsh (9532820930)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

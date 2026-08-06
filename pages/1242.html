@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Multiple Companies<br>
+<br>The following companies are open for CV Submission till 11:59 PM, 7th November, 2025. Interested and eligible students are advised to apply.
+<br>
+<br>1. TIRUPATI GLOBAL DMCC [Profile: Quant Researcher, Quant Developer]
+<br>
+<br>2. MCKINSEY &amp; COMPANY [Profile: Business Analyst]
+<br>
+<br>3. KOTAK MAHINDRA BANK LTD.[Profile:Data Scientist and Data Analyst role]
+<br>
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

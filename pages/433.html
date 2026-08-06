@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Limechat<br>
+<br>PFB the extended shortlist for Limechat:
+<br>
+<br>22CH3FP35
+<br>22MI3EP14
+<br>22MT30037
+<br>23AE10028
+<br>23CE10056
+<br>23ME10014
+<br>23MI10027
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

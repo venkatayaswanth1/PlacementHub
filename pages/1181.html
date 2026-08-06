@@ -1,0 +1,42 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : Multiple Companies<br>
+<br>Please note that the Career Seminar under the Indiaââ¬ââ¬Japan Talent Bridge 2025 will be held on 4th November 2025 from 2:30 PM onwards in an offline mode.
+<br>
+<br>Reporting Time: 2:30 PM
+<br>
+<br>Venue: Netaji Auditorium
+<br>
+<br>The event is being organized in collaboration with Deloitte, Talendy by Tech Japan, and the Ministry of Economy, Trade and Industry (METI), Japan. Representatives from the following companies will be participating:
+<br>
+<br>AGC Inc.
+<br>Nippon Steel Corporation
+<br>Ishihara Sangyo Kaisha Ltd.
+<br>TechMatrix Corporation
+<br>Suzuyo System Technology Co. Ltd.
+<br>Order Busters Co. Ltd.
+<br>
+<br>Students are advised to be present 15 minutes prior to the scheduled time.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

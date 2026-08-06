@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CV verification for placement<br>
+<br>This is to inform all students that Physical CV Verification will be commenced from 17-09-2025. You are advised to regularly check the CDC Notice Board for your roll number and the allocated time slot for verification.
+<br>
+<br>Kindly ensure that you report at the designated time. No alternative slot will be provided in case of absence, and your verification will remain incomplete.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

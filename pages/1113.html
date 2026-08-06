@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : NOMURA<br>
+<br>CV submission for NOMURA is now open for the roles of Global Markets Analyst and Risk Management Analyst - Model Validation Group.
+<br>
+<br>The deadline to apply is 11:59 PM, 31st October 2025.
+<br>
+<br>All students applying for more than one role must mandatorily fill the Google Form attached: https://forms.gle/mpcQrK2wwgfVPRdn7
+<br>
+<br>Interested and eligible students are advised to apply. No further extensions will be given.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

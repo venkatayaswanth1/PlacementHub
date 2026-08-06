@@ -1,0 +1,39 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Multiple Companies<br>
+<br>The CV submission for the following companies is open till 11:59 PM, 18th November 2025:
+<br>
+<br>1. FINBOX [Profile: Data Scientist, Software Engineer-Backend]
+<br>
+<br>2. PWC AC [Profile: Associate]
+<br>
+<br>3. PETRONET LNG LIMITED [Profile: Graduate Engineer Trainee (GET)]
+<br>
+<br>Interested and eligible students are advised to apply. 
+<br>
+<br>No further extensions will be given.
+<br>
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : TEXAS INSTRUMENTS<br>
+<br>CV submission for TEXAS INSTRUMENTS is now open for the follownig roles:
+<br>1. Embedded Software Engineer
+<br>2. Signal Processing Engineer
+<br>3. Digital Engineer
+<br>4. Analog Engineer
+<br>
+<br>The deadline to apply is 11:59 PM, 30th October 2025.
+<br>
+<br>All students applying for more than one role must mandatorily fill the Google Form attached: https://forms.gle/9kFgSi6e8PKaYiuT7
+<br>
+<br>Interested and eligible students are advised to apply. No further extensions will be given.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

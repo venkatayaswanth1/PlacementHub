@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : PWC AC<br>
+<br>CV Submission for PWC AC for Advisory - Business &amp; Supply Chain Operations (BSCO) role is opened till 2:00 AM, 26th November, 2025.
+<br>
+<br>All the applicants are requested to fill the form for additional details and apply on the portal link attached below:
+<br>1. Google Form: https://forms.gle/nQeYZNUPDoWsQEaT6
+<br>2. Company Portal: https://jobs-ta.pwc.com/global/en/job/663933WD/Acceleration-Center-Advisory-Business-Supply-Chain-Operations-BSCO-Associate-2026
+<br>
+<br>NOTE: Students are required to apply using their CDC-registered email ID on both the company portal and the Google Form.
+<br>Interested and eligible students are advised to apply within the given deadline. No further extension will be provided.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

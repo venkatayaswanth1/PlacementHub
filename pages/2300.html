@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CDC Placement Process_2025-26<br>
+<br>CDC Placement process (Second Phase) -
+<br>
+<br>CV Portal in ERP for CV building / CV editing (for placement) is being started from today (24.12.2025) and will open till 31st December, 2025, 11:59 PM.
+<br>
+<br>Unplaced students who are willing to participate are advised to enroll again in ERP for Second Phase Placement Process Registration.
+<br>
+<br>No further CV editing window will be provided.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

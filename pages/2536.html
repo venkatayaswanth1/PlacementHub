@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : RELIANCE RETAIL<br>
+<br>The Coding Assessment Test of RELIANCE RETAIL will be conducted on 3rd February, 2026 (tomorrow).
+<br>
+<br>Test Timings : 9:30 AM
+<br>Venue : Informed Soon
+<br>
+<br>POC - Dishil (+91 9925492574), Rudra (+91 8235755257)
+<br>
+<br>Note: The candidates attending the PPT will be eligible for the test.
+<br>All shortlisted students are advised to attend the test at the above mentioned time. 
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

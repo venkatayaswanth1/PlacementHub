@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Available Candidates Additional Detials<br>
+<br>All available candidates are requested to fill the following form within the deadline of 11:59 PM 29th Jan.
+<br>
+<br>https://docs.google.com/forms/d/e/1FAIpQLSe7ae-j2lSBdkAX-Y8nI9oVT4VangPNXJxiKe-XQ6zUSnvnCw/viewform?usp=header 
+<br>
+<br>For all the students registered, it is compulsory to fill the following form. 
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

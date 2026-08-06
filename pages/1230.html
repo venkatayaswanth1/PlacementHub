@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : DOUBLETICK | QUICKSELL<br>
+<br>The CV submission of DOUBLETICK | QUICKSELL for the following roles is opened until 11:59 PM, 7th November 2025:
+<br>1. Frontend Engineer - SDE 1
+<br>2. Frontend Engineer - SDE 2
+<br>3. Backend Engineer - SDE 1
+<br>4. Backend Engineer - SDE 2
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

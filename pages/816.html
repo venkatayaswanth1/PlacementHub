@@ -1,0 +1,28 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : All<br>
+<br>CDC is starting placement test process from 4th Oct, 2025.
+<br>Please be available as informed earlier by notice dated 12 Sep.
+<br>GOOD LUCK!!!
+<br>Chairperson, CDC<br>
+
+
+</div>
+</body></html>

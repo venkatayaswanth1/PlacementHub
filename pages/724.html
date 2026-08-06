@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Razorpay<br>
+<br>The Test for Razorpay is scheduled on 7th September, 2025
+<br>
+<br>Reporting Time: 9:30AM
+<br>Test Time: 10 AM - 12 PM
+<br>Venue: NR121, Nalanda Complex 
+<br>
+<br>PoC: Amish (+91 99110 34435), Sreelekshmi (9037546952)
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

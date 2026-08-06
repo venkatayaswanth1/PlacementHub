@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Futures First<br>
+<br>All applicants for Futures First are required to fill the NEW and REVISED form below to be considered for the further steps.
+<br>
+<br>Form: https://forms.office.com/r/3yzSHS1giZ
+<br>Deadline: 9:00 AM, 5th December, 2025
+<br>
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. This is the final deadline, no further extensions will be given.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

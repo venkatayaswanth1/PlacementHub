@@ -1,0 +1,47 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPO<br>
+<b>Company</b> : ORACLE<br>
+<br>ORACLE has extended the offer to the following student(s):
+<br>
+<br>ADITYA GARG - 21MA25013
+<br>
+<br>BANNURU ROHIT KUMAR REDDY - 21CS30011
+<br>
+<br>CHITYALA RAVITEJA - 21CS30016
+<br>
+<br>HARSHIKA GOYAL - 21EC39012
+<br>
+<br>MAYUKH MUKHERJEE - 22EC10094
+<br>
+<br>PASUPULETY CHETHAN KRISHNA VENKAT - 21CS30036
+<br>
+<br>UTTAM KUMAR - 21EC3FP29
+<br>
+<br>VEDANTA HAZRA - 22MA10068
+<br>
+<br>The students are advised to give offer acceptance by 18.08.2025.
+<br>
+<br>(For more details, check your email ID.)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

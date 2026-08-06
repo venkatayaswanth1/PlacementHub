@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : AVISO AI<br>
+<br>The CV submission of AVISO AI for the role of Software Engineer and Data Scientist is extended till 10:00 AM, 21th November 2025.
+<br>
+<br>All the applicants of AVISO AI who have applied for any of the above mentioned roles are required to fill the preference form before 10:00 AM, 21th November 2025.
+<br>
+<br>It is mandatory for all the applicants to fill the form. No further extensions will be provided.
+<br>
+<br>Form Link: https://forms.gle/Pqtmo1Bx6iNDccDM7
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,39 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : Multiple Companies<br>
+<br>The following companies are open for CV Submission till 11:59 PM, 4th November, 2025. Interested and eligible students are advised to apply.
+<br>
+<br>1. JUPITER MONEY (Profile: SDE 1)
+<br>
+<br>2. EMA UNLIMITED (Profile: SDE, ML Engineer)
+<br>
+<br>3. QUADEYE (Profile: Systems Engineer, Quantitative Strategist)
+<br>
+<br>4. URBAN COMPANY (Profile: Senior Category Manager, Senior Category Manager(Dubai))
+<br>
+<br>5. COMMONWEALTH BANK OF AUSTRALIA (Profile: Graduate Data Scientist)
+<br>
+<br>No further extension will be provided.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

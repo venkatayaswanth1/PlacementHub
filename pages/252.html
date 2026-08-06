@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPO<br>
+<b>Company</b> : VISA<br>
+<br>VISA has extended the offer to the following student(s) for systems role:
+<br>
+<br>Sanket Naik - 22EC10093
+<br>
+<br>Sayantan Chakraborty - 22MA10076
+<br>
+<br>Harsh Sinha - 22EE10031
+<br>
+<br>The students are advised to give offer acceptance by 24.07.2026.
+<br>
+<br>(For more details, check your email ID.)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

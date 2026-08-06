@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : ALTRODAV TECHNOLOGIES<br>
+<br>The Round 2 Test for ALTRODAV TECHNOLOGIES is scheduled on 12th October (Sunday). PFA the shortlist for the same.
+<br>
+<br>Reporting Time: 1:00 PM
+<br>Mode: Offline
+<br>Venue: NR121 (Nalanda Classroom Complex)
+<br>
+<br>Test POC: Sanchay (7027000295)
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

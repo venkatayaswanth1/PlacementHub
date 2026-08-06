@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : INMOBI<br>
+<br>Please note that the PPT of INMOBI is scheduled for 26th October 2025 from 11:00 AM at NR121. And, the test for INMOBI is scheduled on 26th October 2025 from 11:59 AM onwards. 
+<br>
+<br>PFA the shortlist for the same.
+<br>
+<br>It is mandatory for shortlisted students to attend the PPT. Students are required to carry their Institute ID card/Medical Book and must report 15 minutes prior to the time.
+<br>
+<br>Room allocation will be released shortly.
+<br>
+<br>POC: Pranjal (7988270765), Sumanth (7406826440)
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

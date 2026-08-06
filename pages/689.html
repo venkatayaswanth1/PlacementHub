@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : CV Building and Soft-Skills Training<br>
+<br>Career Development Centre, IIT Kharagpur invites students eligible for the upcoming CDC Placements to the CV Building and Soft-Skills Training in Association with Cantilever Labs. 
+<br>
+<br>Please find the attached details-
+<br>
+<br>Date &amp; Time: 1st and 2nd September (Monday and Tuesday) 
+<br>Time: 6:00 PM
+<br>Venue: Vikramshila Foyer (V1)
+<br>
+<br>
+<br>For any updates regarding Internship and Placement processes keep following the CDC&nbsp;Notice&nbsp;Board<br>
+
+
+</div>
+</body></html>

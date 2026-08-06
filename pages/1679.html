@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : Multiple Companies<br>
+<br>The CV submission of following Companies have been extension till 11:59 PM, 27th November 2025.
+<br>1. HPE
+<br>2. HPCL
+<br>3. JAPAN METEOROLOGICAL CORPORATION
+<br>4. KLA
+<br>5. NAGARRO
+<br>6. ORMAE
+<br>7. PIRAMAL FINANCE LIMITED
+<br>8. DAERO
+<br>9. DOUBLETICK | QUICKSELL
+<br>10. BANK OF AMERICA
+<br>11. SALESCODE.AI
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

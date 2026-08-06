@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Petronet<br>
+<br>The Test for Petronet is Scheduled from 1:00 PM.
+<br>
+<br>PFA the test Shortlist for Petronet. 
+<br>Venue: NR121, Nalanda Classroom Complex
+<br>Mode: Pen &amp; Paper Test
+<br>
+<br>POC: Asmita (8889922442), Vatsal Gutgutia(9234457393)
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

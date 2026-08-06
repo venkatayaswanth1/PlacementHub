@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : MULTIPLE COMPANIES<br>
+<br>PFA shortlist for MULTIPLE COMPANIES as follows:
+<br>
+<br>1. Auxo AI [Profile: AI Engineer]
+<br>
+<br>2. SLIKSYNC [Profile: APM, Data Analyst]
+<br>
+<br>3. Octagos [Profile: Full Stack Developer]
+<br>
+<br>Note: Students who are out of the process are strictly being instructed not to appear for any other interview processes even if your roll number is listed in the sheet.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

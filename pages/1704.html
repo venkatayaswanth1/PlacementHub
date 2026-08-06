@@ -1,0 +1,43 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Schedule<br>
+<b>Company</b> : Petronet<br>
+<br>The shortlisted candidates for written test of Petronet are advised to take a note of the followings -
+<br>
+<br>Venue: NR121, Nalanda Classroom Complex
+<br>Time : 1 PM
+<br>Mode: Pen &amp; Paper Test
+<br>
+<br>POC: Asmita (8889922442), Vatsal Gutgutia(9234457393)
+<br>
+<br>General Instruction:
+<br>
+<br>1. Open the Question booklet once instructed. 
+<br>2. All questions carry equal marks. 
+<br>3. No negative marking. 
+<br>4. Mark answers on OMR sheet provided separately. 
+<br>5. More than one answer shall be deemed as wrong answer. 
+<br>6. Use of calculators allowed. However, usage of Mobile and Laptop is strictly prohibited. 
+<br>7. Use only Blue/Black Ball Pen.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

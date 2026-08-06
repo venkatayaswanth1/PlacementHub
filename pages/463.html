@@ -1,0 +1,43 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Tests of various companies<br>
+<br>1) [TEST] Trilogy
+<br>
+<br>Date: August 7th, 2025 (Thursday)
+<br>Window : 5:00 PM - 7:00 PM
+<br>Mode: Online
+<br>
+<br>POC : Shreyashââ¬ª(+91 9834266207ââ¬¬), Harshââ¬ªââ¬ª(+91 9532820930ââ¬¬ââ¬¬)
+<br>
+<br>2) [TEST] British Petroleum
+<br>
+<br>Date: August 7th, 2025 (Thursday)
+<br>Window : 8 PM to 9 PM
+<br>Mode: OFFLINE
+<br>
+<br>POC : Mehul  ââ¬ªââ¬ªââ¬ª(+91 9760046080ââ¬¬ââ¬¬)
+<br>
+<br>Note: Room allotment will be released soon. Please report to the venue 15 mins before the start time.&nbsp;
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

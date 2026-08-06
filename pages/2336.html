@@ -1,0 +1,56 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Sai Group<br>
+<br>Please find below the test shortlist for Sai Group.
+<br>
+<br>22CS10043
+<br>24CS60R04
+<br>24CS60R22
+<br>24CS60R40
+<br>24CS60R44
+<br>24CS60R53
+<br>24CS60R58
+<br>24CS60R60
+<br>24CS60R61
+<br>24CS60R62
+<br>24CS60R65
+<br>24CS60R70
+<br>24CS60R75
+<br>24CS60R81
+<br>24CS60R82
+<br>24CS60R84
+<br>24AI60R01
+<br>24AI60R03
+<br>24AI60R10
+<br>24AI60R17
+<br>24AI60R22
+<br>24AI60R24
+<br>24AI60R34
+<br>24AI60R38
+<br>24AI60R43
+<br>
+<br>Location : Respective Locations
+<br>Time : 6 : 00 PM, 8th January 2026
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : BLACKROCK<br>
+<br>Everyone who has applied any of the two roles at Blackrock are requested to fill this form before 2:00 PM, 22nd July 2025. 
+<br>Link: https://forms.gle/bQrXfA65fcKV4wig6
+<br>Note: Your application will not be considered if you don't fill this form before the deadline
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

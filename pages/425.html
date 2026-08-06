@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : PPT/Workshop/Seminars etc<br>
+<b>Company</b> : Axxela<br>
+<br>The PPT of Axxela is as per the following schedule:
+<br>
+<br>Date: 2nd August, 2025 (Today)
+<br>Time: 6:00 PM Onwards
+<br>Mode: NR221, OFFLINE
+<br>
+<br>NOTE: It is mandatory for all interested candidates to attend the PPT. Please reach the venue 15 mins in advance.
+<br>
+<br>POC: Harsh(9532820930)
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

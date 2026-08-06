@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CDC Internship Process_2025-26<br>
+<br>All the potential eligible internship students including PG-1st year students who will go for compulsory internship 2026 summer are advised to kindly note the followings:
+<br>
+<br>CV Portal in ERP for CV building / CV editing (for Internship) has been extended and remain open till 9th January, 2026, 11:59 PM.
+<br>
+<br>a) By enrolling in the CDC Internship portal, you are also confirming that, you will go for compulsory internship in the year 2026 from May to Mid-July 2026 (as per academic schedule).
+<br>
+<br>b) Please pass this message to your fellow mates who will go for compulsory internship in the year 2026 summer.
+<br>
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

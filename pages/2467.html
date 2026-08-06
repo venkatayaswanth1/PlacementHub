@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : NAV Fund<br>
+<br>The CV submission of NAV fund for all Roles have been extended till 11:59 PM, 24th January 2026.
+<br>
+<br>Interested and eligible students are advised to fill the following form: 
+<br>
+<br>https://forms.gle/2ThT7BTEM1r6669c8 
+<br>
+<br>To get considered your application, the location will be in jaipur, so fill only if you are interested. 
+<br>
+<br> No further extensions  will be given.
+<br>
+<br>CDC, IIT Kharagpur apply within the given deadline. No further extensions will be given.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CV Building for Internship 2025-26<br>
+<br>All the potential eligible students of compulsory Internship (who will go for internship 2026 summer) are advised to kindly note the following:
+<br>
+<br>CV Portal in ERP for CV building (for Internship) has been opened again till 7th July 2025, 5:00 pm.
+<br>
+<br>This is the final chance to edit your CV. No further extension will be given.
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

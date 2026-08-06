@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : PWC AC<br>
+<br>CV Submission for PWC AC for a newly opened role (Advisory - Associate) is opened till 02:00 PM, 27th November, 2025.
+<br>
+<br>All the applicants are required to fill the google form for additional details and apply on the portal link attached below:
+<br>1. Google Form: https://forms.gle/hgYfMjzsAeho4wfu5
+<br>2. Company Portal: https://jobs-ta.pwc.com/global/en/job/663954WD/Acceleration-Center-Advisory-Associate-2026
+<br>
+<br>NOTE: Students are required to apply using their CDC-registered email ID on both the company portal and the Google Form.
+<br>Interested and eligible students are advised to apply within the given deadline. No further extension will be provided.
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

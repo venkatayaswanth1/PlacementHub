@@ -1,0 +1,39 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : General Mills<br>
+<br>PFA the interview shortlist for General Mills
+<br>
+<br>22IM30015
+<br>22CH3EP18
+<br>22ME10047
+<br>22IM30026
+<br>22CH3EP02
+<br>22ME33009
+<br>22MF3IM22
+<br>22EE38006
+<br>22ME36005
+<br>22IM30013
+<br>22IM3FP33
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

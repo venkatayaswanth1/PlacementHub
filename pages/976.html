@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Schedule<br>
+<b>Company</b> : CDC Placement schedule for 16th October<br>
+<br>All students eligible for placement are advised to take note of the schedule for 16th October:
+<br>
+<br>[PPT] Google (6:00 PM - 7:00 PM) 
+<br>POC : Rumana (7356712900) 
+<br>
+<br>[TEST] SAMSARA (7:30 PM - 9:00 PM)
+<br>POC : Amish (9911034435) , Biplab (7004097392)
+<br>
+<br>[PPT] ARPWOOD CAPITAL (9:00 PM - 10:00 PM)
+<br>POC : Pranjal (7988270765)
+<br>
+<br>Note : The room allocation for the test will be shared along with other relevant details prior to the test. 
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

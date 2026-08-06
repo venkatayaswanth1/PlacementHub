@@ -1,0 +1,48 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Nomura<br>
+<br>PFB the shortlist for Nomura wholesale strategy.
+<br>
+<br>22BT3FP32
+<br>22BT3FP36
+<br>22BT3FP51
+<br>22CE10003
+<br>22CE3FP26
+<br>22CE3FP46
+<br>22EE3FP23
+<br>22ME30076
+<br>22MI31027
+<br>22MT30028
+<br>23AE10017
+<br>23CE10037
+<br>23CH10091
+<br>23HS10004
+<br>23IM10034
+<br>23IM10049
+<br>23ME10047
+<br>23MF10014
+<br>23MI10037
+<br>23NA10027
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

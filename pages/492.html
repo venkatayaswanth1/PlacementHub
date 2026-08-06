@@ -1,0 +1,30 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Eternal<br>
+<br>Test Shortlist will be released shortly.
+<br>
+<br>Date: August 9th, 2025 (Saturday)
+<br>Test timings: 7:00 PM
+<br>Software (SDE) 
+<br>Mode: OFFLINE<br>
+
+
+</div>
+</body></html>

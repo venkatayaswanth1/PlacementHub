@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : PPO<br>
+<b>Company</b> : GODREJ PROPERTIES<br>
+<br>GODREJ PROPERTIES has extended the offer to the following student(s):
+<br>
+<br>Prinaka Chakraborty - 22CE10055
+<br>
+<br>Sunetra Pratihar - 22CE10080
+<br>
+<br>Pihu Singh - 22CE10049
+<br>
+<br>
+<br>The students are advised to give offer acceptance by 26.09.2025.
+<br>
+<br>(For more details, check your email ID.)
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

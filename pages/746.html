@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Warner Bros. Discovery<br>
+<br>PFA the interview shortlist for Warner Bros. Discovery for the Software Engineering role:
+<br>
+<br>23CS10050
+<br>23MA10040
+<br>23MA10041
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

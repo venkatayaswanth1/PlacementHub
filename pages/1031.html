@@ -1,0 +1,42 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : Multiple Companies<br>
+<br>CV submission for the following companies has been extended till 11:59 PM, 24th October, 2025.
+<br>
+<br>1. ACCENTURE AEH [ Profile: Advanced Engineering Analyst ] 
+<br>
+<br>2. ACCENTURE [ Profile: S&amp;C Delivery Associate ]
+<br>
+<br>3. AMERICAN EXPRESS [ Profile: Management Trainee - Data Science &amp; Analytics ]
+<br>
+<br>4. CAPITAL ONE [ Profile: Associate (Software Engineer), Associate (Business Analyst) ]
+<br>
+<br>5. IXANA [ Profile: Embedded Software Engineer, IC Design Engineer I, IC Design Engineer II, Jr Silicon Engineer III, Silicon Engineer ] 
+<br>
+<br>6. MEESHO LIMITED [ Profile: Software Development Engineer - I, Senior Associate - Business Management, Data Scientist I, Product Designer - I ]
+<br>
+<br>This is the final extension. Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

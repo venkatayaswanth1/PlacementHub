@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : GENERAL MILLS<br>
+<br>PFA the Test Shortlist for General Mills.
+<br>
+<br>Test Venue: Nalanda
+<br>Mode: Offline
+<br>Time: 6.30PM - 7.30PM
+<br>Test Duration: 1 hour 
+<br>
+<br>PoC:  Pranjal (+91 79882 70765)
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

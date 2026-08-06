@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : FedEx<br>
+<br>PFA the shortlist for FedEx. 
+<br>
+<br>Location: Respective Location. 
+<br>Time: Will be notified through the whatsapp Group. 
+<br>
+<br>Whatsapp Group Link: https://chat.whatsapp.com/FGm6dAatc9bHBwTCb4nFoG?mode=hqrt2
+<br>
+<br>There is a possibility that interviews will happen tomorrow morning, about the clarity, please join the group. 
+<br>
+<br>PoC: Heramb (9834458336)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

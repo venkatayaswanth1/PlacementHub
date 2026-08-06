@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : AWL, Inc.<br>
+<br>PFB the extended shortlist of AWL, Inc.:
+<br>
+<br>22CE3FP50
+<br>22IM30026
+<br>22ME33011
+<br>22ME3AI34
+<br>22ME3FP22
+<br>23CS10049
+<br>23EE10063
+<br>23MA10030
+<br>23MA10071<br>
+
+
+</div>
+</body></html>

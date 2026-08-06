@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : TESLA<br>
+<br>Kindly note that the test for TESLA for all the roles will be scheduled in 2 batches as follows:
+<br>
+<br>Batch-1 : 7 PM - 8 PM
+<br>Batch-2 : 8 PM - 9 PM
+<br>
+<br>PFA the list of students from Batch-1 who are required to report to their respective allocated rooms. The test links for Batch-2 will be shared shortly.
+<br>
+<br>Students are required to carry their Institute ID card/Medical Book and must report 15 minutes prior to the time.
+<br>
+<br>Room allocation will be released shortly.
+<br>
+<br>POC: Alok (6299042184), Harsh (9532820930)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

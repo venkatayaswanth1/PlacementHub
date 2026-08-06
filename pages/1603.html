@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : RISA LABS INC<br>
+<br>This is to inform all students that the assignment submission deadline for RISA LABS INC (for all roles) has been extended till 5:00 PM, 26th November 2025 (today).
+<br>
+<br>The submission links for each role will be shared shortly.
+<br>
+<br>Students are advised to regularly check the official CDC noticeboard for further updates regarding placement activities.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

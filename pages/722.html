@@ -1,0 +1,36 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Diageo<br>
+<br>PFB the Interview shortlist for Diageo
+<br>22EE38017
+<br>22HS23002
+<br>22HS23016
+<br>22IE35002
+<br>22IM30004
+<br>22IM30008
+<br>22IM30033
+<br>22MA25007
+<br>22NA3AI41
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

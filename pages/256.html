@@ -1,0 +1,39 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Schedule<br>
+<b>Company</b> : Uber<br>
+<br>Please find attached the room allocation for Uber
+<br>
+<br>
+<br>Test Date: 23-07-2024
+<br>Test Window: 8:00 PM - 9:30 PM
+<br>Venue: Nalanda
+<br>Test POC: Yash Raj (6264949043), Dhruv (7248955444)
+<br>
+<br>Few instructions:
+<br>1. All the virtual cameras and OBS are to be uninstalled from both the local system and extensions in the browser.
+<br>2. The login window is from 8:00 PM - 8:30 PM
+<br>
+<br>Students are advised to reach the venue 15 minutes prior to the test.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

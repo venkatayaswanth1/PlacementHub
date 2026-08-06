@@ -1,0 +1,30 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Result<br>
+<b>Company</b> : Day_2 Internship Offers 2025-26<br>
+<br>PFA the result of Day 2 of Internship 2025-26.
+<br>
+<br>Those who have got single offer, that offer will be treated as deemed accepted.
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

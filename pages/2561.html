@@ -1,0 +1,35 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Result<br>
+<b>Company</b> : ENGINEERS INDIA LIMITED<br>
+<br>Following candidates have been selected by Engineers India Limited.
+<br>
+<br>ADITYA VISHWANATH GOLEWAR - 21CH3PE02
+<br>
+<br>CHITIKESH SAI NAGA RAJU - 21AR10009
+<br>
+<br>
+<br>Those who have got single offer, that offer will be treated as deemed accepted.
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

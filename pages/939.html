@@ -1,0 +1,31 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Graviton Research Capital<br>
+<br>Please find attached the room allocation for Quantitative Researcher role. The test is scheduled from 3:30 PM to 4:30 PM.
+<br>
+<br>This would be a pen paper test. Students are required to carry their Institute ID card/Medical Book and must report 15 minutes prior to the time.
+<br>
+<br>POC: Aman (8130306059), Roquiya (7477017679)
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

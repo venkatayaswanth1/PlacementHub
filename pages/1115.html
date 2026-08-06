@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : SEDEMAC MECHATRONICS LIMITED<br>
+<br>The CV submission for SEDEMAC MECHATRONICS LIMITED for the following roles is extended until 11:59 AM, 31st October 2025.
+<br>
+<br>1. Engineer, Electronic Hardware
+<br>2. Engineer, R&amp;D (Rnd-SysE-COE-AppE-CSA) and Engineer, Test Automation	
+<br>3. Engineer, Embedded Software
+<br>4. Lead Engineer, Manufacturing Engineering
+<br>5. Engineer, Manufacturing Engineering
+<br>6. Lead Engineer, R&amp;D (R&amp;D-SysE-COE-AppE-CSA)
+<br>7. Lead Engineer, Electronic Hardware &amp; Lead Engineer, PCB Design
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. No further extensions will be given.
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

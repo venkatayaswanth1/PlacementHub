@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : PLUTUS RESEARCH PVT LTD<br>
+<br>Please find attached the room allocation for the assessment of PLUTUS RESEARCH PVT LTD for Trading Systems Developer and Quantitative Analyst role.
+<br>
+<br>The test is scheduled from 9:30 PM onwards at Nalanda Classroom Complex. Students are required to carry their Institute ID card/Medical Book and are advised to reach the venue 15 minutes prior to the time.
+<br>
+<br>Students might have already received the instructions for the test over email.
+<br>
+<br>POC: Alok (6299042184), Sanchay (7027000295),
+<br>
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

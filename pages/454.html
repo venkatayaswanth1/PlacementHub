@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Ivycap Ventures<br>
+<br>Please find attached the room allotment for Ivycap.
+<br>
+<br>Date: August 5th, 2025 (Tuesday)
+<br>Test timings: 6:00 PM-7:30 PM
+<br>Mode: OFFLINE
+<br>
+<br>POC: Harsh ââ¬ª(+91 9532820930ââ¬¬), Mehul ââ¬ª(+91 9760046080ââ¬¬)
+<br>
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Pull Logic<br>
+<br>Final deadline to fill this questionnaire is 11:59 PM of 12-09-2025.
+<br>
+<br>https://docs.google.com/forms/d/1eHse_OMykPzr6-c7UH02kqqbpHF3ai6B7q4mjru0eKM/viewform?edit_requested=true
+<br>
+<br>Submission of this questionnaire is important for consideration of the candidates who have applied for it.
+<br>
+<br>No further extension will be provided 
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

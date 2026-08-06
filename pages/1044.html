@@ -1,0 +1,32 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : MPHASIS<br>
+<br>The CV submission for MPHASIS is extended till 9.00 AM 25.10.2025.
+<br>
+<br>The interested students are requested to apply through ERP.
+<br>
+<br>No further extension would be provided.
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : WARNER BROS. DISCOVERY<br>
+<br>All the eligible candidates for WARNER BROS. DISCOVERY are being informed to register on the link provided via email without fail by 1:00 PM, 11th November 2025. The deadline will not be extended.
+<br>
+<br>Please keep following the CDC Notice Board for further instructions.
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

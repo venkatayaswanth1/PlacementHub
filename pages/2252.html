@@ -1,0 +1,29 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : CV Submission<br>
+<b>Company</b> : CENTRAL RESEARCH LABORATORY, BHARAT ELECTRONICS LIMITED<br>
+<br>The CV submission CENTRAL RESEARCH LABORATORY, BHARAT ELECTRONICS LIMITED is opened till 11:59 PM, 15th December.
+<br>
+<br>Interested and eligible students are advised to apply within the given deadline. This is the final deadline. No further extensions will be given.
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

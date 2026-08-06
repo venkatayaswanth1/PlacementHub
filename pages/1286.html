@@ -1,0 +1,38 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : Accenture AEH<br>
+<br>Type : PLACEMENT
+<br>Subject : Urgent
+<br>Company : Accenture AEH
+<br>
+<br>The test for Accenture AEH is scheduled from 12:00 PM onwards at NR 221, Nalanda Classroom Complex. Please find attached the shortlist for the same.
+<br>
+<br>Note: Students are required to carry a hard copy of their admit card (sent to them) and a printout/original copy of their PAN Card for verification.
+<br>
+<br>Students are required to carry their Institute ID card/Medical Book and are advised to reach the venue 15 minutes prior to the time.
+<br>
+<br>
+<br>POC: Sanchay (7027000295) , Mehul (9760046080)
+<br> 
+<br>CDC,&nbsp;IIT&nbsp;Kharagpur<br>
+
+
+</div>
+</body></html>

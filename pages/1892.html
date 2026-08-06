@@ -1,0 +1,48 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : INNOVACCER<br>
+<br>PFB the extended shortlist of INNOVACCER
+<br>
+<br>21AR10003
+<br>21AR10005
+<br>21AR10015
+<br>21AR10037
+<br>21AR10040
+<br>21HS23012
+<br>21IM30024
+<br>21MA20003
+<br>21ME31011
+<br>22AE10047
+<br>22AG10053
+<br>22GG10046
+<br>22HS10004
+<br>22HS10049
+<br>22IE10009
+<br>22IE10021
+<br>22PH10043
+<br>24BT60R19
+<br>24BT60R21
+<br>24CP61019
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

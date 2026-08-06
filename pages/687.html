@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : General Mills<br>
+<br>PFB the extended interview shortlist for General Mills
+<br>
+<br>22ME31044
+<br>22CH30021
+<br>22EE38024
+<br>22IE35003
+<br>22IM30030
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

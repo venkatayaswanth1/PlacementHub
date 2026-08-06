@@ -1,0 +1,33 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : CDC Placement process 2025-26<br>
+<br>Presently CDC is opening all the depts, specializations (in most cases) against any opportunity being offered by the company.
+<br>
+<br>As placement interviews, tests are being conducted / will be conducted simultaneously, reviewing of each job notification is not possible.
+<br>
+<br>Hence CDC is offering the whole bouquet of interested students before the company to choose the relevant dept/ specialization etc.as decided by them.
+<br>
+<br>Note that CDC has no role in the shortlisting process of any company.
+<br>
+<br>Chairman&nbsp;CDC<br>
+
+
+</div>
+</body></html>

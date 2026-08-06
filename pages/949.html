@@ -1,0 +1,49 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : IBM<br>
+<br>PFB the Interview shortlist for IBM: 
+<br>22AE30034
+<br>22AG3AI06
+<br>22AG3AI08
+<br>22BT30045
+<br>22BT3AI11
+<br>22CE3AI16
+<br>22EC39017
+<br>22EE38023
+<br>22HS3AI24
+<br>22IM30004
+<br>22ME3AI32
+<br>22MT3AI36
+<br>22MT3EP09
+<br>23CH10073
+<br>23CS10018
+<br>23CS10033
+<br>23CY10015
+<br>23EC10067
+<br>23GG10023
+<br>23GG10044
+<br>23MA10049
+<br>23MT10057
+<br>
+<br>Chairman,&nbsp;CDC<br>
+
+
+</div>
+</body></html>

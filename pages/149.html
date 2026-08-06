@@ -1,0 +1,34 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Date extension<br>
+<b>Company</b> : ATLASSIAN<br>
+<br>CV submission for ATLASSIAN for all the roles is extended till 11:59 AM, 17th July, 2025.
+<br>
+<br>It is mandatory for the students to register on the below link as well.
+<br>https://global-invite-atlassian.icims.com/jobs/20885/job
+<br>(Deadline : 11:59 AM, 17th July 2025)
+<br>
+<br>Interested students are advised to apply within the given time. No further extension will be provided.
+<br>
+<br>
+<br>Chairman, CDC<br>
+
+
+</div>
+</body></html>

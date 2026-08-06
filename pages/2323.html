@@ -1,0 +1,46 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : GMDC<br>
+<br>PFB the Interview Shortlist for GMDC.
+<br>
+<br>21MI31034
+<br>21MI3PE01
+<br>21MI31046
+<br>22MI10027
+<br>22MI10034
+<br>24MI62R05
+<br>24MT60R25
+<br>24MT60R21
+<br>24MT60R06
+<br>24MT60R22
+<br>24MT60R04
+<br>24MT60R07
+<br>24MT60R09
+<br>24GG40001
+<br>24GG40028
+<br>24GG40012
+<br>24GG61R12
+<br>24GG61R07
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>

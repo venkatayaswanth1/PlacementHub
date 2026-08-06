@@ -1,0 +1,37 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : INTERNSHIP<br>
+<b>Subject</b> : Urgent<br>
+<b>Company</b> : HONEYWELL<br>
+<br>All the eligible candidate who has apply on CDC portal has received the Test Link for HONEYWELL.
+<br>
+<br>Date : 29th July, 2025 (Today)
+<br>Time : 10:00 PM to 11:00 PM
+<br>Login Window : 30 Minutes
+<br>Venue : Respective Location
+<br>
+<br>Note: Kindly attempt the test within the given timeline.
+<br>
+<br>POC: Sreelekshmi (9037546952), Adeeba (7860139131)
+<br>
+<br>
+<br>Chairman CDC<br>
+
+
+</div>
+</body></html>

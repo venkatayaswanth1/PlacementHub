@@ -1,0 +1,40 @@
+<html><head><script>
+    function printDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+   }
+</script>
+</head><body><center><input type="button" onclick="printDiv('printableArea')" value="Print This Page"></center>
+
+<div id="printableArea">
+
+<b>Type</b>    : PLACEMENT<br>
+<b>Subject</b> : Shortlist<br>
+<b>Company</b> : Lennox<br>
+<br>PFB the interview shortlist for Lennox- Analyst- FEA role.
+<br>
+<br>24NA60R08
+<br>24ME63R24
+<br>24ME63R14
+<br>24ME63R53
+<br>24ME63R09
+<br>24AE60R03
+<br>24ME63R30
+<br>
+<br>Date : 27th February 2026
+<br>VENUE : Respective Location
+<br>
+<br>POC - Bhavy Vaishnav(+91 7597121669)
+<br>
+<br>CDC, IIT Kharagpur<br>
+
+
+</div>
+</body></html>
